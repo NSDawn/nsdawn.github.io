@@ -9,22 +9,61 @@
         font-family: MPLUS;
         src: url(assets/fonts/M_PLUS_1p/MPLUS1p-Regular.ttf);
     }
-    body {
-    font-family: MPLUS;
+    @font-face {
+        font-family: MPLUS_bold;
+        src: url(assets/fonts/M_PLUS_1p/MPLUS1p-Medium.ttf);
     }
-
+    body {
+        font-family: MPLUS;
+    }
     .header {
         padding: 10px;
         text-align: center;
         background: #f9a38b;
         color: #ffffff;
         font-size: 50px;
+        line-height: 50%;
     }
+    /* Style the top navigation bar */
+    .navbar {
+        overflow: hidden; /* Hide overflow */
+        background-color: #f46036; /* Dark background color */
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+        float: left; /* Make sure that the links stay side-by-side */
+        display: block; /* Change the display to block, for responsive reasons (see below) */
+        color: white; /* White text color */
+        text-align: center; /* Center the text */
+        padding: 14px 20px; /* Add some padding */
+        text-decoration: none; /* Remove underline */
+    }
+
+    /* Right-aligned link */
+    .navbar a.right {
+        float: right; /* Float a link to the right */
+    }
+
+    /* Change color on hover/mouse-over */
+    .navbar a:hover {
+        background-color: #f9a38b; /* Grey background color */
+        font-family: MPLUS_bold;
+        color: #ffffff; 
+    }
+    
 </style>
 </head>
 <body>
     <div class="header">
-        <h1>Nishant Suria<br>二シャント・スーリア</h1>
+        <h1>Nishant Suria</h1>
+        <p>二シャント・スーリア</p>
+    </div>
+    <div class="navbar">
+        <a href="#">Home ホーム</a>
+        <a href="#">Game Design ゲームデザイン</a>
+        <a href="#">Linguistics 言語学</a>
+        <a href="#" class="right">Contact 連絡</a>
     </div>
     <p>
         カリフォルニア大学サンタクルーズ校での大学生で、二シャント・スーリアと申します。よろしくね！<br><br> 
@@ -37,4 +76,4 @@
 </body>
 </html>
 
-<!--ffffff,f46036,f9a38b,f353de,f785e7-->
+<!--ffffff,f46036,f9a38b-->
