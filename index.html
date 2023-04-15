@@ -4,7 +4,7 @@
 <title>Nishant Suria</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="assets/main.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
 </head>
 <body>
@@ -13,10 +13,17 @@
     </div>
     <div class="navbar">
         <a href="" id="LBL_HOME"></a>
-        <a href="#" id="LBL_PROJECTS"></a>
+        <div class="dropdown"> <!--dropdown class for creating complex dropdown menus-->
+            <a href="#" id="LBL_PROJECTS"></a>
+            <div class="dropdown-menu">
+                Potato
+            </div>
+        </div>
+        
         <a href="#" class="right" id="LBL_RESUME"></a>
         
     </div>
+    
     <p id="BODY_INTRO"> </p>
     <script>
         // Grab navigation Language
