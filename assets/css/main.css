@@ -67,7 +67,7 @@ body {
     margin-left: auto;
 }
 
-/* Change color on hover/mouse-over */
+
 .navbar a:hover,button:hover {
     background-color: #e64d22; /* Grey background color */
     font-family: MPLUS;
@@ -75,6 +75,7 @@ body {
     font-size: 110%;
     text-decoration: underline;
 }
+
 /* dropdown menu stuff! */ 
 
 .dropdown {
@@ -91,12 +92,26 @@ body {
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out; transform: 150ms ease-in-out;
 }
-.dropdown > .link:focus + .dropdown-menu {
+.dropdown.active > .link + .dropdown-menu {
     opacity: 1;
     transform: translateY(0px);
     pointer-events: none;
 }
 
+.dropdown.active > button, a {
+    background-color: #e64d22; /* Grey background color */
+    font-family: MPLUS;
+    color: #ffffff; 
+    font-size: 110%;
+    text-decoration: underline;
+}
+.dropdown.active > a:hover,button:hover {
+    background-color: #e64d22; /* Grey background color */
+    font-family: MPLUS;
+    color: #ffffff; 
+    font-size: 110%;
+    text-decoration: underline;
+}
 
 img { 
     /* disable gross and lame anti-aliasing */ 

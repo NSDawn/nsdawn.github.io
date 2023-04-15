@@ -4,9 +4,15 @@
 <title>Nishant Suria</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <!-- #JS -->
-    <script src="data/js/dropdown.js"defer></script>
+
+<!-- #CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    
+<!-- #JS -->
+    <script src="assets/js/lang.js" defer ></script>
+    <script src="assets/js/dropdown.js" defer ></script>
+    
+
 </head>
 <body>
     <div class="header">
@@ -15,7 +21,7 @@
     <div class="navbar">
         
         <a href="" id="LBL_HOME"></a>
-        <div class="dropdown"> <!--dropdown class for creating complex dropdown menus-->
+        <div class="dropdown" data-dropdown> <!--dropdown class for creating complex dropdown menus-->
             <button class="link" id="LBL_PROJECTS" data-dropdown-button></button>
             <div class="dropdown-menu">
                 <a href="#" id="LBL_LINGUISTICS"></a>
@@ -28,36 +34,6 @@
     </div>
     
     <p id="BODY_INTRO"> </p>
-    <script>
-        // Grab navigation Language
-        // const userLanguage = navigator.language || navigator.userLanguage;
-        const userLanguage = "en-US";
-        // ON RENCONTRE SA DESTINÉE SOUVENT PAR LES CHEMINS QU’ON PREND POUR L’ÉVITER
 
-
-        let dataFilePath;
-        if (userLanguage.startsWith("en")) {
-            dataFilePath = "assets/data/en.json";
-        } 
-        if (userLanguage.startsWith("ja")) {
-            dataFilePath = "assets/data/ja.json";
-        } else {
-            dataFilePath = "assets/data/en.json";
-        }
-
-        // Replace text with localized strings
-        // open file
-        fetch(dataFilePath)
-            .then(response => response.json())
-            .then(DATA => {
-                for (let k in DATA)  {
-                    if (k != "") {
-                        document.getElementById(k).innerHTML = DATA[k];
-                    }
-                }
-        });
-        
-
-    </script>
 </body>
 </html>
