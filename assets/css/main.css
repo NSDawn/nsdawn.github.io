@@ -13,8 +13,13 @@
 body {
     font-family: MPLUS;
     background-image: url("../img/bg/main.png");
+    background-color: #0d001f;
     background-repeat: no-repeat;
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-position: bottom;
     background-size: cover;
+    /*background-size: cover;*/
 
     /* disable gross and lame anti-aliasing */ 
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
