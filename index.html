@@ -13,16 +13,23 @@
         font-family: MPLUS_bold;
         src: url(assets/fonts/M_PLUS_1p/MPLUS1p-Medium.ttf);
     }
+    @font-face {
+        font-family: PressStart2P;
+        src: url(assets/fonts/PressStart2P/PressStart2P-Regular.ttf);
+    }
     body {
         font-family: MPLUS;
+        background: #554c55;
     }
     .header {
         padding: 10px;
         text-align: center;
         background: #f9a38b;
         color: #ffffff;
-        font-size: 50px;
-        line-height: 50%;
+        font-family: PressStart2P;
+        font-size: 3vw; 
+        line-height: 100%;
+        /* line-height: 50%; 50px */
     }
     /* Style the top navigation bar */
     .navbar {
@@ -48,7 +55,7 @@
     /* Change color on hover/mouse-over */
     .navbar a:hover {
         background-color: #f9a38b; /* Grey background color */
-        font-family: MPLUS_bold;
+        font-family: MPLUS;
         color: #ffffff; 
     }
     
@@ -57,23 +64,44 @@
 <body>
     <div class="header">
         <h1>Nishant Suria</h1>
-        <p>二シャント・スーリア</p>
     </div>
     <div class="navbar">
-        <a href="#">Home ホーム</a>
-        <a href="#">Game Design ゲームデザイン</a>
-        <a href="#">Linguistics 言語学</a>
-        <a href="#" class="right">Contact 連絡</a>
+        <a href="#" id="LBL_HOME"></a>
+        <a href="#" id="LBL_PROJECTS"></a>
+        <a href="#" class="right" id="LBL_RESUME"></a>
+        
     </div>
-    <p>
-        カリフォルニア大学サンタクルーズ校での大学生で、二シャント・スーリアと申します。よろしくね！<br><br> 
+    <p id="BODY_INTRO"> </p>
+    <script>
+        // Grab navigation Language
+        // const userLanguage = navigator.language || navigator.userLanguage;
+        const userLanguage = "en-US";
+        // ON RENCONTRE SA DESTINÉE SOUVENT PAR LES CHEMINS QU’ON PREND POUR L’ÉVITER
 
-        勉強中：<br>
-        学士・語学（日本語）<br>
-        学士・ゲームデザイン <br>    
-    </p>
-    <button type="button">poggers</button>
+
+        let dataFilePath;
+        if (userLanguage.startsWith("en")) {
+            dataFilePath = "assets/data/en.json";
+        } 
+        if (userLanguage.startsWith("ja")) {
+            dataFilePath = "assets/data/ja.json";
+        } else {
+            dataFilePath = "assets/data/en.json";
+        }
+
+        // Replace text with localized strings
+        // open file
+        fetch(dataFilePath)
+            .then(response => response.json())
+            .then(DATA => {
+                for (let k in DATA)  {
+                    if (k != "") {
+                        document.getElementById(k).innerHTML = DATA[k];
+                    }
+                }
+        });
+        
+
+    </script>
 </body>
 </html>
-
-<!--ffffff,f46036,f9a38b-->
