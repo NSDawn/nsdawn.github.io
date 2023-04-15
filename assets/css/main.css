@@ -12,7 +12,19 @@
 }
 body {
     font-family: MPLUS;
-    background: #554c55;
+    background-image: url("../img/bg/main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* disable gross and lame anti-aliasing */ 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
+
 }
 .header {
     padding: 10px;
@@ -26,16 +38,18 @@ body {
 }
 /* Style the top navigation bar */
 .navbar {
-
+    
     display: flex;
     background-color: #f46036; /* Dark background color */
 }
 
 /* Style the navigation bar links */
-.navbar a {
+.navbar a, button {
+    font: inherit;
+    border: none;
+    background-color: inherit;
     
-    float: left; /* Make sure that the links stay side-by-side */
-    display: block; /* Change the display to block, for responsive reasons (see below) */
+    display: inherit; /* Change the display to block, for responsive reasons (see below) */
     color: white; /* White text color */
     text-align: center; /* Center the text */
     padding: 14px 20px; /* Add some padding */
@@ -43,44 +57,19 @@ body {
 }
 
 /* Right-aligned link */
-.navbar a.right {
+.navbar a.right, button.right {
     float: right; /* Float a link to the right */
+    margin-left: auto;
 }
 
 /* Change color on hover/mouse-over */
-.navbar a:hover {
+.navbar a:hover,button:hover {
     background-color: #e64d22; /* Grey background color */
     font-family: MPLUS;
     color: #ffffff; 
+    font-size: 110%;
+    text-decoration: underline;
 }
-/* Style the top navigation bar */
-.navbarsub {
-    overflow: hidden; /* Hide overflow */
-    background-color: #e64d22; /* Dark background color */
-}
-
-/* Style the navigation bar links */
-.navbarsub a {
-    float: left; /* Make sure that the links stay side-by-side */
-    display: block; /* Change the display to block, for responsive reasons (see below) */
-    color: white; /* White text color */
-    text-align: center; /* Center the text */
-    padding: 14px 20px; /* Add some padding */
-    text-decoration: none; /* Remove underline */
-}
-
-/* Right-aligned link */
-.navbarsub a.right {
-    float: right; /* Float a link to the right */
-}
-
-/* Change color on hover/mouse-over */
-.navbarsub a:hover {
-    background-color: #aa2a06; /* Grey background color */
-    font-family: MPLUS;
-    color: #ffffff; 
-}
-
 /* dropdown menu stuff! */ 
 
 .dropdown {
@@ -90,7 +79,28 @@ body {
     position: absolute;
     left: 14px;
     top: 50px;
-    
     background-color: #e64d22; /* Dark background color */
     padding: .75rem; 
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out; transform: 150ms ease-in-out;
+}
+.dropdown > .link:focus + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: none;
+}
+
+
+img { 
+    /* disable gross and lame anti-aliasing */ 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
 }
