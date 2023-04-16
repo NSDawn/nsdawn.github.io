@@ -4,7 +4,12 @@
     "LBL_RESUME": "Resume",
     "LBL_LINGUISTICS": "Linguistics",
     "LBL_GAMEDESIGN": "Game Design",
-    
+    "LBL_LANG": "<sup>A</sup>ぁ",
+    "LBL_LANG_EN": "English",
+    "LBL_LANG_ES": "Español",
+    "LBL_LANG_FR": "Français",
+    "LBL_LANG_JA": "日本語",
+
     "BODY_INTRO": "Hello, I'm Nishant Suria. I make games as N.S. Dawn. Welcome to my page!",
     "": ""
 }
