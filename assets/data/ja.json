@@ -2,6 +2,16 @@
     "LBL_HOME": "ホーム",
     "LBL_PROJECTS": "プロジェクト",
     "LBL_RESUME": "履歴書",
-    "BODY_INTRO": "</ruby>\n<ruby>Nishant Suria<rt>二シャント・スーリア</rt></ruby>と申します。通名【NS<ruby>暁<rt>ドーン</rt>】でゲーム発達します。よろしくお願いいたします。",
+    "LBL_LINGUISTICS": "言語学",
+    "LBL_GAMEDESIGN": "ゲームデザイン",
+    "LBL_LANG": "<sup>A</sup>ぁ",
+    "LBL_LANG_EN": "English",
+    "LBL_LANG_ES": "Español",
+    "LBL_LANG_FR": "Français",
+    "LBL_LANG_JA": "日本語",
+    "BODY_HOME_INTRO": "</ruby>\n<ruby>Nishant Suria<rt>二シャント・スーリア</rt></ruby>と申します。<br><br>通名【NS<ruby>暁<rt>ドーン</rt>】でゲーム発達します。",
+    "BODY_HOME_BIO": "２００１生まれアメリカのカリフォルニア州出身で、テクノロジーに富んでいる世界に養ってもらいました。",
+    "BODY_HOME_INTERESTS": "ゲームデザイン以外に興味のある分野はいくつかある：言語学・語学、世界文化、料理、ディジタルアート。うちの作で、どうやって人の間の会話はゲームのようなのかや、コトバの力は何かに応じるのに関心しています。",
+    "BODY_HOME_CLOSER": "よろしくお願いいたします。",
     "": ""
 }

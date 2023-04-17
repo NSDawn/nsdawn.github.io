@@ -126,22 +126,13 @@ img {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 
 }
-.thumbnail.hayu.smile {
-    width: 300px;
-    float: right;
-    transform:translate( -100px, -100px);
-}
-.thumbnail.hayu.angy {
-    width: 300px;
-    float: right;
-    transform:translate( 350px, 0px);
-}
+
 
 /* boxes and stuff */
 
 .infobox {
     display: block;
-    background-color: rgb(158, 220, 255, 0.4); /* Dark background color */
+    background-color: rgba(72, 72, 72, 0.811); /* Dark background color */
     color: white;
     padding: 14px 20px;
 }
