@@ -21,7 +21,12 @@ fetch(dataFilePath)
     .then(DATA => {
         for (let k in DATA)  {
             if (k != "") {
-                document.getElementById(k).innerHTML = DATA[k];
+                try {
+                    document.getElementById(k).innerHTML = DATA[k];
+                } catch {
+                    continue;
+                }
+                    
             }
         }
 });

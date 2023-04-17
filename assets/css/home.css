@@ -1,17 +1,30 @@
-.thumbnail.hayu.smile {
-    width: 300px;
+.thumbnail.hayu {
+    width: 30vw;
+    min-width: 200px;
     float: right;
-    position: absolute;
-    transform:translate( 700px, -100px);
     padding: none;
+}
+.thumbnail.hayu.smile {
+    transform: translate( 0vw, 0vw);
 }
 .thumbnail.hayu.angy {
+    
+    position: absolute;
+    min-width: 200px;
+    transform: translate( 30vw, 20vw);
+   
+}
+
+.infoboxtext {
+    max-width: 700px;
+}
+.eeee{
+    position: absolute;
+    transform:translate( 700px, -50px);
+    
     width: 300px;
     position: absolute;
     float: right;
-    transform: translate( 800px, 0px);
+    
     padding: none;
-}
-.infoboxtext {
-    max-width: 700px;
 }
