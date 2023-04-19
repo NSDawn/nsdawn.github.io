@@ -10,6 +10,14 @@
     max-width: 500px;
     float: center;
     padding: none;
+} 
+@media only screen and (max-width: 480px) {
+    .picture.katy.city {
+        max-width: 100%; 
+        height: auto; 
+        display: block;
+        margin: 0 auto;
+    }
 }
 .infoboxtext {
     max-width: 700px;
