@@ -943,11 +943,7 @@ console.log(holidays_that_are_today);
 // Output the date and time to the HTML document
 document.getElementById('date').innerHTML = "Current Holiday Codes: " + String(holidays_that_are_today)
 
-console.log(HOLIDAYS)
-
-
 function getHolidaysByDate(date) {
-    console.log()
     let holidayList = [];
     let yearOfOurLord = 2023;
     let lastYearOfData = 2033;
@@ -985,7 +981,6 @@ function getHolidaysByDate(date) {
 
 function dayIsBetween(in_date, date_a, date_b) {
     if ( ! (in_date >= date_a)) {return false;}
-    console.log(date_a)
     if ( ! (in_date <= date_b)) {return false;}
     return true;
 

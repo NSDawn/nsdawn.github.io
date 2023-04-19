@@ -31,7 +31,7 @@ body {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
 
 }
-.header {
+.header.title {
     padding: 10px;
     text-align: center;
     background: #f9a38b;
