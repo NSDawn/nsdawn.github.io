@@ -934,14 +934,14 @@ const HOLIDAYS = {
 };
 
 // Get the current date and time
-var today = new Date(2031, MONTH.JAN, 1);
+var today = new Date();
 
 // Format the date and time as a string
 let holidays_that_are_today = getHolidaysByDate(today);
 console.log(holidays_that_are_today);
 
 // Output the date and time to the HTML document
-document.getElementById('date').innerHTML = String(holidays_that_are_today)
+document.getElementById('date').innerHTML = "Current Holiday Codes: " + String(holidays_that_are_today)
 
 console.log(HOLIDAYS)
 

@@ -134,5 +134,5 @@ img {
     display: block;
     background-color: rgba(72, 72, 72, 0.811); /* Dark background color */
     color: white;
-    padding: 14px 20px;
+    padding: 14px 14px 14px 14px;
 }
