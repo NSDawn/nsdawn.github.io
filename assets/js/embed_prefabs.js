@@ -1,5 +1,5 @@
 const PREFABS = [
-    "_header",
+    "pf_header",
 ];
 const ASSETS_FOLDER = document.querySelector('script').getAttribute('data-assets-folder');
 
