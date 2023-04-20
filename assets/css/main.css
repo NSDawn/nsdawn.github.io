@@ -33,7 +33,12 @@ body {
     margin: 0vw 2vw;
 }
 .header.title {
+    transform: rotate(5deg) translate(-5vw, 10px);
+    position: relative;
+    
+    z-index: -2;
     padding: 10px;
+
     text-align: center;
     background: #f9a38b;
     color: #ffffff;
@@ -44,7 +49,7 @@ body {
 }
 /* Style the top navigation bar */
 .navbar {
-    
+    z-index: 3;
     display: flex;
     background-color: #f46036; /* Dark background color */
     

@@ -4,6 +4,9 @@
     max-width: 300px;
     float: right;
     padding: none;
+
+    transform: rotate(-10deg) translate(-5vw, 10px);
+
 }
 .picture.katy.city {
     width: 100%;
@@ -11,6 +14,9 @@
     max-width: 500px;
     float: center;
     padding: none;
+    transform: rotate(10deg) translate(-5vw, 10px);
+
+    transform-origin: center;
 } 
 @media only screen and (max-width: 480px) {
     .picture.katy.city {
