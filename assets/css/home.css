@@ -6,7 +6,8 @@
     padding: none;
 }
 .picture.katy.city {
-    width: 92vw;
+    width: 100%;
+    margin: 0;
     max-width: 500px;
     float: center;
     padding: none;
