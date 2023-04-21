@@ -74,3 +74,13 @@ Promise.all(prefabs_promises).then( (results) => {
     })
 });
 
+// // // // // // // // // // // // // // // // 
+//                                           // 
+//  SOME FUNCTIONS IG                        // 
+//                                           // 
+// // // // // // // // // // // // // // // // 
+
+function copyToClipboard(in_text) {
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(in_text);
+  }
