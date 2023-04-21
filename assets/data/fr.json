@@ -1,3 +1,31 @@
 {
+    "WEBPTITLE_HOME": "NS: Acceuil",
+    "WEBPTITLE_LINGUISTICS": "NS: Linguistics",
+    "WEBPTITLE_GAMES": "NS: Games",
+
+    "LBL_HOME": "acceuil",
+    "LBL_PROJECTS": "projets",
+    "LBL_RESUME": "cv / resume",
+    "LBL_LINGUISTICS": "linguistiques",
+    "LBL_GAMES": "jeux",
+    "LBL_LANG": "<sup>A</sup>ぁ",
+    "LBL_LANG_EN": "english",
+    "LBL_LANG_ES": "español",
+    "LBL_LANG_FR": "français",
+    "LBL_LANG_JA": "日本語",
+
+    "BODY_HOME_INTRO": "Bonjour, je suis <b>Nishant Suria</b>. Je crée des jeux vidéo sous le nom <b>N.S. Dawn</b>.",
+    "BODY_HOME_BIO": "",
+    "BODY_HOME_INTERESTS": "Dehors de design de jeux, les linguistiques, la multilingualisme et la pédagogie de langues secondes, les cultures et cuisines diverses du monde, et l'art digitale m'interessent profondement. Moyennant mes projets, je tente de relier les discours des humaines avec les jeux, et de demontrer la puissance de language.",
+    "BODY_HOME_CLOSER": "Bienvenue chez moi.",
+    
+    "PEACE_POLE": "MAY PEACE PREVAIL ON EARTH",
+    "PEACE_POLE_LA": "RĒGNET PĀX OMNEM PER TERRAM",
+
+    "KATY_SAYS": "Katy dit...",
+    
+
+    "": ""  
+
     
 }

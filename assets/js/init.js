@@ -31,25 +31,36 @@ for (filename of PREFABS) {
 //                                           // 
 // // // // // // // // // // // // // // // // 
 
+function getDefualtLanguage() {
+    var userLanguage = navigator.language;
+    if (userLanguage.startsWith("en")) { return "en";} 
+    if (userLanguage.startsWith("ja")) { return "ja";} 
+    if (userLanguage.startsWith("es")) { return "es";} 
+    if (userLanguage.startsWith("fr")) { return "fr";} 
+    
+    return "en";
+}
+
+function setLanguage(in_lang) {
+    displayLanguage = in_lang;
+    localStorage.setItem("displayLanguage", in_lang);
+    location.reload();
+}
+
+
+var displayLanguage;
+
 // Grab navigation Language
-// const userLanguage = navigator.language || navigator.userLanguage;
-var userLanguage = "en-US";
-var displayLanguage = "en"
+if (localStorage.getItem("displayLanguage") == null) {
+    displayLanguage = getDefualtLanguage();
+} else {
+    displayLanguage = localStorage.getItem("displayLanguage");
+}
+
 // ON RENCONTRE SA DESTINÉE SOUVENT PAR LES CHEMINS QU’ON PREND POUR L’ÉVITER
 
 let dataFilePath = ASSETS_FOLDER;
-
-if (userLanguage.startsWith("en")) { 
-    dataFilePath += "data/en.json";
-    displayLanguage = "en";
-} 
-else if (userLanguage.startsWith("ja")) {
-    dataFilePath += "data/ja.json";
-    displayLanguage = "ja";
-} else {
-    dataFilePath += "data/en.json";
-    displayLanguage = "en";
-}
+dataFilePath += "data/" + displayLanguage + ".json";
 
 
 let LANG_DATA;
@@ -73,6 +84,9 @@ Promise.all(prefabs_promises).then( (results) => {
         }
     })
 });
+
+
+
 
 // // // // // // // // // // // // // // // // 
 //                                           // 
