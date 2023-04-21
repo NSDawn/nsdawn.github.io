@@ -933,15 +933,168 @@ const HOLIDAYS = {
     
 };
 
+const HOLIDAY_TEXT = {
+    "en" : { 
+        'GREGORIAN_NEW_YEAR' : "happy new year !!",
+        'GREGORIAN_NEW_YEARS_EVE': "new years eve is upon us owo.", 
+        'CHINESE_NEW_YEAR': "a new spring is upon us, 新年快乐! also 새해 복 많이 받으세요, for seol-nal hehe. <##https://en.wikipedia.org/wiki/Chinese_New_Year##>", 
+        'VIETNAMESE_NEW_YEAR': "happy tet, chúc mừng năm mới :3. <##https://en.wikipedia.org/wiki/Tết##>", 
+        'TIBETAN_NEW_YEAR': "happy losar, ལོ་གསར་བཀྲ་ཤིས་བདེ་ལེགས།! <##https://en.wikipedia.org/wiki/Losar##>", 
+        'IRANIAN_NEW_YEAR': "سرخی تو از من، زردی من از تو! happy nowruz! <##https://en.wikipedia.org/wiki/Nowruz##>", 
+        'HINDU_NEW_YEAR': "happy ugadi, ఉగాది శుభాకాంక్షలు <##https://en.wikipedia.org/wiki/Ugadi##>, and happy gudi padwa, गुढी पाडव्याच्या हार्दिक शुभेच्छा ! <##https://en.wikipedia.org/wiki/Gudi_Padwa##>", 
+        'SOUTH_ASIAN_NEW_YEAR': "happy puthandu, புத்தாண்டு வாழ்த்துகள் !!! <##https://en.wikipedia.org/wiki/Puthandu##>", 
+        'JEWISH_NEW_YEAR': "happy rosh hashanah, שָׁנָה טוֹבָה! have some fish, maybe :3 <##https://en.wikipedia.org/wiki/Rosh_Hashanah##>", 
+        'ISLAMIC_NEW_YEAR': "a new lunar year! it's hijri new year (رأس السنة الهجرية).  <##https://en.wikipedia.org/wiki/Islamic_New_Year##>", 
+        'EARTH_DAY': "for as much as i scratch trees, i do appriciate them. today's for our earth :3.<##https://en.wikipedia.org/wiki/Earth_Day##>", 
+        'INTERNATIONAL_WOMENS_DAY': "respecc women :3 <##https://en.wikipedia.org/wiki/International_Women%27s_Day##>", 
+        'MAYDAY': "all u hard-working workers of the world, stay home today. and give me pets. and food. <##https://en.wikipedia.org/wiki/International_Workers%27_Day##>", 
+        'HALLOWEEN': "oooooo spoopy ^_^ <##https://en.wikipedia.org/wiki/Halloween##>", 
+        'JUNETEENTH': "“freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed.” -mlk, jr. <##https://en.wikipedia.org/wiki/Juneteenth##> ", 
+        'INDIGENOUS_PEOPLES_DAY': "“only when the last tree has been cut down, the last fish been caught, and the last stream poisoned, will we realize we cannot eat money.” -cree proverb <##https://en.wikipedia.org/wiki/Indigenous_Peoples%27_Day_(United_States)##>", 
+        'KWANZAA': "happy kwaanza, to all those celebrating. <##https://en.wikipedia.org/wiki/Kwaanza##>", 
+        'CHRISTMAS': "meowy christmas! also happy birthday to the messiah. <##https://en.wikipedia.org/wiki/Christmas##>", 
+        'CHRISTMAS_EVE': "presents tomorrow 0_0 <##https://en.wikipedia.org/wiki/Christmas_Eve##>", 
+        'EPIPHANY': "are you telling me three kings baked this cake? /j happy epiphany. <##https://en.wikipedia.org/wiki/Epiphany_(holiday)##>", 
+        'ASH_WEDNESDAY': "from now on, only fish uwu. <##https://en.wikipedia.org/wiki/Ash_Wednesday##>", 
+        'LENT': "blessed lent. <##https://en.wikipedia.org/wiki/Lent##>", 
+        'MID_LENT': "it's the middle of lent! mid-lent! ##https://en.wikipedia.org/wiki/Laetare_Sunday##", 
+        'GOOD_FRIDAY': "every friday is a good friday, but this one is especially good. <##https://en.wikipedia.org/wiki/Good_Friday##>", 
+        'HOLY_SATURDAY': "feeling holy. <##https://en.wikipedia.org/wiki/Holy_Saturday##>", 
+        'EASTER': "he is risen. <##https://en.wikipedia.org/wiki/Easter##>", 
+        'ASCENSION_DAY': "he is risen, but even higher this time. <##https://en.wikipedia.org/wiki/Feast_of_the_Ascension##>", 
+        'PENTACOST': "let's have a little feast. as a treat. <##https://en.wikipedia.org/wiki/Pentecost##>", 
+        'ALL_SAINTS_DAY': "super extra holy today. <##https://en.wikipedia.org/wiki/All_Saints%27_Day##>", 
+        'ASHURA': "thus they were liberated. <##https://en.wikipedia.org/wiki/Ashura##>",  
+        'RAMADAN' :"ramadan meowbarak (رمضان مبارك)! <##https://en.wikipedia.org/wiki/Ramadan##>",
+        'CHAND_RAAT': "presents tomorrow 0_0. (چاند رات مبارک) <##https://en.wikipedia.org/wiki/Chaand_Raat##>",
+        'EID_AL_FITR': "eid meowbarak (عيد مبارك)! :3 <##https://en.wikipedia.org/wiki/Eid_al-Fitr##>", 
+        'MAWLID_AN_NABI': "happy birthday to the prophet! <##https://en.wikipedia.org/wiki/Mawlid##>", 
+        'ARAFAH': "presents tomorrow 0_0. <##https://en.wikipedia.org/wiki/Day_of_Arafah##>", 
+        'EID_AL_ADHA': "eid meowbarak (عيد مبارك)! :3 <##https://en.wikipedia.org/wiki/Eid_al-Adha##>", 
+        'DIWALI': "may knowledge win over ignorance, good over evil, and light over darkness :3 दीपावली की शुभकामनाएं <##https://en.wikipedia.org/wiki/Diwali##>", 
+        'HOLI': "C O L O R S !! !! होली है ! <##https://en.wikipedia.org/wiki/Holi##>", 
+        'NAVARATRI': "", 
+        'RAKSHA_BANDHAN': "shoutout to siblings :3. my brother is mean tho. <##https://en.wikipedia.org/wiki/Raksha_Bandhan##>", 
+        'PONGAL': "bountiful harvest to all, happy pongal பொங்கல் வாழ்த்துக்கள்! <##https://en.wikipedia.org/wiki/Pongal_(festival)##> ", 
+        'HANUKKAH': "happy hanukkah, חנוכה שמח! <##https://en.wikipedia.org/wiki/Hanukkah##>", 
+        'PASSOVER': "may they be delivered. happy passover, חג פסח שמח! <##https://en.wikipedia.org/wiki/Pesach##>", 
+        'YOM_KIPPUR': "today is extra super holy, happy yom kippur, גמר חתימה טובה! <##https://en.wikipedia.org/wiki/Yom_Kippur##>", 
+        'UNITED_STATES_INDEPENDENCE_DAY': "'merica owo. <##https://en.wikipedia.org/wiki/Independence_Day_(United_States)##>", 
+        'CANADA_DAY': "", 
+        'INDIAN_INDEPENDENCE_DAY': "", 
+        'PAKISTANI_INDEPENDENCE_DAY': "", 
+        'INDONESIAN_INDEPENDENCE_DAY': "", 
+        'NIGERIAN_INDEPENDENCE_DAY': "", 
+        'BRAZILIAN_INDEPENDENCE_DAY': "", 
+        'BANGLADESHI_INDEPENDENCE_DAY': "", 
+        'MEXICAN_INDEPENDENCE_DAY': "", 
+        'PHILIPPINE_INDEPENDENCE_DAY': "", 
+        'VIETNAMESE_INDEPENDENCE_DAY': "", 
+        'CONGOLESE_INDEPENDENCE_DAY': "", 
+        'KOREAN_INDEPENDENCE_DAY': "", 
+        'SOUTH_AFRICAN_FREEDOM_DAY': "", 
+        'AUSTRALIA_DAY': "", 
+        'TAIWAN_NATIONAL_DAY': "", 
+        'TURKISH_REPUBLIC_DAY': "", 
+        'HANGEUL_DAY': "", 
+        'BASTILLE_DAY': "", 
+        'DAY_OF_THE_DEAD': "",
+        "": "am hungies. give food.",
+    },
+    "_template" : {
+        'GREGORIAN_NEW_YEAR' : "",
+        'GREGORIAN_NEW_YEARS_EVE': "", 
+        'CHINESE_NEW_YEAR': "", 
+        'VIETNAMESE_NEW_YEAR': "", 
+        'TIBETAN_NEW_YEAR': "", 
+        'IRANIAN_NEW_YEAR': "", 
+        'HINDU_NEW_YEAR': "", 
+        'SOUTH_ASIAN_NEW_YEAR': "", 
+        'JEWISH_NEW_YEAR': "", 
+        'ISLAMIC_NEW_YEAR': "", 
+        'EARTH_DAY': "", 
+        'INTERNATIONAL_WOMENS_DAY': "", 
+        'MAYDAY': "", 
+        'HALLOWEEN': "", 
+        'JUNETEENTH': "", 
+        'INDIGENOUS_PEOPLES_DAY': "", 
+        'KWANZAA': "", 
+        'CHRISTMAS': "", 
+        'CHRISTMAS_EVE': "", 
+        'EPIPHANY': "", 
+        'ASH_WEDNESDAY': "", 
+        'LENT': "", 
+        'MID_LENT': "", 
+        'GOOD_FRIDAY': "", 
+        'HOLY_SATURDAY': "", 
+        'EASTER': "", 
+        'ASCENSION_DAY': "", 
+        'PENTACOST': "", 
+        'ALL_SAINTS_DAY': "", 
+        'ASHURA': "",  
+        'RAMADAN' :"",
+        'CHAND_RAAT': "",
+        'EID_AL_FITR': "", 
+        'MAWLID_AN_NABI': "", 
+        'ARAFAH': "", 
+        'EID_AL_ADHA': "", 
+        'DIWALI': "", 
+        'HOLI': "", 
+        'NAVARATRI': "", 
+        'RAKSHA_BANDHAN': "", 
+        'PONGAL': "", 
+        'HANUKKAH': "", 
+        'PASSOVER': "", 
+        'YOM_KIPPUR': "", 
+        'UNITED_STATES_INDEPENDENCE_DAY': "", 
+        'CANADA_DAY': "", 
+        'INDIAN_INDEPENDENCE_DAY': "", 
+        'PAKISTANI_INDEPENDENCE_DAY': "", 
+        'INDONESIAN_INDEPENDENCE_DAY': "", 
+        'NIGERIAN_INDEPENDENCE_DAY': "", 
+        'BRAZILIAN_INDEPENDENCE_DAY': "", 
+        'BANGLADESHI_INDEPENDENCE_DAY': "", 
+        'MEXICAN_INDEPENDENCE_DAY': "", 
+        'PHILIPPINE_INDEPENDENCE_DAY': "", 
+        'VIETNAMESE_INDEPENDENCE_DAY': "", 
+        'CONGOLESE_INDEPENDENCE_DAY': "", 
+        'KOREAN_INDEPENDENCE_DAY': "", 
+        'SOUTH_AFRICAN_FREEDOM_DAY': "", 
+        'AUSTRALIA_DAY': "", 
+        'TAIWAN_NATIONAL_DAY': "", 
+        'TURKISH_REPUBLIC_DAY': "", 
+        'HANGEUL_DAY': "", 
+        'BASTILLE_DAY': "", 
+        'DAY_OF_THE_DEAD': "",
+        "": "mlep",
+    },
+};
+
 // Get the current date and time
 var today = new Date();
 
 // Format the date and time as a string
 let holidays_that_are_today = getHolidaysByDate(today);
-console.log(holidays_that_are_today);
 
 // Output the date and time to the HTML document
-document.getElementById('date').innerHTML = "Current Holiday Codes: " + String(holidays_that_are_today)
+// document.getElementById('date').innerHTML = "Current Holiday Codes: " + String(holidays_that_are_today)
+let katy_text_today = ""
+if (holidays_that_are_today == []) {
+    katy_text_today += HOLIDAY_TEXT[displayLanguage][""]
+} 
+if (holidays_that_are_today.length >= 1) {
+    katy_text_today += HOLIDAY_TEXT[displayLanguage][holidays_that_are_today[0]]
+}
+if (holidays_that_are_today.length >= 2) {
+    katy_text_today += "<br>"
+    katy_text_today += HOLIDAY_TEXT[displayLanguage][holidays_that_are_today[1]]
+}
+
+katy_text_today = katy_text_today.replaceAll("<##","<a href='").replaceAll("##>", "' target='_blank' class='simplelink'>[?]</a>")
+
+
+document.getElementById('KATY_TEXT').innerHTML = katy_text_today;
+
 
 function getHolidaysByDate(date) {
     let holidayList = [];
@@ -986,7 +1139,6 @@ function dayIsBetween(in_date, date_a, date_b) {
 
 
 }
-
 
 
 

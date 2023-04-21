@@ -33,22 +33,26 @@ for (filename of PREFABS) {
 
 // Grab navigation Language
 // const userLanguage = navigator.language || navigator.userLanguage;
-const userLanguage = "en-US";
+var userLanguage = "en-US";
+var displayLanguage = "en"
 // ON RENCONTRE SA DESTINÉE SOUVENT PAR LES CHEMINS QU’ON PREND POUR L’ÉVITER
 
 let dataFilePath = ASSETS_FOLDER;
 
 if (userLanguage.startsWith("en")) { 
     dataFilePath += "data/en.json";
+    displayLanguage = "en";
 } 
 else if (userLanguage.startsWith("ja")) {
     dataFilePath += "data/ja.json";
+    displayLanguage = "ja";
 } else {
     dataFilePath += "data/en.json";
+    displayLanguage = "en";
 }
 
 
-
+let LANG_DATA;
 
 // Replace text with localized strings
 // open file
@@ -56,6 +60,7 @@ Promise.all(prefabs_promises).then( (results) => {
     fetch(dataFilePath)
     .then(response => response.json())
     .then(DATA => {
+    LANG_DATA = DATA;
     for (let k in DATA)  {
         if (k != "") {
             try {

@@ -10,6 +10,10 @@
     font-family: PressStart2P;
     src: url(../fonts/PressStart2P/PressStart2P-Regular.ttf);
 }
+@font-face {
+    font-family: Kalam_bold;
+    src: url(../fonts/Kalam/Kalam-Bold.ttf);
+}
 body {
     font-family: MPLUS;
     background-image: url("../img/bg/main.png");
@@ -79,11 +83,26 @@ body {
 }
 
 
+
 .navbar a:hover,button:hover {
     background-color: #e64d22; 
     font-family: MPLUS;
     color: #ffffff; 
     text-decoration: underline;
+}
+
+.simplelink {
+    background-color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    color: #fff3a5; 
+
+}
+.simplelink:hover {
+    background-color: #0000000f;
+    font-family: inherit;
+    text-decoration: underline;
+    color: #ffd69c;
 }
 
 /* dropdown menu stuff! */ 
