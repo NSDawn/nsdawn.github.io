@@ -16,6 +16,7 @@
 }
 body {
     font-family: MPLUS;
+    
     background-image: url("../img/bg/main.png");
     background-color: #0d001f;
     background-repeat: no-repeat;
@@ -36,6 +37,9 @@ body {
     
     margin: 0vw 2vw;
 }
+b {
+    font-family: MPLUS_bold;
+}
 .header.title {
 
     /*
@@ -54,6 +58,10 @@ body {
     line-height: 10%;
     /* line-height: 50%; 50px */
 }
+
+
+/* NAVBAR!! - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
 /* Style the top navigation bar */
 .navbar {
     z-index: 3;
@@ -82,14 +90,20 @@ body {
     margin-left: auto;
 }
 
-
-
 .navbar a:hover,button:hover {
     background-color: #e64d22; 
     font-family: MPLUS;
     color: #ffffff; 
     text-decoration: underline;
 }
+.navbar_clipboard_button_image:hover {
+    content: url(../img/icon/copy.png);
+}
+.navbar_link_button_image:hover {
+    content: url(../img/icon/link.png);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
 .simplelink {
     background-color: inherit;
@@ -105,14 +119,16 @@ body {
     color: #ffd69c;
 }
 
-/* dropdown menu stuff! */ 
+/* DROPDOWN - - - - - - - - - - - - - - - - - - - - - -*/
 
 .dropdown {
     position: relative;
     font-family: MPLUS;
+    
 }
 .dropdown.lang {
     font-size: 20px;
+    z-index: 10;
 }
 .dropdown-menu {
     position: absolute;
@@ -128,7 +144,7 @@ body {
 .dropdown.active > .link + .dropdown-menu {
     opacity: 1;
     transform: translateY(0px);
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .dropdown.active > button, a {
@@ -143,6 +159,8 @@ body {
     color: #ffffff; 
     text-decoration: underline;
 }
+
+/* - IMG - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
 img { 
     /* disable gross and lame anti-aliasing */ 

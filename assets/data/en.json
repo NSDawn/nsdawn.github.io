@@ -1,19 +1,23 @@
 {
+    "WEBPTITLE_HOME": "NS: Home",
+    "WEBPTITLE_LINGUISTICS": "NS: Linguistics",
+    "WEBPTITLE_GAMES": "NS: Games",
+
     "LBL_HOME": "Home",
     "LBL_PROJECTS": "Projects",
     "LBL_RESUME": "Resume",
     "LBL_LINGUISTICS": "Linguistics",
-    "LBL_GAMEDESIGN": "Game Design",
+    "LBL_GAMES": "Games",
     "LBL_LANG": "<sup>A</sup>ぁ",
     "LBL_LANG_EN": "English",
     "LBL_LANG_ES": "Español",
     "LBL_LANG_FR": "Français",
     "LBL_LANG_JA": "日本語",
 
-    "BODY_HOME_INTRO": "Hello, I'm Nishant Suria. I make games as N.S. Dawn. Welcome to my page!",
-    "BODY_HOME_BIO": "Born in 2001 in California, I had the privilege among developing technologies.[wip]",
-    "BODY_HOME_INTERESTS": "Outside of Game Design, I am interested in linguistics, multilingualism and second language pedagogy, world cultures and cuisines, and digital art. With my work, I seek to connect human conversation with play, and to demonstrate the power of language.",
-    "BODY_HOME_CLOSER": "Thank you for viewing my page.",
+    "BODY_HOME_INTRO": "Hello, I'm <b>Nishant Suria</b>. I make games as <b>N.S. Dawn</b>.",
+    "BODY_HOME_BIO": "",
+    "BODY_HOME_INTERESTS": "Outside of game design, I am interested in linguistics, multilingualism and second language pedagogy, world cultures and cuisines, and digital art. With my work, I seek to connect human conversation with play, and to demonstrate the power of language.",
+    "BODY_HOME_CLOSER": "Welcome to my page.",
     
     "PEACE_POLE": "MAY PEACE PREVAIL ON EARTH",
     "PEACE_POLE_LA": "RĒGNET PĀX OMNEM PER TERRAM",

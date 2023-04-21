@@ -32,16 +32,16 @@
         
 
         <a href="https://www.linkedin.com/in/nishant-suria-9b48ab228/" class = "right">
-            <img src="_assets_file_path/img/icon/linkedin.png" alt="linkedin icon, links to linkedin" >
+            <img src="_assets_file_path/img/icon/linkedin.png" alt="linkedin icon, links to linkedin" class="navbar_link_button_image">
         </a>
         <a href="#" onclick="copyToClipboard('nishant.suria@gmail.com')" class = "">
-            <img src="_assets_file_path/img/icon/mail.png" alt="mail icon, copies email address to clipboard." >
+            <img src="_assets_file_path/img/icon/mail.png" alt="mail icon, copies email address to clipboard." class="navbar_clipboard_button_image" >
         </a>
         <a href="https://ns-dawn.itch.io/" class = "">
-            <img src="_assets_file_path/img/icon/itch.png" alt="itch.io icon, links to itch.io" >
+            <img src="_assets_file_path/img/icon/itch.png" alt="itch.io icon, links to itch.io" class="navbar_link_button_image">
         </a>
         <a href="https://github.com/NSDawn" class = "">
-            <img src="_assets_file_path/img/icon/github.png" alt="github icon, links to GitHub" >
+            <img src="_assets_file_path/img/icon/github.png" alt="github icon, links to GitHub" class="navbar_link_button_image">
         </a>
     </div>
     <div class="header title">
@@ -54,8 +54,10 @@
         <div class="dropdown" data-dropdown> <!--dropdown class for creating complex dropdown menus-->
             <button class="link" id="LBL_PROJECTS" data-dropdown-button></button>
             <div class="dropdown-menu">
-                <a href="#" id="LBL_LINGUISTICS"></a>
-                <a href="#" id="LBL_GAMEDESIGN"></a>
+                <div class="dropdown-links">
+                    <a href="_assets_file_path/../linguistics/" id="LBL_LINGUISTICS" data-dropdown></a>
+                    <a href="#" id="LBL_GAMES"></a>
+                </div>
             </div>
         </div>
 
