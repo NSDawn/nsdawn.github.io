@@ -33,10 +33,13 @@ body {
     margin: 0vw 2vw;
 }
 .header.title {
+
+    /*
     transform: rotate(5deg) ;
     position: relative;
-
     z-index: -2;
+    */
+
     padding: 10px;
 
     text-align: center;
@@ -138,7 +141,6 @@ img {
 /* boxes and stuff */
 
 .infobox {
-    display: block;
     background-color: rgba(72, 72, 72, 0.811); /* Dark background color */
     color: white;
     padding: 14px 14px 14px 14px;

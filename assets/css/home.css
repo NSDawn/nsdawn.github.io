@@ -1,28 +1,42 @@
 .thumbnail.hayu {
+    display: none;
     width: 30vw;
     min-width: 200px;
     max-width: 300px;
     float: right;
     padding: none;
+    margin-left: 1em;
 
-    transform: rotate(-10deg) translate(-5vw, 10px);
+    transform: rotate(10deg) translate(0, 0vw);
 
 }
+.katy_box {
+    display: inline-grid;
+    
+}
 .picture.katy.city {
+    grid-row: 1; grid-column: 1;
+    
     width: 100%;
-    margin: 0;
-    max-width: 500px;
-    float: center;
-    padding: none;
-    transform: rotate(10deg) translate(-5vw, 10px);
-
+    height: 100%;
+    max-width: 700px;
+    transform: rotate(-10deg) translate(0, 0);
     transform-origin: center;
 } 
+.picture.katy.city.speech_bubble {
+    grid-row: 1; grid-column: 1;
+    width: 40%;
+    transform: translate(0, 0);
+    
+    z-index: 2;
+    
+    max-width: 400px;
+
+}
 @media only screen and (max-width: 480px) {
     .picture.katy.city {
         max-width: 100%; 
         height: auto; 
-        display: block;
         margin: 0 auto;
     }
 }
