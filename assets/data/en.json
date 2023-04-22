@@ -36,7 +36,7 @@
     "LINGUISTICS/PROJECTS_1_TITLE": "a phonetic investigation of tamil liquids",
     "LINGUISTICS/PROJECTS_1_DESC": "Standard Tamil is said to have five /ɾ/, /r/, /l/, /ɭ/ and the elusive /ɻ/. Using phonetic data elicited from native speakers of Tamil, Fourier analysis was used to determine an auditory basis for this five-way distinction.",
     "LINGUISTICS/PROJECTS_2_TITLE": "a phonological framework for japanese vowel devoicing using OT",
-    "LINGUISTICS/PROJECTS_2_DESC": "In Japanese, vowels can get devoiced, such as in words like つき /tsuki/ → [tsɯ̥ki]. While the triggers for vowel devoicing are easily explained, interactions between environments, pitch accents, and knockout conditions make the full extent of the phenomenon hard to explain without Optimality Theory. ",
+    "LINGUISTICS/PROJECTS_2_DESC": "In Japanese, vowels can get devoiced, such as in words like つき /tsuki/. While the triggers for vowel devoicing are easily explained, interactions between environments, pitch accents, and knockout conditions make the full extent of the phenomenon hard to explain without Optimality Theory. ",
     "LINGUISTICS/PROJECTS_3_TITLE": "feature lookup",
     "LINGUISTICS/PROJECTS_3_DESC": "A small script that facilitates the lookup and comparison of features used in phonological analysis. Originally made for UCSC's LING 101. ",
     "LINGUISTICS/GO_LINK": "see more >",
