@@ -36,7 +36,6 @@
     grid-row: 1; grid-column: 1;
     z-index: 2;
     padding-left: 5vw;
-    padding-top: 0;
     font-size: 3vw;
 }
 .text.katy.city.katytext {
@@ -50,6 +49,10 @@
     padding-bottom: 1vw;
     font-size: 2vw;
     width: 40vw;
+}
+.text.katy.city.katysays > ruby {
+    display: inline;
+    vertical-align: middle;
 }
 @media screen and (min-width: 768px) {
     .text.katy.city.katysays {
