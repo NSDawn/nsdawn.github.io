@@ -8,11 +8,12 @@
 
     <!-- #CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/linguistics.css">
 
     <!-- #JS -->
     <script src="../assets/js/init.js" defer data-assets-folder="../assets/" ></script>
     <script src="../assets/js/dropdown.js" defer ></script>
+    <script src="../assets/js/linguistics_flip_page.js" defer></script>
     
     <!--# OTHER STUFF-->
     <link rel="icon" type="image/png" href="assets/img/art/hayu_smile.png">
@@ -20,9 +21,36 @@
 </head>
 <body>
     <div id="pf_header"></div> 
+    
 
     <div class="infobox">
-        Links to my projects...
+        <p id="LBL_LINGUISTICSPROJECTS" class="ling title"></p>
+        <div class="ling_sidebar">
+            <div class="ling_sidebar_item a" onclick="lingFlipPage('LINGUISTICS/PROJECTS_1')">
+                <img src="../assets/img/icon/sidebar_item_A.png" alt="sidebar item" class="ling_sidebar_item_image">
+                <a href="#" id="LBL_LINGUISTICSPROJECTS_1" class="ling_sidebar_item_link"></a>
+            </div>
+            <div class="ling_sidebar_item b" onclick="lingFlipPage('LINGUISTICS/PROJECTS_2')">
+                <img src="../assets/img/icon/sidebar_item_A.png" alt="sidebar item" class="ling_sidebar_item_image">
+                <a href="#" id="LBL_LINGUISTICSPROJECTS_2" class="ling_sidebar_item_link" ></a>
+            </div>
+            <div class="ling_sidebar_item a" onclick="lingFlipPage('LINGUISTICS/PROJECTS_3')">
+                <img src="../assets/img/icon/sidebar_item_A.png" alt="sidebar item" class="ling_sidebar_item_image" >
+                <a href="#" id="LBL_LINGUISTICSPROJECTS_3" class="ling_sidebar_item_link"></a>
+            
+            </div>
+            
+        </div>
+        <div class="ling_mainbox">
+            <p id="LINGUISTICS/PROJECTS_1_TITLE" class="ling_mainbox_title"></p>
+            <img src="../assets/img/icon/LINGUISTICS/base.png" alt="linguistics project icon" class="ling_mainbox_icon base">
+            <img src="../assets/img/icon/LINGUISTICS/PROJECTS_1.png" alt="linguistics project icon" class="ling_mainbox_icon icon">
+            
+            <p id="LINGUISTICS/PROJECTS_1_DESC" class="ling_mainbox_text"></p>
+            <p id="ENGLISH_ONLY" class="ling_mainbox_text_2 warning"></p>
+            <p><a href="" id = "LINGUISTICS/GO_LINK" class="simplelink ling_mainbox_go_link"></a></p>
+        </div>
+    
     </div>
 </body>
 </html>

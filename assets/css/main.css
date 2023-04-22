@@ -40,6 +40,9 @@ body {
 b {
     font-family: MPLUS_bold;
 }
+.warning {
+    color: rgb(255, 104, 104);
+}
 .header.title {
 
     /*
@@ -106,7 +109,7 @@ b {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
 .simplelink {
-    background-color: inherit;
+    background-color: #00000000;
     font-family: inherit;
     text-decoration: none;
     color: #fff3a5; 

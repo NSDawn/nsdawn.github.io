@@ -14,16 +14,33 @@
     "LBL_LANG_FR": "français",
     "LBL_LANG_JA": "日本語",
 
-    "BODY_HOME_INTRO": "Hello, I'm <b>Nishant Suria</b>. I make games as <b>N.S. Dawn</b>.",
-    "BODY_HOME_BIO": "",
-    "BODY_HOME_INTERESTS": "Outside of game design, I am interested in linguistics, multilingualism and second language pedagogy, world cultures and cuisines, and digital art. With my work, I seek to connect human conversation with play, and to demonstrate the power of language.",
-    "BODY_HOME_CLOSER": "Welcome to my page.",
+
+    "HOME/BODY_INTRO": "Hello, I'm <b>Nishant Suria</b>. I make games as <b>N.S. Dawn</b>.",
+    "HOME/BODY_BIO": "",
+    "HOME/BODY_INTERESTS": "Outside of game design, I am interested in linguistics, multilingualism and second language pedagogy, world cultures and cuisines, and digital art. With my work, I seek to connect human conversation with play, and to demonstrate the power of language.",
+    "HOME/BODY_CLOSER": "Welcome to my page.",
     
     "PEACE_POLE": "MAY PEACE PREVAIL ON EARTH",
     "PEACE_POLE_LA": "RĒGNET PĀX OMNEM PER TERRAM",
 
     "KATY_SAYS": "Today, Katy says...",
+
+    "ENGLISH_ONLY": "",
     
+
+    "LBL_LINGUISTICSPROJECTS": "linguistics projects",
+    "LBL_LINGUISTICSPROJECTS_1": "tamil liquid consonants",
+    "LBL_LINGUISTICSPROJECTS_2": "japanese vowel devoicing",
+    "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
+
+    "LINGUISTICS/PROJECTS_1_TITLE": "a phonetic investigation of tamil liquids",
+    "LINGUISTICS/PROJECTS_1_DESC": "Standard Tamil is said to have five /ɾ/, /r/, /l/, /ɭ/ and the elusive /ɻ/. Using phonetic data elicited from native speakers of Tamil, Fourier analysis was used to determine an auditory basis for this five-way distinction.",
+    "LINGUISTICS/PROJECTS_2_TITLE": "a phonological framework for japanese vowel devoicing using OT",
+    "LINGUISTICS/PROJECTS_2_DESC": "In Japanese, vowels can get devoiced, such as in words like つき /tsuki/ → [tsɯ̥ki]. While the triggers for vowel devoicing are easily explained, interactions between environments, pitch accents, and knockout conditions make the full extent of the phenomenon hard to explain without Optimality Theory. ",
+    "LINGUISTICS/PROJECTS_3_TITLE": "feature lookup",
+    "LINGUISTICS/PROJECTS_3_DESC": "A small script that facilitates the lookup and comparison of features used in phonological analysis. Originally made for UCSC's LING 101. ",
+    "LINGUISTICS/GO_LINK": "see more >",
+
 
     "": ""  
 

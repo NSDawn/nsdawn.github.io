@@ -13,11 +13,23 @@
     "LBL_LANG_ES": "Español",
     "LBL_LANG_FR": "Français",
     "LBL_LANG_JA": "日本語",
-    "BODY_HOME_INTRO": "<b><ruby>Nishant Suria<rt>二シャント・スーリア</rt></ruby></b>と申します。通名【<b>NS<ruby>暁<rt>ドーン</rt></b>】でゲーム開発しています。</ruby>\n",
-    "BODY_HOME_BIO": "",
-    "BODY_HOME_INTERESTS": "ゲームデザイン以外に興味のある分野はいくつかある：言語学・語学、世界文化、料理、ディジタルアート。うちの作で、どうやって人の間の会話はゲームのようなのかや、コトバの力に関心しています。",
-    "BODY_HOME_CLOSER": "よろしくお願いいたします。",
+    "HOME/BODY_INTRO": "<b><ruby>Nishant Suria<rt>二シャント・スーリア</rt></ruby></b>と申します。通名【<b>NS<ruby>暁<rt>ドーン</rt></b>】でゲーム開発しています。</ruby>\n",
+    "HOME/BODY_BIO": "",
+    "HOME/BODY_INTERESTS": "ゲームデザイン以外に興味のある分野はいくつかある：言語学・語学、世界文化、料理、ディジタルアート。うちの作で、どうやって人の間の会話はゲームのようなのかや、コトバの力に関心しています。",
+    "HOME/BODY_CLOSER": "よろしくお願いいたします。",
 
     "KATY_SAYS": "今日、<ruby>Katy<rt>キャティ</rt></ruby>が言う...",
+
+    "ENGLISH_ONLY": "※ このページにある1つまたは複数の資料は英語のみで提供される場合があります。",
+    
+    "LBL_LINGUISTICSPROJECTS": "言語学的プロジェクト",
+    "LBL_LINGUISTICSPROJECTS_1": "タミルの流音についての検査",
+    "LBL_LINGUISTICSPROJECTS_2": "日本語の無声音かした母音",
+    "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
+
+    "LINGUISTICS/PROJECTS_1_DESC": "",
+    "LINGUISTICS/PROJECTS_2_DESC": "",
+    "LINGUISTICS/PROJECTS_3_DESC": "",
+    "LINGUISTICS/GO_LINK": "入る >",
     "": ""
 }

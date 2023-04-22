@@ -14,16 +14,27 @@
     "LBL_LANG_FR": "français",
     "LBL_LANG_JA": "日本語",
 
-    "BODY_HOME_INTRO": "Hola, soy <b>Nishant Suria</b>. Hago videojuegos bajo el seudónimo <b>N.S. Dawn</b>. <FIX translation!!>",
-    "BODY_HOME_BIO": "",
-    "BODY_HOME_INTERESTS": "Fuera de diseño de (video)juegos, [traducción desprovista]",
-    "BODY_HOME_CLOSER": "Me complace darles la bienvenida a mi sitio web.",
+    "HOME/BODY_INTRO": "Hola, soy <b>Nishant Suria</b>. Hago videojuegos bajo el seudónimo <b>N.S. Dawn</b>. <FIX translation!!>",
+    "HOME/BODY_BIO": "",
+    "HOME/BODY_INTERESTS": "Fuera de diseño de (video)juegos, [traducción desprovista]",
+    "HOME/BODY_CLOSER": "Me complace darles la bienvenida a mi sitio web.",
     
     "PEACE_POLE": "MAY PEACE PREVAIL ON EARTH",
     "PEACE_POLE_LA": "RĒGNET PĀX OMNEM PER TERRAM",
 
     "KATY_SAYS": "Hoy Katy dice...",
     
+    "ENGLISH_ONLY": "* Uno o varios materiales en esta página pueden estar disponibles solo en inglés.",
+
+    "LBL_LINGUISTICSPROJECTS": "proyectos de lingüística",
+    "LBL_LINGUISTICSPROJECTS_1": "consonantes líquidas de támil",
+    "LBL_LINGUISTICSPROJECTS_2": "japanese vowel devoicing",
+    "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
+
+    "LINGUISTICS/PROJECTS_1_DESC": "",
+    "LINGUISTICS/PROJECTS_2_DESC": "",
+    "LINGUISTICS/PROJECTS_3_DESC": "",
+    "LINGUISTICS/GO_LINK": "entrar >",
 
     "": ""  
 

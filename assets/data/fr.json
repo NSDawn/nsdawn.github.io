@@ -14,16 +14,27 @@
     "LBL_LANG_FR": "français",
     "LBL_LANG_JA": "日本語",
 
-    "BODY_HOME_INTRO": "Bonjour, je suis <b>Nishant Suria</b>. Je crée des jeux vidéo sous le nom <b>N.S. Dawn</b>.",
-    "BODY_HOME_BIO": "",
-    "BODY_HOME_INTERESTS": "Dehors de design de jeux, les linguistiques, la multilingualisme et la pédagogie de langues secondes, les cultures et cuisines diverses du monde, et l'art digitale m'interessent profondement. Moyennant mes projets, je tente de relier les discours des humaines avec les jeux, et de demontrer la puissance de language.",
-    "BODY_HOME_CLOSER": "Je vous accueille à mon site web.",
+    "HOME/BODY_INTRO": "Bonjour, je suis <b>Nishant Suria</b>. Je développe des jeux vidéo sous le pseudo <b>N.S. Dawn</b>.",
+    "HOME/BODY_BIO": "",
+    "HOME/BODY_INTERESTS": "Dehors de design de jeux, les linguistiques, la multilingualisme et la pédagogie de langues secondaires, les cultures et cuisines diverses du monde, et l'art digitale m'interessent beaucoup. Moyennant mes projets, je tente de relier les discours des humaines avec les jeux, et de demontrer la puissance de language.",
+    "HOME/BODY_CLOSER": "Je vous accueille à mon site web.",
     
     "PEACE_POLE": "MAY PEACE PREVAIL ON EARTH",
     "PEACE_POLE_LA": "RĒGNET PĀX OMNEM PER TERRAM",
 
     "KATY_SAYS": "Katy dit...",
     
+    "ENGLISH_ONLY": "Un ou plusieurs éléments sur cette page ne peuvent être disponibles qu'en anglais.",
+
+    "LBL_LINGUISTICSPROJECTS": "projets de linguistique",
+    "LBL_LINGUISTICSPROJECTS_1": "consonnes liquides de tamoul",
+    "LBL_LINGUISTICSPROJECTS_2": "voyelles devocalisés japonaises",
+    "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
+
+    "LINGUISTICS/PROJECTS_1_DESC": "",
+    "LINGUISTICS/PROJECTS_2_DESC": "",
+    "LINGUISTICS/PROJECTS_3_DESC": "",
+    "LINGUISTICS/GO_LINK": "entrer >",
 
     "": ""  
 

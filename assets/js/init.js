@@ -72,21 +72,25 @@ Promise.all(prefabs_promises).then( (results) => {
     .then(response => response.json())
     .then(DATA => {
     LANG_DATA = DATA;
-    for (let k in DATA)  {
+    updateData(DATA);
+    
+    })
+});
+
+function updateData(in_data) {
+    
+    for (let k in in_data)  {
         if (k != "") {
             try {
-                document.getElementById(k).innerHTML = DATA[k];
+                document.getElementById(k).innerHTML = in_data[k];
             } catch {
                 continue;
             }
                 
-            }
         }
-    })
-});
-
-
-
+    }
+    
+}
 
 // // // // // // // // // // // // // // // // 
 //                                           // 
