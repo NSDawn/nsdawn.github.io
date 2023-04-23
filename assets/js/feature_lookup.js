@@ -37,15 +37,14 @@ document.addEventListener("keydown", function(event) {
 });
 
 let previousStoredConsole = localStorage.getItem("feature_lookup_console");
-if (previousStoredConsole == null) {
+console.log(previousStoredConsole);
+if (previousStoredConsole == null || previousStoredConsole == "") {
     consoleClear(save = true);
     consolePrintDefault()
 } else {
     consoleClear(save = false);
     consolePrint(localStorage.getItem("feature_lookup_console"), hasNewline = false)
 }
-
-
 
 
 // DATA
