@@ -29,6 +29,7 @@
     "KATY_SAYS": "Today, Katy says...",
 
     "ENGLISH_ONLY": "",
+    "IN_PROGRESS": "⚠ This website is currently being developped, and work is in-progress. Some links may be dead.",
     
 
     "LBL_LINGUISTICSPROJECTS": "linguistics projects",
@@ -43,6 +44,9 @@
     "LINGUISTICS/PROJECTS_3_TITLE": "feature lookup",
     "LINGUISTICS/PROJECTS_3_DESC": "A small script that facilitates the lookup and comparison of features used in phonological analysis. Originally made for UCSC's LING 101. ",
     "LINGUISTICS/GO_LINK": "see more >",
+
+    "LINGUISTICS/FEATURE_LOOKUP/DESC": "feature_lookup.js is a program that facilitates the lookup and analysis of phonemes and features used for phonolgical analysis. Originally made for UCSC's LING 101. ",
+    "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "pdf guide >",
 
 
     "": ""  

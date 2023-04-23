@@ -25,15 +25,20 @@
     "KATY_SAYS": "今日、<ruby>Katy<rt>キャティ</rt></ruby>が言う...",
 
     "ENGLISH_ONLY": "※ このページにある1つまたは複数の資料は英語のみで提供される場合があります。",
+    "IN_PROGRESS": "⚠ このウェブサイトは今開発中で、リンク・機能がダメなこともあります。不便で大変申し訳ありません。",
+
     
     "LBL_LINGUISTICSPROJECTS": "言語学的プロジェクト",
     "LBL_LINGUISTICSPROJECTS_1": "タミルの流音についての検査",
     "LBL_LINGUISTICSPROJECTS_2": "日本語の無声音かした母音",
     "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
 
-    "LINGUISTICS/PROJECTS_1_DESC": "",
-    "LINGUISTICS/PROJECTS_2_DESC": "",
-    "LINGUISTICS/PROJECTS_3_DESC": "",
+    "LINGUISTICS/FEATURE_LOOKUP/DESC": "和訳欠落",
+    "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "和訳欠落",
+
+    "LINGUISTICS/PROJECTS_1_DESC": "和訳欠落",
+    "LINGUISTICS/PROJECTS_2_DESC": "和訳欠落",
+    "LINGUISTICS/PROJECTS_3_DESC": "和訳欠落",
     "LINGUISTICS/GO_LINK": "入る >",
     "": ""
 }

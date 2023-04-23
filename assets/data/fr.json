@@ -28,15 +28,20 @@
     "KATY_SAYS": "Katy dit...",
     
     "ENGLISH_ONLY": "＊ Un ou plusieurs éléments sur cette page ne peuvent être disponibles qu'en anglais.",
+    "IN_PROGRESS": "⚠ Ce site web est maintenant en developpement. Quelques liens/fonctions peut être en panne.",
+
 
     "LBL_LINGUISTICSPROJECTS": "projets de linguistique",
     "LBL_LINGUISTICSPROJECTS_1": "consonnes liquides de tamoul",
     "LBL_LINGUISTICSPROJECTS_2": "voyelles devocalisés japonaises",
     "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
 
-    "LINGUISTICS/PROJECTS_1_DESC": "",
-    "LINGUISTICS/PROJECTS_2_DESC": "",
-    "LINGUISTICS/PROJECTS_3_DESC": "",
+    "LINGUISTICS/FEATURE_LOOKUP/DESC": "!! on se manque traduction",
+    "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "!! on se manque traduction",
+
+    "LINGUISTICS/PROJECTS_1_DESC": "!! on se manque traduction",
+    "LINGUISTICS/PROJECTS_2_DESC": "!! on se manque traduction",
+    "LINGUISTICS/PROJECTS_3_DESC": "!! on se manque traduction",
     "LINGUISTICS/GO_LINK": "entrer >",
 
     "": ""  
