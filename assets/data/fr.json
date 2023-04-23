@@ -1,7 +1,8 @@
 {
     "WEBPTITLE_HOME": "NS: Acceuil",
-    "WEBPTITLE_LINGUISTICS": "NS: Linguistics",
-    "WEBPTITLE_GAMES": "NS: Games",
+    "WEBPTITLE_LINGUISTICS": "NS: Linguistique",
+    "WEBPTITLE_GAMES": "NS: Jeux",
+    "WEBPTITLE_FEATURELOOKUP": "NS: FeatureLookup",
 
     "LBL_HOME": "acceuil",
     "LBL_PROJECTS": "projets",
@@ -14,6 +15,8 @@
     "LBL_LANG_FR": "français",
     "LBL_LANG_JA": "日本語",
 
+    "LBL_FEATURELOOKUP": "feature_lookup.js",
+
     "HOME/BODY_INTRO": "Bonjour, je suis <b>Nishant Suria</b>. Je développe des jeux vidéo sous le pseudo <b>N.S. Dawn</b>.",
     "HOME/BODY_BIO": "",
     "HOME/BODY_INTERESTS": "Dehors de design de jeux, les linguistiques, la multilingualisme et la pédagogie de langues secondaires, les cultures et cuisines diverses du monde, et l'art digitale m'interessent beaucoup. Moyennant mes projets, je tente de relier les discours des humaines avec les jeux, et de demontrer la puissance de language.",
@@ -24,7 +27,7 @@
 
     "KATY_SAYS": "Katy dit...",
     
-    "ENGLISH_ONLY": "Un ou plusieurs éléments sur cette page ne peuvent être disponibles qu'en anglais.",
+    "ENGLISH_ONLY": "＊ Un ou plusieurs éléments sur cette page ne peuvent être disponibles qu'en anglais.",
 
     "LBL_LINGUISTICSPROJECTS": "projets de linguistique",
     "LBL_LINGUISTICSPROJECTS_1": "consonnes liquides de tamoul",

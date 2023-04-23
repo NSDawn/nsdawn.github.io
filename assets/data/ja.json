@@ -2,6 +2,7 @@
     "WEBPTITLE_HOME": "NS: ホーム",
     "WEBPTITLE_LINGUISTICS": "NS: 言語学",
     "WEBPTITLE_GAMES": "NS: ゲーム",
+    "WEBPTITLE_FEATURELOOKUP": "NS: FeatureLookup",
 
     "LBL_HOME": "ホーム",
     "LBL_PROJECTS": "プロジェクト",
@@ -13,6 +14,9 @@
     "LBL_LANG_ES": "Español",
     "LBL_LANG_FR": "Français",
     "LBL_LANG_JA": "日本語",
+
+    "LBL_FEATURELOOKUP": "feature_lookup.js",
+
     "HOME/BODY_INTRO": "<b><ruby>Nishant Suria<rt>二シャント・スーリア</rt></ruby></b>と申します。通名【<b>NS<ruby>暁<rt>ドーン</rt></b>】でゲーム開発しています。</ruby>\n",
     "HOME/BODY_BIO": "",
     "HOME/BODY_INTERESTS": "ゲームデザイン以外に興味のある分野はいくつかある：言語学・語学、世界文化、料理、ディジタルアート。うちの作で、どうやって人の間の会話はゲームのようなのかや、コトバの力に関心しています。",

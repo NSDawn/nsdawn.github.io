@@ -2,6 +2,7 @@
     "WEBPTITLE_HOME": "NS: Home",
     "WEBPTITLE_LINGUISTICS": "NS: Linguistics",
     "WEBPTITLE_GAMES": "NS: Games",
+    "WEBPTITLE_FEATURELOOKUP": "NS: FeatureLookup",
 
     "LBL_HOME": "home",
     "LBL_PROJECTS": "projects",
@@ -13,6 +14,8 @@
     "LBL_LANG_ES": "español",
     "LBL_LANG_FR": "français",
     "LBL_LANG_JA": "日本語",
+    
+    "LBL_FEATURELOOKUP": "feature_lookup.js",
 
 
     "HOME/BODY_INTRO": "Hello, I'm <b>Nishant Suria</b>. I make games as <b>N.S. Dawn</b>.",

@@ -16,7 +16,6 @@
     width: 10vw;
     padding: 1em;
     
-    
 }
 /* .ling_mainbox_icon base {
     
@@ -48,7 +47,7 @@
 }
 
 .ling.title {
-    font-size: 3vw;
+    font-size: clamp(1em, 3vw, 3em);
     padding-left: 1em;
 }
 .ling_sidebar_item {
@@ -84,6 +83,22 @@
 }
 .ling_sidebar_item_link:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .ling_mainbox{
+       width: 100% ;
+       margin: auto;
+    }
+    .ling_sidebar {
+        width: 100%;
+        margin: auto;
+    }
+    .ling_sidebar_item_link {
+        font-size: 1em;
+    
+    }
+
 }
 
 
