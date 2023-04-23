@@ -43,7 +43,7 @@
     "LINGUISTICS/PROJECTS_2_DESC": "In Japanese, vowels can get devoiced, such as in words like つき /tsuki/ → [tsɯ̥ki]. While the triggers for vowel devoicing are easily explained, interactions between environments, pitch accents, and knockout conditions make the full extent of the phenomenon hard to explain without Optimality Theory. ",
     "LINGUISTICS/PROJECTS_3_TITLE": "feature lookup",
     "LINGUISTICS/PROJECTS_3_DESC": "A small script that facilitates the lookup and comparison of features used in phonological analysis. Originally made for UCSC's LING 101. ",
-    "LINGUISTICS/GO_LINK": "see more >",
+    "LINGUISTICS/GO_LINK": "enter >",
 
     "LINGUISTICS/FEATURE_LOOKUP/DESC": "feature_lookup.js is a program that facilitates the lookup and analysis of phonemes and features used for phonolgical analysis. Originally made for UCSC's LING 101. ",
     "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "pdf guide >",
