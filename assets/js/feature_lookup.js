@@ -37,7 +37,6 @@ document.addEventListener("keydown", function(event) {
 });
 
 let previousStoredConsole = localStorage.getItem("feature_lookup_console");
-console.log(previousStoredConsole);
 if (previousStoredConsole == null || previousStoredConsole == "") {
     consoleClear(save = true);
     consolePrintDefault()
@@ -167,6 +166,15 @@ const CMD_ABRV = [
     ["l ", "list "],
     ["h ", "help "],
     ["s ", "set "],
+    ["set a ", "set add "],
+    ["set add . ", "set add all "],
+    ["set add * ", "set add all "],
+    ["set d ", "set del "],
+    ["set del ", "set delete "],
+    ["set delete .", "set delete all"],
+    ["set delete all", "set clear"],
+    ["set f ", "set filter "],
+    ["set c ", "set clear "],
 ]
 
 // BASIC FNS
@@ -230,6 +238,8 @@ function consolePrintDefault() {
 
 // THE MAIN PART
 // - - - - - - - - - - - - - - -
+
+let PHONSET = {}
 
 function enterCmd() {
     const user_input = CMD_LN.value.trim();
@@ -306,8 +316,10 @@ function enterCmd() {
                     consolePrint("Usage: list<br>or --- list [phoneme]<br>or --- list [feature] {+/-/0}");
                 }
             } else if (cmd.length == 3) {
-                if (FEATURES[cmd[1]] != null) {
+                console.log(cmd[1])
+                if (FEATURES.includes(cmd[1])) {
                     if (["+", "-", "0"].includes(cmd[2])) {
+                        console.log("HELLO")
                         consolePrint("<span style='color:white;'>$ " + user_input + "</span>");
                         if (interpreted_message != "") {consolePrint(interpreted_message)};
                         let i = 0;
@@ -427,10 +439,165 @@ function enterCmd() {
             break;
 
         case "set": 
-            consolePrint("<span style='color:red;'>? " + user_input + "</span>");
-            if (interpreted_message != "") {consolePrint(interpreted_message)};
-            consolePrint("Support for command 'set' is currently in-progress.");
-            break
+            let isSuccess = true;
+            let printSet = true;
+            let msg = "";
+            
+            if (cmd.length > 1) {
+                switch (cmd[1]) {
+                    case "clear" : 
+                        PHONSET = {};
+                        msg = "Set cleared."
+                        isSuccess = true;
+                        printSet = false;
+                        break;
+
+                    case "add" :
+                        if (cmd.length > 2) {
+                            if (cmd[2] == "all") {
+                                for (let entry in PHONDATA) {
+                                    PHONSET[entry] = PHONDATA[entry];
+                                }
+                                printSet = true;
+                            } else if (FEATURES.includes(cmd[2])) {
+                                if (["+", "-", "0"].includes(cmd[3])) {
+                                    for (let entry in PHONDATA) {
+                                        if (PHONDATA[entry][cmd[2]] == cmd[3]) {
+                                            PHONSET[entry] = PHONDATA[entry];
+                                        }
+                                    }
+                                    printSet = true;
+                                } else {
+                                    msg = "Feature value must be specified as +, -, or 0.";
+                                    isSuccess = false;
+                                }
+                            } else {
+                                let phonemeAdd = true;
+                                
+                                for (let phone of cmd.slice(2)) {
+                                    if (PHONDATA[phone] == null) {
+                                        phonemeAdd = false;
+                                    }
+                                }
+                                if (phonemeAdd) {
+                                    
+                                    for (let phone of cmd.slice(2)) {
+                                        PHONSET[phone] = PHONDATA[phone];
+                                        printSet = true;
+                                    }
+                                } else {
+                                    msg = "One or multiple phonemes were not found or invalid.";
+                                    isSuccess = false;
+                                }
+                            }  
+
+                        } else {
+                            isSuccess = false;
+                        }
+                        break;
+                    case "delete" : 
+                        if (cmd.length > 2) {
+                            if (FEATURES.includes(cmd[2])) {
+                                if (cmd[2] == "all") {
+                                    PHONSET = {};
+                                    msg = "Set cleared."
+                                    isSuccess = true;
+                                    printSet = false;
+                                } else if (["+", "-", "0"].includes(cmd[3])) {
+                                    let new_set = {}
+                                    for (let entry in PHONSET) {
+                                        if (PHONSET[entry][cmd[2]] != cmd[3]) {
+                                            new_set[entry] = PHONSET[entry];
+                                        }
+                                    }
+                                    PHONSET = new_set;
+                                    printSet = true;
+                                } else {
+                                    msg = "Feature value must be specified as +, -, or 0.";
+                                    isSuccess = false;
+                                }
+                            } else {
+                                let phonemeDel = true;
+                                
+                                for (let phone of cmd.slice(2)) {
+                                    if (PHONDATA[phone] == null) {
+                                        phonemeDel = false;
+                                    }
+                                }
+                                if (phonemeDel) {
+                                    
+                                    for (let phone of cmd.slice(2)) {
+                                        delete PHONSET[phone];
+                                        printSet = true;
+                                    }
+                                } else {
+                                    msg = "One or multiple phonemes were not found or invalid.";
+                                    isSuccess = false;
+                                }
+                            }  
+
+                            } else {
+                                isSuccess = false;
+                            }
+                        break;
+                    
+                    case "filter":
+                        if (cmd.length > 2) {
+                            if (FEATURES.includes(cmd[2])) {
+                                if (["+", "-", "0"].includes(cmd[3])) {
+                                    let new_set = {}
+                                    for (let entry in PHONSET) {
+                                        if (PHONSET[entry][cmd[2]] == cmd[3]) {
+                                            new_set[entry] = PHONSET[entry];
+                                        }
+                                    }
+                                    PHONSET = new_set;
+                                    printSet = true;
+                                } else {
+                                    msg = "Feature value must be specified as +, -, or 0.";
+                                    isSuccess = false;
+                                }
+                            } else {
+                                msg = "Feature '" + cmd[2] + "' not found.";
+                                isSuccess = false;
+                            }
+                        } else {
+                            isSuccess = false;
+                        }
+                        break;
+                    default:
+                        isSuccess = false;
+                        break;
+                }
+            }
+        
+            if (isSuccess) {
+                
+                consolePrint("<span style='color:white;'>$ " + user_input + "</span>");
+                if (interpreted_message != "") {consolePrint(interpreted_message)};
+                if (msg != "") {consolePrint(msg)};
+                if (printSet) {
+                    if (Object.keys(PHONSET).length === 0) {
+                        consolePrint("Set is empty. Enter 'set add all' to add all phonemes.")
+                    } else {
+                        let i = 0;
+                        let formatted_result = ""
+                        for (let entry in PHONSET) {
+                            i += 1;
+                            formatted_result += entry;
+                            formatted_result += (i % 8 != 0)? " " : "<br>";
+                        }
+                        consolePrint(formatted_result, hasNewline = (i % 8 != 0));
+                    }
+                }
+            } else {
+                consolePrint("<span style='color:red;'>? " + user_input + "</span>");
+                if (interpreted_message != "") {consolePrint(interpreted_message)};
+                if (msg != "") {consolePrint(msg)};
+                consolePrint("Usage: set<br>or --- set clear<br>or --- set add [phoneme]<br>or --- set add [feature] {+/-/0}<br>or --- set add all<br>or --- set delete [phoneme]<br>or --- set delete [feature] {+/-/0}<br>or --- set filter [feature] {+/-/0}")
+            }
+            
+            break;
         default:
             consolePrint("<span style='color:red;'>? " + user_input + "</span>");
             consolePrint("Command '" + cmd[0] + "' was not understood.")
