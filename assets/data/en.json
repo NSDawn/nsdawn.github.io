@@ -47,8 +47,11 @@
 
     "LINGUISTICS/FEATURE_LOOKUP/DESC": "feature_lookup.js is a program that facilitates the lookup and analysis of phonemes and features used for phonolgical analysis. Originally made for UCSC's LING 101. ",
     "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "pdf guide >",
+    
+    "LINGUISTICS/JAPANESE_VOWELS/DESC": "The following is the full paper. Description coming soon.",
 
-
+    "LINGUISTICS/TAMIL_LIQUIDS/DESC": "The following is the full paper. Description coming soon.",
+    
     "": ""  
 
     

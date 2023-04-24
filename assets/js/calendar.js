@@ -1280,7 +1280,7 @@ let holidays_that_are_today = getHolidaysByDate(today);
 // Output the date and time to the HTML document
 // document.getElementById('date').innerHTML = "Current Holiday Codes: " + String(holidays_that_are_today)
 let katy_text_today = ""
-if (holidays_that_are_today == []) {
+if (holidays_that_are_today.length == 0) {
     katy_text_today += HOLIDAY_TEXT[displayLanguage][""]
 } 
 if (holidays_that_are_today.length >= 1) {
@@ -1320,7 +1320,7 @@ function getHolidaysByDate(date) {
             if (date.getFullYear() == yearOfOurLord) {continue};
             
             const endHolidayAlt = new Date(HOLIDAYS[holiday][yearIndex -1].getTime() + (HOLIDAYS[holiday][0] * 24 * 60 * 60 * 1000));
-            console.log(date, HOLIDAYS[holiday][yearIndex -1], endHolidayAlt)
+
             if (dayIsBetween(date, HOLIDAYS[holiday][yearIndex -1], endHolidayAlt)) {
                 
                 holidayList.push(holiday); continue;
