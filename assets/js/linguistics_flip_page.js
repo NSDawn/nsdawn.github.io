@@ -16,3 +16,43 @@ function lingFlipPage(idname) {
     updateData(LANG_DATA);
 }
 
+
+const FEATURE_LOOKUP_LINKS_REF = {
+    "LINGUISTICS/FEATURE_LOOKUP_1": {
+        "name": "feature_lookup_2022",
+        "color": "rgb(0, 235, 67)",
+    },
+    "LINGUISTICS/FEATURE_LOOKUP_2": {
+        "name": "feature_lookup_hayes_2005",
+        "color": "rgb(69, 140, 255)",
+    }
+}
+
+
+featureLookupInit()
+function featureLookupInit() {
+
+    let idname = localStorage.getItem("feature_lookup_selection")
+    if (idname == null) {idname = "LINGUISTICS/FEATURE_LOOKUP_1"}
+
+    const FL_CONSOLE = document.getElementsByClassName("console")[0];
+    FL_CONSOLE.style.setProperty("color", FEATURE_LOOKUP_LINKS_REF[idname]["color"]);
+    FL_CONSOLE.style.setProperty("border-color", FEATURE_LOOKUP_LINKS_REF[idname]["color"]);
+
+    const oldScriptElement = document.getElementsByClassName("feature_lookup")[0];
+        if (oldScriptElement != null) {
+            oldScriptElement.remove()
+    
+            const scriptElement = document.createElement('script');
+            scriptElement.setAttribute('src', "../../assets/js/" + FEATURE_LOOKUP_LINKS_REF[idname]["name"] + ".js");
+            scriptElement.setAttribute('type', 'text/javascript');
+            document.head.appendChild(scriptElement);
+        }
+        
+}
+
+function lingFeatureLookupFlipPage(idname) {
+    localStorage.setItem("feature_lookup_selection", idname);
+    location.reload()
+}
+

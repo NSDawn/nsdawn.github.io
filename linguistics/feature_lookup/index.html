@@ -13,7 +13,8 @@
     <!-- #JS -->
     <script src="../../assets/js/init.js" defer data-assets-folder="../../assets/" ></script>
     <script src="../../assets/js/dropdown.js" defer ></script>
-    <script src="../../assets/js/feature_lookup.js" defer></script>
+    <script src="../../assets/js/linguistics_flip_page.js" defer></script>
+    <script src="../../assets/js/feature_lookup_2022.js" defer class="feature_lookup"></script>
      
     <!--# OTHER STUFF-->
     <link rel="icon" type="image/png" href="../../assets/img/art/hayu_smile.png">
@@ -21,19 +22,36 @@
 </head>
 <body>
     <div id= "pf_header"></div>
-    
+
     <div class="infobox">
-        <p id="LBL_FEATURELOOKUP" class="simpletitle"></p>
+        <span id="LBL_FEATURELOOKUP" class="simpletitle"></span>
+        <br>
+        
+        <div class="ling_sidebar">
+            <div class="ling_sidebar_item a" onclick="lingFeatureLookupFlipPage('LINGUISTICS/FEATURE_LOOKUP_1')">
+                <img src="../../assets/img/icon/sidebar_item_A.png" alt="sidebar item" class="ling_sidebar_item_image">
+                <a href="#" id="" class="ling_sidebar_item_link">2022</a>
+            </div>
+            <div class="ling_sidebar_item b" onclick="lingFeatureLookupFlipPage('LINGUISTICS/FEATURE_LOOKUP_2')">
+                <img src="../../assets/img/icon/sidebar_item_A.png" alt="sidebar item" class="ling_sidebar_item_image">
+                <a href="#" id="" class="ling_sidebar_item_link" >2021, Hayes (2005)</a>
+            </div>
+        </div>
+
         <div class="terminalbox">
             <div class="command_box">
                 <p class="console" ></p>
             </div>
-            <!-- <label for="my-text-input">Enter your name:</label> -->
             <input type="text" id="" class="command_line" name="name" autocomplete="off">
+            
         </div>
-
+        
         <p id="LINGUISTICS/FEATURE_LOOKUP/DESC"></p>
         <a id="LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK" class= "simplelink" href="../../assets/misc/feature_lookup_js_guide_01.pdf" target="_blank"></a>
+        
+
     </div>
+
+    
 </body>
 </html>
