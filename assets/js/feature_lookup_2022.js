@@ -382,7 +382,7 @@ function enterCmd() {
                             compare_dict[entry] = PHONDATA[cmd[1]][entry];
                         }
                     }
-                    if (compare_dict.length === 0) {
+                    if (Object.keys(compare_dict).length === 0) {
                         consolePrint("No similarities were found.");
                     } else {
                         dict_print(compare_dict);
@@ -422,7 +422,7 @@ function enterCmd() {
                             contrast_dict[entry] = PHONDATA[cmd[1]][entry] + "/" + PHONDATA[cmd[2]][entry];
                         }
                     }
-                    if (contrast_dict.length === 0) {
+                    if (Object.keys(contrast_dict).length === 0) {
                         consolePrint("No distinctions were found.");
                     } else {
                         dict_print(contrast_dict);
