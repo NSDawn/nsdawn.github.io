@@ -255,6 +255,7 @@ function cmd_parse(in_str) {
 
 function consolePrintDefault() {
     consolePrint("Welcome to feature_lookup.js.");
+    consolePrint("[*] 2021 Version, based on Hayes (2005)");
     consolePrint("Type 'help' for help.");
 }
 

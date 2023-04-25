@@ -230,6 +230,7 @@ function cmd_parse(in_str) {
 
 function consolePrintDefault() {
     consolePrint("Welcome to feature_lookup.js.");
+    consolePrint("[*] 2022 Version");
     consolePrint("Type 'help' for help.");
 }
 
