@@ -218,9 +218,8 @@ for (let phoneme in PHONDATA) {
 
 // fn that prints dicts 
 function dict_print(in_dict) {
-    
     for (const key in in_dict) {
-        let outPrint = key + ": [" + in_dict[key] + "]";
+        let outPrint = key + ":" + "-".repeat((16 - key.length)) + "[" + in_dict[key] + "]";
         consolePrint(outPrint);
     }
 }
