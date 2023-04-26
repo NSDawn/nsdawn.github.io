@@ -31,8 +31,18 @@ for (filename of PREFABS) {
 //                                           // 
 // // // // // // // // // // // // // // // // 
 
+
 function getDefualtLanguage() {
     var userLanguage = navigator.language;
+
+    const languages = ["en", "ja", "es", "fr"];
+
+    if (false) {
+        if (langauges.includes(userLangauge.slice(0, 2))) {
+            return userLangauge.slice(0, 2);
+        }
+    }
+
     if (userLanguage.startsWith("en")) { return "en";} 
     if (userLanguage.startsWith("ja")) { return "ja";} 
     if (userLanguage.startsWith("es")) { return "es";} 

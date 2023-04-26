@@ -10,7 +10,7 @@ try { // try block bc i'm too lazy to actually fix bugs
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 const CMD_LN = document.getElementsByClassName("command_line")[0];
 const CONSOLE = document.getElementsByClassName("console")[0];
-let COMMANDBOX = document.getElementsByClassName("command_box")[0];
+const COMMANDBOX = document.getElementsByClassName("command_box")[0];
 COMMANDBOX.scrollTop = COMMANDBOX.scrollHeight;
 var currConsole = "";
 
@@ -44,7 +44,7 @@ if (previousStoredConsole == null || previousStoredConsole == "") {
     consolePrintDefault()
 } else {
     consoleClear(save = false);
-    consolePrint(localStorage.getItem("feature_lookup_hayes_2005_console"), hasNewline = false)
+    consolePrint(localStorage.getItem("feature_lookup_hayes_2005_console"), hasNewline = false);
 }
 
 
