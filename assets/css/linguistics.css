@@ -1,5 +1,4 @@
 .infobox {
-    height: auto;
     display: inline-block;
 }
 .ling_mainbox {
@@ -17,9 +16,6 @@
     padding: 1em;
     
 }
-/* .ling_mainbox_icon base {
-    
-} */
 .ling_mainbox_title {
     grid-row: 1; grid-column: 2;
     font-size: clamp(1em, 2vw, 3em);
@@ -101,5 +97,4 @@
     }
 
 }
-
 
