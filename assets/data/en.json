@@ -36,6 +36,8 @@
     "LBL_LINGUISTICSPROJECTS_1": "tamil liquid consonants",
     "LBL_LINGUISTICSPROJECTS_2": "japanese vowel devoicing",
     "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
+    "LBL_LINGUISTICSPROJECTS_4": "game of tones",
+
 
     "LINGUISTICS/PROJECTS_1_TITLE": "a phonetic investigation of tamil liquids",
     "LINGUISTICS/PROJECTS_1_DESC": "Standard Tamil is said to have five /ɾ/, /r/, /l/, /ɭ/ and the elusive /ɻ/. Using phonetic data elicited from native speakers of Tamil, Fourier analysis was used to determine an auditory basis for this five-way distinction.",
@@ -51,6 +53,8 @@
     "LINGUISTICS/JAPANESE_VOWELS/DESC": "The following is the full paper. Description coming soon.",
 
     "LINGUISTICS/TAMIL_LIQUIDS/DESC": "The following is the full paper. Description coming soon.",
+
+    "LINGUISTICS/GAME_OF_TONES/DESC": "This is a project for UCSC's WLMA, which works on Mesoamerican langauges. Description coming soon.",
     
     "": ""  
 

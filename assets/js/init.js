@@ -43,6 +43,7 @@ function getDefualtLanguage() {
         }
     }
 
+
     if (userLanguage.startsWith("en")) { return "en";} 
     if (userLanguage.startsWith("ja")) { return "ja";} 
     if (userLanguage.startsWith("es")) { return "es";} 
