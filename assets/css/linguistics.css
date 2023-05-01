@@ -20,6 +20,7 @@
     grid-row: 1; grid-column: 2;
     font-size: clamp(1em, 2vw, 3em);
     padding: 1em;
+    font-family:"MPLUS_bold";
     /* text-decoration: underline; */
 }
 .ling_mainbox_text {
@@ -44,6 +45,7 @@
 }
 
 .ling.title {
+    font-family:"MPLUS_bold";
     font-size: clamp(1em, 3vw, 3em);
     padding-left: 1em;
 }

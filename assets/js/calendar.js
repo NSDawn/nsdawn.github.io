@@ -560,7 +560,7 @@ const HOLIDAYS = {
         new Date(2032, MONTH.MAR, 27),
         new Date(2033, MONTH.MAR, 16),
     ],
-    "NAVARATRI" : [
+    /*"NAVARATRI" : [
         10,
         new Date(2023, MONTH.OCT, 15),
         new Date(2024, MONTH.OCT, 3),
@@ -573,7 +573,7 @@ const HOLIDAYS = {
         new Date(2031, MONTH.OCT, 21),
         //new Date(2032, 0, 0), // no data
         //new Date(2033, 0, 0),
-    ],
+    ],*/
     "RAKSHA_BANDHAN" : [
         1,
         new Date(2023, MONTH.AUG, 30),
@@ -802,6 +802,7 @@ const HOLIDAYS = {
         new Date(2032, MONTH.SEP, 2),
         new Date(2033, MONTH.SEP, 2),
     ],
+    /*
     "CONGOLESE_INDEPENDENCE_DAY" : [
         1,
         new Date(2023, MONTH.JUN, 30),
@@ -815,7 +816,7 @@ const HOLIDAYS = {
         new Date(2031, MONTH.JUN, 30),
         new Date(2032, MONTH.JUN, 30),
         new Date(2033, MONTH.JUN, 30),
-    ],
+    ], */
     "KOREAN_INDEPENDENCE_DAY" : [
         1,
         new Date(2023, MONTH.AUG, 15),
@@ -980,25 +981,25 @@ const HOLIDAY_TEXT = {
         'PASSOVER': "may they be delivered. happy passover, חג פסח שמח! <##https://en.wikipedia.org/wiki/Pesach##>", 
         'YOM_KIPPUR': "today is extra super holy, happy yom kippur, גמר חתימה טובה! <##https://en.wikipedia.org/wiki/Yom_Kippur##>", 
         'UNITED_STATES_INDEPENDENCE_DAY': "'merica owo. <##https://en.wikipedia.org/wiki/Independence_Day_(United_States)##>", 
-        'CANADA_DAY': "", 
-        'INDIAN_INDEPENDENCE_DAY': "", 
-        'PAKISTANI_INDEPENDENCE_DAY': "", 
-        'INDONESIAN_INDEPENDENCE_DAY': "", 
-        'NIGERIAN_INDEPENDENCE_DAY': "", 
-        'BRAZILIAN_INDEPENDENCE_DAY': "", 
-        'BANGLADESHI_INDEPENDENCE_DAY': "", 
-        'MEXICAN_INDEPENDENCE_DAY': "", 
-        'PHILIPPINE_INDEPENDENCE_DAY': "", 
-        'VIETNAMESE_INDEPENDENCE_DAY': "", 
-        'CONGOLESE_INDEPENDENCE_DAY': "", 
-        'KOREAN_INDEPENDENCE_DAY': "", 
-        'SOUTH_AFRICAN_FREEDOM_DAY': "", 
-        'AUSTRALIA_DAY': "", 
-        'TAIWAN_NATIONAL_DAY': "", 
-        'TURKISH_REPUBLIC_DAY': "", 
-        'HANGEUL_DAY': "", 
-        'BASTILLE_DAY': "", 
-        'DAY_OF_THE_DEAD': "",
+        'CANADA_DAY': "with glowing hearts ... we see (?) thee (?) shine (?)... I guess? <##https://en.wikipedia.org/wiki/Canada_Day##>", 
+        'INDIAN_INDEPENDENCE_DAY': "happy indian independence day! <##https://en.wikipedia.org/wiki/Independence_Day_(India)##>", 
+        'PAKISTANI_INDEPENDENCE_DAY': "happy pakistani independence day! <##https://en.wikipedia.org/wiki/Independence_Day_(Pakistan)##>", 
+        'INDONESIAN_INDEPENDENCE_DAY': "happy indonesian independence day! <##https://en.wikipedia.org/wiki/Independence_Day_(Indonesia)##>", 
+        'NIGERIAN_INDEPENDENCE_DAY': "happy nigerian independence day! <##https://en.wikipedia.org/wiki/Independence_Day_(Nigeria)##>", 
+        'BRAZILIAN_INDEPENDENCE_DAY': "happy brazilian independence day! <##https://en.wikipedia.org/wiki/Independence_Day_(Brazil)##>", 
+        'BANGLADESHI_INDEPENDENCE_DAY': "happy bangladeshi independence day! <##https://en.wikipedia.org/wiki/Independence_Day_(Bangladesh)##>", 
+        'MEXICAN_INDEPENDENCE_DAY': "happy mexican independence day! <##https://en.wikipedia.org/wiki/Cry_of_Dolores##>", 
+        'PHILIPPINE_INDEPENDENCE_DAY': "happy philippine independenece day! <##https://en.wikipedia.org/wiki/Independence_Day_(Philippines)##>", 
+        'VIETNAMESE_INDEPENDENCE_DAY': "happy vietnamese independence day! <##https://en.wikipedia.org/wiki/Independence_Day_(Vietnam)##>", 
+        'CONGOLESE_INDEPENDENCE_DAY': "happy congolese independence day <##https://en.wikipedia.org/wiki/Independence_Day_(Congo)##>", 
+        'KOREAN_INDEPENDENCE_DAY': "happy korean national liberation day! <##https://en.wikipedia.org/wiki/National_Liberation_Day_of_Korea##>", 
+        'SOUTH_AFRICAN_FREEDOM_DAY': "happy south african freedom day! <##https://en.wikipedia.org/wiki/Freedom_Day_(South_Africa)##>", 
+        'AUSTRALIA_DAY': "happy australia day! <##https://en.wikipedia.org/wiki/Australia_Day##>", 
+        'TAIWAN_NATIONAL_DAY': "happy double ten day (雙十節)! <##https://en.wikipedia.org/wiki/National_Day_of_the_Republic_of_China##>", 
+        'TURKISH_REPUBLIC_DAY': "happy turkish republic day! <##https://en.wikipedia.org/wiki/Republic_Day_(Turkey)##>", 
+        'HANGEUL_DAY': "big fan of hangeul. sejong the great did a great job.  <##https://en.wikipedia.org/wiki/Hangul_Day##>", 
+        'BASTILLE_DAY': "happy bastille day! joyeux 14 juillet! <##https://en.wikipedia.org/wiki/Bastille_Day##>", 
+        'DAY_OF_THE_DEAD': "feliz día de los muertos! <##https://en.wikipedia.org/wiki/Day_of_the_Dead##>",
         "": "am hungies. give food. either way, have a meowful day hehe :3",
     },
     "ja" : {
@@ -1340,9 +1341,6 @@ function dayIsBetween(in_date, date_a, date_b) {
 
 
 }
-
-
-
 
 
 

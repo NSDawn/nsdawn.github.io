@@ -18,6 +18,18 @@
     font-family: Cascadia;
     src: url(../fonts/CascadiaCode/CascadiaCode.ttf);
 }
+@font-face {
+    font-family: Exo2;
+    src: url(../fonts/Exo2/Exo2-Medium.ttf);
+}
+@font-face {
+    font-family: Exo2_Light;
+    src: url(../fonts/Exo2/Exo2-Light.ttf);
+}
+@font-face {
+    font-family: Exo2_Bold;
+    src: url(../fonts/Exo2/Exo2-Bold.ttf);
+}
 body {
     font-family: MPLUS;
     
@@ -117,7 +129,7 @@ b {
     font-family: inherit;
     text-decoration: none;
     color: #fff3a5; 
-
+    
 }
 .simplelink:hover {
     background-color: #0000000f;
@@ -126,9 +138,18 @@ b {
     color: #ffd69c;
 }
 .simpletitle {
-    font-size: clamp(1em, 3vw, 3em);
-    padding-left: 1em;
+    font-size: clamp(2em, 4vw, 3em);
+    padding: 0.5em 0em;
+    font-family: "Exo2_bold";
+    
 }
+.simplesubtitle {
+    font-family: "Exo2";
+    font-size: clamp(1.5em, 3vw, 2em);
+    font-style: italic;
+    padding: 0.5em 0em;
+}
+
 
 /* DROPDOWN - - - - - - - - - - - - - - - - - - - - - -*/
 
@@ -158,13 +179,13 @@ b {
     pointer-events: auto;
 }
 
-.dropdown.active > button, a {
+.dropdown.active > button, .dropdown.active > a {
     background-color: #e64d22; /* Grey background color */
     font-family: MPLUS;
     color: #ffffff; 
     text-decoration: underline;
 }
-.dropdown.active > a:hover,button:hover {
+.dropdown.active > .dropdown.active > a:hover,button:hover {
     background-color: #e64d22; /* Grey background color */
     font-family: MPLUS;
     color: #ffffff; 
@@ -195,4 +216,9 @@ img {
 }
 ::selection {
     background: #00000071;
+}
+
+
+.placeholder {
+    font-size: 2em;
 }
