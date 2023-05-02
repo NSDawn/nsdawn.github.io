@@ -114,11 +114,12 @@ b {
     font-family: MPLUS;
     color: #ffffff; 
     text-decoration: underline;
+    border-radius: 10px;
 }
-.navbar_clipboard_button_image:hover {
+.navbar_clipboard_button:hover {
     content: url(../img/icon/copy.png);
 }
-.navbar_link_button_image:hover {
+.navbar_link_button:hover {
     content: url(../img/icon/link.png);
 }
 
@@ -171,12 +172,15 @@ b {
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
+    border-radius: 10px;
+    border: solid 2px white;
     transition: opacity 150ms ease-in-out; transform: 50ms ease-in-out;
 }
 .dropdown.active > .link + .dropdown-menu {
     opacity: 1;
     transform: translateY(0px);
     pointer-events: auto;
+    border-radius: 10px;
 }
 
 .dropdown.active > button, .dropdown.active > a {
@@ -184,12 +188,15 @@ b {
     font-family: MPLUS;
     color: #ffffff; 
     text-decoration: underline;
+    border-radius: 10px;
 }
 .dropdown.active > .dropdown.active > a:hover,button:hover {
     background-color: #e64d22; /* Grey background color */
     font-family: MPLUS;
     color: #ffffff; 
     text-decoration: underline;
+    border-radius: 10px;
+
 }
 
 /* - IMG - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
