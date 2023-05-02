@@ -1342,5 +1342,3 @@ function dayIsBetween(in_date, date_a, date_b) {
 
 }
 
-
-
