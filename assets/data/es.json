@@ -17,9 +17,9 @@
 
     "LBL_FEATURELOOKUP": "feature_lookup.js",
 
-    "HOME/BODY_INTRO": "Hola, soy <b>Nishant Suria</b>. Hago videojuegos bajo el seudónimo <b>N.S. Dawn</b>. <FIX translation!!>",
+    "HOME/BODY_INTRO": "Hola, soy <b>Nishant Suria</b>. Desarollo videojuegos bajo el seudónimo <b>N.S. Dawn</b>. <FIX translation!!>",
     "HOME/BODY_BIO": "",
-    "HOME/BODY_INTERESTS": "!! traducción desprovista",
+    "HOME/BODY_INTERESTS": "Aparte del diseño de juegos, me interesa la lingüística, el multilingüismo y la pedagogía de idiomas secundarios, las culturas y gastronomías del mundo, y el arte digital. En mi trabajo, persigo juntar conversación humana y juegos, y demostrar el poder del lenguaje.",
     "HOME/BODY_CLOSER": "Me complace darles la bienvenida a mi sitio web.",
     
     "PEACE_POLE": "MAY PEACE PREVAIL ON EARTH",
@@ -32,12 +32,12 @@
 
     "LBL_LINGUISTICSPROJECTS": "proyectos de lingüística",
     "LBL_LINGUISTICSPROJECTS_1": "consonantes líquidas de támil",
-    "LBL_LINGUISTICSPROJECTS_2": "japanese vowel devoicing",
+    "LBL_LINGUISTICSPROJECTS_2": "vocales japoneses",
     "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
 
     "LINGUISTICS/PROJECTS_1_TITLE": "una investigación fonética de las consonantes líquidas del támil",
     "LINGUISTICS/PROJECTS_1_DESC": "Se dice que el támil estándar tiene una distinción entre cinco consonantes líquidas /ɾ/, /r/, /l/, /ɭ/ y /ɻ/. Analizando los datos fonéticos obtenidos de hablantes nativos, se busca deducir una base auditiva para estas distinciones.",
-    "LINGUISTICS/PROJECTS_2_TITLE": "un marco fonológico del desonorización de vocales japoneses usando la OT.",
+    "LINGUISTICS/PROJECTS_2_TITLE": "un marco fonológico del desonorización de vocales japoneses usando la OT",
     "LINGUISTICS/PROJECTS_2_DESC": "En japonés, vocales pueden ser desonorizadas en palabras como つき /tsuki/ → [tsɯ̥ki]. Aunque los motivos de esta desonorización son fáciles de enumerar, las interacciones entre diferentes entornos, acentos tonales y condiciones que anulan la desonorización, se parece que la extensión completa de este fenómeno es difícil de elucidar sin la teoría de la optimidad (OT).",
     "LINGUISTICS/PROJECTS_3_TITLE": "feature lookup",
     "LINGUISTICS/PROJECTS_3_DESC": "Un pequeño script escrito para LING 101 a UCSC, para facilitar la búsqueda y análisis de fonemas y características utilizadas en análisis fonológico.",
@@ -83,6 +83,10 @@
     "RESUME/SKILLS_CODING_PYTHON_LEVEL": "Avanzado",
     "RESUME/SKILLS_CODING_HTML5CSS": "HTML5 / CSS",
     "RESUME/SKILLS_CODING_HTML5CSS_LEVEL": "Apto",
+    "RESUME/SKILLS_CODING_R": "R",
+    "RESUME/SKILLS_CODING_R_LEVEL": "Apto",
+    "RESUME/SKILLS_CODING_LATEX": "LaTeX",
+    "RESUME/SKILLS_CODING_LATEX_LEVEL": "Apto",
     "RESUME/SKILLS_SOFTWARE_UNITY": "Unity",
     "RESUME/SKILLS_SOFTWARE_UNITY_LEVEL": "Apto",
     "RESUME/SKILLS_SOFTWARE_GODOT": "Godot",

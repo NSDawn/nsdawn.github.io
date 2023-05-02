@@ -1067,7 +1067,7 @@ const HOLIDAY_TEXT = {
         'HANGEUL_DAY': "", 
         'BASTILLE_DAY': "", 
         'DAY_OF_THE_DEAD': "",
-        "": "",
+        "": "えさちょうだい〜にゃ〜",
     },
     "es" : {
         'GREGORIAN_NEW_YEAR' : "",
@@ -1134,7 +1134,7 @@ const HOLIDAY_TEXT = {
         'HANGEUL_DAY': "", 
         'BASTILLE_DAY': "", 
         'DAY_OF_THE_DEAD': "",
-        "": "",
+        "": "miau",
     },
     "fr" : {
         'GREGORIAN_NEW_YEAR' : "",
@@ -1201,7 +1201,7 @@ const HOLIDAY_TEXT = {
         'HANGEUL_DAY': "", 
         'BASTILLE_DAY': "", 
         'DAY_OF_THE_DEAD': "",
-        "": "",
+        "": "miaou",
     },
     "_template" : {
         'GREGORIAN_NEW_YEAR' : "",
