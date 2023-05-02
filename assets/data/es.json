@@ -35,9 +35,12 @@
     "LBL_LINGUISTICSPROJECTS_2": "japanese vowel devoicing",
     "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
 
-    "LINGUISTICS/PROJECTS_1_DESC": "!! traducción desprovista",
-    "LINGUISTICS/PROJECTS_2_DESC": "!! traducción desprovista",
-    "LINGUISTICS/PROJECTS_3_DESC": "!! traducción desprovista",
+    "LINGUISTICS/PROJECTS_1_TITLE": "una investigación fonética de las consonantes líquidas del támil",
+    "LINGUISTICS/PROJECTS_1_DESC": "Se dice que el támil estándar tiene una distinción entre cinco consonantes líquidas /ɾ/, /r/, /l/, /ɭ/ y /ɻ/. Analizando los datos fonéticos obtenidos de hablantes nativos, se busca deducir una base auditiva para estas distinciones.",
+    "LINGUISTICS/PROJECTS_2_TITLE": "un marco fonológico del desonorización de vocales japoneses usando la OT.",
+    "LINGUISTICS/PROJECTS_2_DESC": "En japonés, vocales pueden ser desonorizadas en palabras como つき /tsuki/ → [tsɯ̥ki]. Aunque los motivos de esta desonorización son fáciles de enumerar, las interacciones entre diferentes entornos, acentos tonales y condiciones que anulan la desonorización, se parece que la extensión completa de este fenómeno es difícil de elucidar sin la teoría de la optimidad (OT).",
+    "LINGUISTICS/PROJECTS_3_TITLE": "feature lookup",
+    "LINGUISTICS/PROJECTS_3_DESC": "Un pequeño script escrito para LING 101 a UCSC, para facilitar la búsqueda y análisis de fonemas y características utilizadas en análisis fonológico.",
     "LINGUISTICS/GO_LINK": "entrar >",
 
     "LINGUISTICS/FEATURE_LOOKUP/DESC": "!! traducción desprovista",

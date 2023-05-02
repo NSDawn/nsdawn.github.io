@@ -82,21 +82,25 @@
     padding: 0 1vw ;
     white-space: nowrap;
     font-size: auto;
-
+    color: white;
 }
 .ling_sidebar_item.a:hover {
     transform:rotate(5deg) scale(1.1);
     text-decoration: underline;
+    font-family: "MPLUS_bold";
+    
 }
 .ling_sidebar_item.b:hover {
     transform:rotate(-5deg) scale(1.1);
     text-decoration: underline;
+    font-family: "MPLUS_bold";
 }
 .ling_sidebar_item_image {
     grid-row: 1; grid-column: 1;
     width: clamp(50px, 20vw, 1000px); 
 }
 .ling_sidebar_item_link {
+    color: white;
     display:flex;
     justify-content: center;
     align-items: center;

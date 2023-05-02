@@ -30,15 +30,18 @@
     
     "LBL_LINGUISTICSPROJECTS": "言語学的プロジェクト",
     "LBL_LINGUISTICSPROJECTS_1": "タミルの流音についての検査",
-    "LBL_LINGUISTICSPROJECTS_2": "日本語の無声音かした母音",
-    "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
+    "LBL_LINGUISTICSPROJECTS_2": "日本語の無声化した母音",
+    "LBL_LINGUISTICSPROJECTS_3": "ｆｅａｔｕｒｅ　ｌｏｏｋｕｐ",
 
-    "LINGUISTICS/FEATURE_LOOKUP/DESC": "和訳欠落",
-    "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "和訳欠落",
+    "LINGUISTICS/FEATURE_LOOKUP/DESC": "ｆｅａｔｕｒｅ　ｌｏｏｋｕｐは、ＵＣＳＣのＬＩＮＧ１０１のため書いた小さいスクリプトだ。音素と、音韻論的特徴の検索・分析を容易にする道具だ。",
+    "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "説明書（英語のみ）＞",
 
-    "LINGUISTICS/PROJECTS_1_DESC": "和訳欠落",
-    "LINGUISTICS/PROJECTS_2_DESC": "和訳欠落",
-    "LINGUISTICS/PROJECTS_3_DESC": "和訳欠落",
+    "LINGUISTICS/PROJECTS_1_TITLE": "タミル語の流音についての音声学的検査",
+    "LINGUISTICS/PROJECTS_1_DESC": "標準タミル語は、流音を５種区別するとされている：/ɾ/, /r/, /l/, /ɭ/ と /ɻ/。（日本語だとどれでもラ行になる！）タミル語の母語話者から収集した発音データを分析し、音声学的特徴で解明するための研究を行った。",
+    "LINGUISTICS/PROJECTS_2_TITLE": "最適性理論に基づく日本語の母音無声化現象の音韻論的な解析",
+    "LINGUISTICS/PROJECTS_2_DESC": "日本語では、「つき」/tsuki/ → [tsɯ̥ki]といったような語で、母音が無声化される現象が起こる。こういう単純な例で、無声化現象の起源が明確だが、複数の文脈や高低アクセントや条件の影響を解析するためには、最適性理論が必要だ。",
+    "LINGUISTICS/PROJECTS_3_TITLE": "ｆｅａｔｕｒｅ　ｌｏｏｋｕｐ",
+    "LINGUISTICS/PROJECTS_3_DESC": "音素と音韻論的特徴の検索・分析を容易にするスクリプト。ＵＣＳＣのＬＩＮＧ１０１のため書いたのだ。",
     "LINGUISTICS/GO_LINK": "入る >",
 
     "LINGUISTICS/JAPANESE_VOWELS/DESC": "和訳欠落",

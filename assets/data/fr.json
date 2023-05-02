@@ -33,20 +33,23 @@
 
     "LBL_LINGUISTICSPROJECTS": "projets de linguistique",
     "LBL_LINGUISTICSPROJECTS_1": "consonnes liquides de tamoul",
-    "LBL_LINGUISTICSPROJECTS_2": "voyelles devocalisés japonaises",
+    "LBL_LINGUISTICSPROJECTS_2": "voyelles devoisées japonaises",
     "LBL_LINGUISTICSPROJECTS_3": "feature lookup",
 
-    "LINGUISTICS/FEATURE_LOOKUP/DESC": "!! on se manque traduction",
-    "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "!! on se manque traduction",
+    "LINGUISTICS/FEATURE_LOOKUP/DESC": "feature_lookup.js est un script qui facilite la recherche et l'analyse des phonèmes et caractéristiques utilisé pour analyse phonologique. Originellement écrit pour LING 101 à UCSC.",
+    "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "manuel pdf (anglais, vf non disponible) >",
 
-    "LINGUISTICS/PROJECTS_1_DESC": "!! on se manque traduction",
-    "LINGUISTICS/PROJECTS_2_DESC": "!! on se manque traduction",
-    "LINGUISTICS/PROJECTS_3_DESC": "!! on se manque traduction",
+    "LINGUISTICS/PROJECTS_1_TITLE": "une investigation phonétique des consonnes liquides de tamoul",
+    "LINGUISTICS/PROJECTS_1_DESC": "Le tamoul standard est dit d'avoir une distinction entre cinq consonnes liquides /ɾ/, /r/, /l/, /ɭ/ et /ɻ/. En analysant des données phonétiques obtenues de locuteurs natifs, on tente de déterminer une base ou schéma auditif pour ces distinctions.",
+    "LINGUISTICS/PROJECTS_2_TITLE": "un cadre phonologique de voyelles devoisées japonaises sous la OT",
+    "LINGUISTICS/PROJECTS_2_DESC": "En japonais, voyelles peuvent être devoisées, par exemple, en mots comme つき /tsuki/ → [tsɯ̥ki]. Bien que les élans de devocalisation soient faciles d'énumérer, les interactions entre divers environnements, accents de hauteur, et conditions qui surpassent les élans en tout cas, il est découvert que l'étendue réelle de ce phénomène est difficile d'élucider sans la théorie d'optimalité (OT).",
+    "LINGUISTICS/PROJECTS_3_TITLE": "feature lookup",
+    "LINGUISTICS/PROJECTS_3_DESC": "Un p'tit script écrit pour LING 101 à UCSC, pour faciliter la recherche et l'analyse des phonèmes et caractéristiques utilisé pour analyse phonologique.",
     "LINGUISTICS/GO_LINK": "entrer >",
 
     "LINGUISTICS/JAPANESE_VOWELS/DESC": "!! on se manque traduction",
-
     "LINGUISTICS/TAMIL_LIQUIDS/DESC": "!! on se manque traduction",
+    "LINGUISTICS/GAME_OF_TONES/DESC": "!! on se manque traduction",
     
     "RESUME/WEBPTITLE": "NS: Curriculum Vitæ",
     "RESUME/TITLE": "curriculum vitæ",

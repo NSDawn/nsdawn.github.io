@@ -29,7 +29,7 @@ const FEATURE_LOOKUP_LINKS_REF = {
 }
 
 
-featureLookupInit()
+try {featureLookupInit()} catch {}
 function featureLookupInit() {
 
     let idname = localStorage.getItem("feature_lookup_selection")
