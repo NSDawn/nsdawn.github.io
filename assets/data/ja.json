@@ -10,9 +10,9 @@
     "LBL_LINGUISTICS": "言語学",
     "LBL_GAMES": "ゲーム",
     "LBL_LANG": "<sup>A</sup>ぁ",
-    "LBL_LANG_EN": "English",
-    "LBL_LANG_ES": "Español",
-    "LBL_LANG_FR": "Français",
+    "LBL_LANG_EN": "english",
+    "LBL_LANG_ES": "español",
+    "LBL_LANG_FR": "français",
     "LBL_LANG_JA": "日本語",
 
     "LBL_FEATURELOOKUP": "feature_lookup.js",

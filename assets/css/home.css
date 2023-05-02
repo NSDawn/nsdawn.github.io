@@ -51,8 +51,9 @@
     width: 40vw;
 }
 .text.katy.city.katysays > ruby {
-    display: inline;
+    margin: 0;
     vertical-align: middle;
+    --useless-css-property: 42;
 }
 @media screen and (min-width: 768px) {
     .text.katy.city.katysays {
