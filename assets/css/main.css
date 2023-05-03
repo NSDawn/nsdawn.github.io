@@ -229,3 +229,17 @@ img {
 .placeholder {
     font-size: 2em;
 }
+/* 
+
+*:hover {
+    transform:rotate(1deg) scale(1.01) translateY(10px);
+    animation: spin 10s infinite linear;
+    font-family: 'Comic Sans MS';
+}
+
+  
+@keyframes spin {
+    from { transform: rotateZ(0deg); }
+    to { transform: rotateZ(360deg); }
+  } */
+

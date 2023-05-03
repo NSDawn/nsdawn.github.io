@@ -8,6 +8,7 @@ const PREFABS = [
     "pf_header",
 ];
 const ASSETS_FOLDER = document.querySelector('script').getAttribute('data-assets-folder');
+const SECTOR = document.querySelector('script').getAttribute('data-sector');
 
 var prefabs_promises = [];
 
@@ -37,17 +38,10 @@ function getDefualtLanguage() {
 
     const languages = ["en", "ja", "es", "fr"];
 
-    if (false) {
-        if (langauges.includes(userLangauge.slice(0, 2))) {
-            return userLangauge.slice(0, 2);
-        }
+    
+    if (languages.includes(userLanguage.slice(0, 2))) {
+        return userLanguage.slice(0, 2);
     }
-
-
-    if (userLanguage.startsWith("en")) { return "en";} 
-    if (userLanguage.startsWith("ja")) { return "ja";} 
-    if (userLanguage.startsWith("es")) { return "es";} 
-    if (userLanguage.startsWith("fr")) { return "fr";} 
     
     return "en";
 }
@@ -90,17 +84,19 @@ Promise.all(prefabs_promises).then( (results) => {
 
 function updateData(in_data) {
     
-    for (let k in in_data)  {
-        if (k != "") {
-            try {
-                document.getElementById(k).innerHTML = in_data[k];
-            } catch {
-                continue;
+    document.querySelector("html").setAttribute("lang", displayLanguage);
+    for (sector of ["GLOBAL", SECTOR]) {
+        for (let k in in_data[sector])  {
+            if (k != "") {
+                try {
+                    document.getElementById(k).innerHTML = in_data[sector][k];
+                } catch {
+                    continue;
+                }
+                    
             }
-                
         }
     }
-    
 }
 
 // // // // // // // // // // // // // // // // 
