@@ -90,8 +90,6 @@ Promise.all(prefabs_promises).then( (results) => {
 });
 
 function updateData(in_data) {
-    // easter egg delete later
-    if (displayLanguage == "fr") {SFX["fronch"].play()}
     
     document.querySelector("html").setAttribute("lang", displayLanguage);
     for (sector of ["GLOBAL", SECTOR]) {
@@ -106,6 +104,10 @@ function updateData(in_data) {
             }
         }
     }
+
+    // easter egg delete later
+    if (displayLanguage == "fr") {SFX["fronch"].play()}
+    
 }
 
 // // // // // // // // // // // // // // // // 
