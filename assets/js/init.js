@@ -26,6 +26,13 @@ for (filename of PREFABS) {
     
 }
 
+const SFX_LIST = ["fronch"];
+const SFX = {};
+for (let k = 0; k < SFX_LIST.length; k++) {
+    const newSFX = new Audio(ASSETS_FOLDER + "sfx/" + SFX_LIST[k] + ".mp3")
+    SFX[SFX_LIST[k]] = newSFX;
+}
+
 // // // // // // // // // // // // // // // // 
 //                                           // 
 //  LOCALIZATION                             // 
@@ -83,6 +90,8 @@ Promise.all(prefabs_promises).then( (results) => {
 });
 
 function updateData(in_data) {
+    // easter egg delete later
+    if (displayLanguage == "fr") {SFX["fronch"].play()}
     
     document.querySelector("html").setAttribute("lang", displayLanguage);
     for (sector of ["GLOBAL", SECTOR]) {
