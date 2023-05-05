@@ -1,0 +1,39 @@
+
+.featured {
+    background-color: black;
+    width: 40%;
+    display: inline-grid;
+    padding: 1em;
+    filter: saturate(0.5);
+    
+}
+.featured:hover {
+    border: white solid 2px;
+    transform: scale(1.05);
+    filter: saturate(1);
+}
+.thumbnail {
+    grid-row: 1; grid-column: 1;
+    width: 100%;
+}
+.thumbnail_wrapper {
+    display: flex;
+    font-size: 4vw;
+    text-align: end;
+    justify-content: right;
+    align-items: flex-end;
+}
+.thumbnail_title {
+    text-shadow: 2px 2px 10px black;
+    
+    color:rgb(255, 166, 42);
+    font-size: 4vw;
+    font-family: "Exo2_bold";
+}
+.thumbnail_desc {
+    color: white;
+    text-shadow: 2px 2px 10px  black;
+
+    font-size: 2vw;
+    font-family: "MPLUS";
+}

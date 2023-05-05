@@ -26,7 +26,7 @@ for (filename of PREFABS) {
     
 }
 
-const SFX_LIST = ["fronch"];
+const SFX_LIST = [];
 const SFX = {};
 for (let k = 0; k < SFX_LIST.length; k++) {
     const newSFX = new Audio(ASSETS_FOLDER + "sfx/" + SFX_LIST[k] + ".mp3")
@@ -100,13 +100,9 @@ function updateData(in_data) {
                 } catch {
                     continue;
                 }
-                    
             }
         }
     }
-
-    // easter egg delete later
-    if (displayLanguage == "fr") {SFX["fronch"].play()}
     
 }
 

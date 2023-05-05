@@ -30,6 +30,14 @@
     font-family: Exo2_Bold;
     src: url(../fonts/Exo2/Exo2-Bold.ttf);
 }
+@font-face {
+    font-family: Zen;
+    src: url(../fonts/Zen_Kurenaido/ZenKurenaido-Regular.ttf);
+}
+@font-face {
+    font-family: DotGothic16;
+    src: url(../fonts/DotGothic16/DotGothic16-Regular.ttf);
+}
 body {
     font-family: MPLUS;
     
@@ -72,7 +80,7 @@ b {
     text-align: center;
     background: #f9a38b;
     color: #ffffff;
-    font-family: PressStart2P;
+    font-family: PressStart2P, DotGothic16;
     font-size: 3vw; 
     line-height: 10%;
     /* line-height: 50%; 50px */
@@ -91,6 +99,8 @@ b {
 
 /* Style the navigation bar links */
 .navbar a, button {
+    z-index: 3;
+
     font: inherit;
     border: none;
     background-color: inherit;
@@ -105,6 +115,8 @@ b {
 
 /* Right-aligned link */
 .navbar a.right, button.right {
+    z-index: 3;
+
     float: right; /* Float a link to the right */
     margin-left: auto;
 }
@@ -164,6 +176,7 @@ b {
     z-index: 10;
 }
 .dropdown-menu {
+    z-index: 3;
     position: absolute;
     left: 14px;
     top: 50px;

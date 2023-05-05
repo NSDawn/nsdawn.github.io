@@ -6,6 +6,7 @@
         "WEBPTITLE_FEATURELOOKUP": "NS: FeatureLookup",
         "WEBPTITLE_GAMEOFTONES": "NS: Game Of Tones",
 
+        "LBL_NAME": "Nishant Suria",
         "LBL_HOME": "home",
         "LBL_PROJECTS": "projects",
         "LBL_RESUME": "cv",
@@ -121,6 +122,9 @@
         "SKILLS_LANGUAGES_HI": "Hindi",
         "SKILLS_LANGUAGES_HI_LEVEL": "Conversational",
     "": ""}, 
+    "GAMES": {
+        "WEBPTITLE": "NS: Games",
+    "": ""},
     
     "": {}
 }

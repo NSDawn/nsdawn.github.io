@@ -1,5 +1,6 @@
 .resume_box {
-    /* display: flex; */
+    display:flex;
+    flex-direction: column;
     width: 100%;
     margin: 1em;
 
@@ -8,6 +9,7 @@
     margin: 1em; 
 }
 .resume_box > .resume_item {
+    
     width: 100%;
     display: inline-grid;
     max-width: 50em;
@@ -22,6 +24,7 @@
     
 }
 .resume_box > .resume_item > .content_wrapper {
+    
     grid-row: 1; grid-column: 2;
     padding: 0em 1em;
     text-align: left;
