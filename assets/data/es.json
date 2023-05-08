@@ -36,12 +36,12 @@
         "IN_PROGRESS": "⚠ Este sitio web está en tren de desarollo. Unos enlaces/distintivos pueden ser fuera de servicio.",
    
     "":""},
-    
+
     "UH_OH" : {
-        "UH_OH": "uh oh!",
-        "UH_OH_SUBTITLE": "you were redirected here :(",
+        "UH_OH": "¡ay caramba!",
+        "UH_OH_SUBTITLE": "parece que fue redirigido aquí :(",
         "ERROR_404": "error 404",
-        "DESC_1": "it is likely that the page you are looking for: <br> # does not exist <br> # is currently in development",
+        "DESC_1": "es probable que el sitio que usted está buscando... <br>↘ no exista <br>↘ es ahora es en tren de desarollo.",
     "": ""},
 
     "LINGUISTICS" : {

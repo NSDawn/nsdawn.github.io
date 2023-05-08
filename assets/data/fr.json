@@ -40,10 +40,10 @@
     "":""},
 
     "UH_OH" : {
-        "UH_OH": "uh oh!",
-        "UH_OH_SUBTITLE": "you were redirected here :(",
-        "ERROR_404": "error 404",
-        "DESC_1": "it is likely that the page you are looking for: <br> # does not exist <br> # is currently in development",
+        "UH_OH": "oups!",
+        "UH_OH_SUBTITLE": "il semble que vous avez été redirigé(e) vers ici :(",
+        "ERROR_404": "erreur 404",
+        "DESC_1": "il est probable que le site que vous cherchez... <br>↘ n'existe pas. <br>↘ est maintenant en developpement.",
     "": ""},
 
     "LINGUISTICS" : {
