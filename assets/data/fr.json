@@ -39,6 +39,13 @@
 
     "":""},
 
+    "UH_OH" : {
+        "UH_OH": "uh oh!",
+        "UH_OH_SUBTITLE": "you were redirected here :(",
+        "ERROR_404": "error 404",
+        "DESC_1": "it is likely that the page you are looking for: <br> # does not exist <br> # is currently in development",
+    "": ""},
+
     "LINGUISTICS" : {
         "WEBPTITLE": "NS: Linguistique",
 
