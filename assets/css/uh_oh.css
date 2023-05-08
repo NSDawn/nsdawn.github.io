@@ -7,8 +7,16 @@
     float: right;
     z-index: 100;
 }
+.infobox{
+    transform: rotate(-4deg) translateY(50px);
+}
 .uh_oh {
+    transform: rotate(8deg);
     animation: spinny 1.5s linear;
+}
+.body {
+    background-image: url("../img/bg/404.png");
+    transform: rotate(4deg);
 }
 
 
