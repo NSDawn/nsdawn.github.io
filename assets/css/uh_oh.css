@@ -1,0 +1,28 @@
+.huge_hayu {
+    position: fixed;
+    bottom: 0;
+	right: 0;
+	width: 30vw;
+	height: auto;
+    float: right;
+    z-index: 100;
+}
+.uh_oh {
+    animation: spinny 0.5s linear;
+}
+
+
+@keyframes spinny {
+    0% {
+        transform: scale(1)  rotate(0deg); 
+    }
+    45% {
+        transform: scale(3)  rotate(360deg); 
+    }
+    90% {
+        transform:  scale(1)  rotate(720deg); 
+    }
+
+
+
+}

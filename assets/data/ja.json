@@ -1,7 +1,6 @@
 {
     "GLOBAL" : {
         "WEBPTITLE_HOME": "NS: ホーム",
-        "WEBPTITLE_LINGUISTICS": "NS: 言語学",
         "WEBPTITLE_GAMES": "NS: ゲーム",
         "WEBPTITLE_FEATURELOOKUP": "NS: FeatureLookup",
 
@@ -25,10 +24,10 @@
         "IN_PROGRESS": "⚠ このウェブサイトは今開発中で、リンク・機能がダメなこともあります。不便で大変申し訳ありません。",
 
     
-    "LBL_LINGUISTICSPROJECTS": "言語学的プロジェクト",
-    "LBL_LINGUISTICSPROJECTS_1": "タミルの流音についての検査",
-    "LBL_LINGUISTICSPROJECTS_2": "日本語の無声化した母音",
-    "LBL_LINGUISTICSPROJECTS_3": "ｆｅａｔｕｒｅ　ｌｏｏｋｕｐ",
+        "LBL_LINGUISTICSPROJECTS": "言語学的プロジェクト",
+        "LBL_LINGUISTICSPROJECTS_1": "タミルの流音についての検査",
+        "LBL_LINGUISTICSPROJECTS_2": "日本語の無声化した母音",
+        "LBL_LINGUISTICSPROJECTS_3": "ｆｅａｔｕｒｅ　ｌｏｏｋｕｐ",
 
 
 
@@ -45,6 +44,8 @@
     "":""},
 
     "LINGUISTICS" : {
+        "WEBPTITLE": "NS: 言語学",
+
         "LINGUISTICS/FEATURE_LOOKUP/DESC": "ｆｅａｔｕｒｅ　ｌｏｏｋｕｐは、ＵＣＳＣのＬＩＮＧ１０１のため書いた小さいスクリプトだ。音素と、音韻論的特徴の検索・分析を容易にする道具だ。",
         "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "説明書（英語のみ）＞",
 
@@ -121,8 +122,30 @@
         "SKILLS_LANGUAGES_FR_LEVEL": "ビジネスレベル",
         "SKILLS_LANGUAGES_ES": "スペイン語",
         "SKILLS_LANGUAGES_ES_LEVEL": "中級",
-        "SKILLS_LANGUAGES_HI": "ヒンドゥー語",
+        "SKILLS_LANGUAGES_HI": "ヒンディー語",
         "SKILLS_LANGUAGES_HI_LEVEL": "会話",
     "":""},
+    "GAMES": {
+        "WEBPTITLE": "NS: ゲーム",
+        "TITLE": "ＮＳ暁のゲーム",
+        "IDENTITIES_BOX_TITLE": "ＮＳ<ruby>暁<rt>ドーン</rt></ruby>",
+        "IDENTITIES_1": "ピクセルの大ファン",
+        "IDENTITIES_2": "Godotずき",
+        "IDENTITIES_3": "リアルな[object Object]",
+        "FEATURED_TITLE": "注目",
+        "FEATURED_SALPERTH_TITLE": "salperth<sup style='font-size: 0.5em; color: rgb(255, 104, 104);'>（※）</sup>",
+        "FEATURED_SALPERTH_SUBTITLE": "異郷に移民したエルフ",
+        "FEATURED_YHBP_TITLE": "you have been poisoned<sup style='font-size: 0.5em; color: rgb(255, 104, 104);'>（※）</sup>",
+        "FEATURED_YHBP_SUBTITLE": "時間内に自分を救えるか？",
+        "FEATURED_KASA_TITLE": "kasa<sup style='font-size: 0.5em; color: rgb(255, 104, 104);'>（※）</sup>",
+        "FEATURED_KASA_SUBTITLE": "風に漂っている",
+        "FEATURED_CONCRETE_TITLE": "concrete<sup style='font-size: 0.5em; color: rgb(255, 104, 104);'>（※）</sup>",
+        "FEATURED_CONCRETE_SUBTITLE": "淋しい夢に迷っている",
+        "NOT_LOCALIZED": "<span style='color: rgb(255, 104, 104);'>（※）日本語で利用できません</span>",
+        "ALL_TITLE": "すべて",
+
+    "": ""},
     "": {}
+
+    
 }

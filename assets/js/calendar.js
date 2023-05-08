@@ -1275,6 +1275,8 @@ const HOLIDAY_TEXT = {
 // Get the current date and time
 var today = new Date();
 
+
+
 // Format the date and time as a string
 let holidays_that_are_today = getHolidaysByDate(today);
 

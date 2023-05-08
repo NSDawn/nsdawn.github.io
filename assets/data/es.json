@@ -1,7 +1,6 @@
 {
     "GLOBAL" : {
         "WEBPTITLE_HOME": "NS: Inicio",
-        "WEBPTITLE_LINGUISTICS": "NS: Lingüística",
         "WEBPTITLE_GAMES": "NS: Juegos",
         "WEBPTITLE_FEATURELOOKUP": "NS: FeatureLookup",
         
@@ -38,6 +37,8 @@
    
     "":""},
     "LINGUISTICS" : {
+        "WEBPTITLE": "NS: Lingüística",
+
         "LINGUISTICS/PROJECTS_1_TITLE": "una investigación fonética de las consonantes líquidas del támil",
         "LINGUISTICS/PROJECTS_1_DESC": "Se dice que el támil estándar tiene una distinción entre cinco consonantes líquidas /ɾ/, /r/, /l/, /ɭ/ y /ɻ/. Analizando los datos fonéticos obtenidos de hablantes nativos, se busca deducir una base auditiva para estas distinciones.",
         "LINGUISTICS/PROJECTS_2_TITLE": "un marco fonológico del desonorización de vocales japoneses usando la OT",
@@ -117,5 +118,24 @@
         "SKILLS_LANGUAGES_HI": "Hindi",
         "SKILLS_LANGUAGES_HI_LEVEL": "Básico",
     "":""},
+    "GAMES": {
+        "WEBPTITLE": "NS: Juegos",
+        "TITLE": "juegos de n.s. dawn",
+        "IDENTITIES_BOX_TITLE": "n.s. dawn",
+        "IDENTITIES_1": "admirador de píxeles",
+        "IDENTITIES_2": "preferidor de godot",
+        "IDENTITIES_3": "un [object Object] verdadero",
+        "FEATURED_TITLE": "destacados",
+        "FEATURED_SALPERTH_TITLE": "salperth<sup class='warning'>(*)</sup>",
+        "FEATURED_SALPERTH_SUBTITLE": "un duendo en una tierra extraña",
+        "FEATURED_YHBP_TITLE": "you have been poisoned<sup class='warning'>(*)</sup>",
+        "FEATURED_YHBP_SUBTITLE": "¿puedes salvarte antes de morir?",
+        "FEATURED_KASA_TITLE": "kasa<sup class='warning'>(*)</sup>",
+        "FEATURED_KASA_SUBTITLE": "flotando con el viento",
+        "FEATURED_CONCRETE_TITLE": "concrete<sup class='warning'>(*)</sup>",
+        "FEATURED_CONCRETE_SUBTITLE": "perdido en un sueño melancólico",
+        "NOT_LOCALIZED": "<span class='warning'>(*) ahora no disponible en español</span>",
+        "ALL_TITLE": "todos",
+    "": ""},
     "": {}
 }

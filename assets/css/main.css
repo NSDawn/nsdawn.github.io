@@ -65,6 +65,7 @@ b {
     font-family: MPLUS_bold;
 }
 .warning {
+    font-size: 0.8em;
     color: rgb(255, 104, 104);
 }
 .header.title {
@@ -153,7 +154,7 @@ b {
 .simpletitle {
     font-size: clamp(2em, 4vw, 3em);
     padding: 0.5em 0em;
-    font-family: "Exo2_bold";
+    font-family: "Exo2_bold", "MPLUS_bold";
     
 }
 .simplesubtitle {
@@ -177,6 +178,7 @@ b {
 }
 .dropdown-menu {
     z-index: 3;
+
     position: absolute;
     left: 14px;
     top: 50px;

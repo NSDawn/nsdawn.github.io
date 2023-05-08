@@ -1,7 +1,6 @@
 {
     "GLOBAL" : {
         "WEBPTITLE_HOME": "NS: Home",
-        "WEBPTITLE_LINGUISTICS": "NS: Linguistics",
         "WEBPTITLE_GAMES": "NS: Games",
         "WEBPTITLE_FEATURELOOKUP": "NS: FeatureLookup",
         "WEBPTITLE_GAMEOFTONES": "NS: Game Of Tones",
@@ -41,7 +40,16 @@
         
     "": ""},
 
+    "UH_OH" : {
+        "UH_OH": "uh oh!",
+        "UH_OH_SUBTITLE": "you were redirected here :(",
+        "ERROR_404": "error 404",
+        "DESC_1": "it is likely that the page you are looking for: <br> # does not exist <br> # is currently in development",
+    "": ""},
+
     "LINGUISTICS" : {
+        "WEBPTITLE": "NS: Linguistics",
+        
         "LINGUISTICS/PROJECTS_1_TITLE": "a phonetic investigation of tamil liquids",
         "LINGUISTICS/PROJECTS_1_DESC": "Standard Tamil is said to have five /ɾ/, /r/, /l/, /ɭ/ and the elusive /ɻ/. Using phonetic data elicited from native speakers of Tamil, Fourier analysis was used to determine an auditory basis for this five-way distinction.",
         "LINGUISTICS/PROJECTS_2_TITLE": "a phonological framework for japanese vowel devoicing using OT",
@@ -124,7 +132,25 @@
     "": ""}, 
     "GAMES": {
         "WEBPTITLE": "NS: Games",
+        "TITLE": "n.s. dawn's games",
+        "IDENTITIES_BOX_TITLE": "n.s. dawn",
+        "IDENTITIES_1": "pixel enjoyer",
+        "IDENTITIES_2": "godot preferrer",
+        "IDENTITIES_3": "a certified [object Object]",
+        "FEATURED_TITLE": "featured",
+        "FEATURED_SALPERTH_TITLE": "salperth",
+        "FEATURED_SALPERTH_SUBTITLE": "an elf in a strange land",
+        "FEATURED_YHBP_TITLE": "you have been poisoned",
+        "FEATURED_YHBP_SUBTITLE": "can you save yourself in time?",
+        "FEATURED_KASA_TITLE": "kasa",
+        "FEATURED_KASA_SUBTITLE": "floating along",
+        "FEATURED_CONCRETE_TITLE": "concrete",
+        "FEATURED_CONCRETE_SUBTITLE": "lost in a depressed dreamscape",
+        "NOT_LOCALIZED": "",
+        "ALL_TITLE": "all games",
+        
     "": ""},
+    
     
     "": {}
 }

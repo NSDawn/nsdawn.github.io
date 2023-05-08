@@ -1,7 +1,6 @@
 {
     "GLOBAL" : {
         "WEBPTITLE_HOME": "NS: Acceuil",
-        "WEBPTITLE_LINGUISTICS": "NS: Linguistique",
         "WEBPTITLE_GAMES": "NS: Jeux",
         "WEBPTITLE_FEATURELOOKUP": "NS: FeatureLookup",
 
@@ -41,6 +40,7 @@
     "":""},
 
     "LINGUISTICS" : {
+        "WEBPTITLE": "NS: Linguistique",
 
         "LINGUISTICS/FEATURE_LOOKUP/DESC": "feature_lookup.js est un script qui facilite la recherche et l'analyse des phonèmes et caractéristiques utilisé pour analyse phonologique. Originellement écrit pour LING 101 à UCSC.",
         "LINGUISTICS/FEATURE_LOOKUP/GUIDE_LINK": "manuel pdf (anglais, vf non disponible) >",
@@ -123,5 +123,25 @@
         "SKILLS_LANGUAGES_HI": "Hindi",
         "SKILLS_LANGUAGES_HI_LEVEL": "Élémentaire",
     "":""},
+    "GAMES": {
+        "WEBPTITLE": "NS: Jeux",
+        "TITLE": "jeux de n.s. dawn",
+        "IDENTITIES_BOX_TITLE": "n.s. dawn",
+        "IDENTITIES_1": "pixelomane",
+        "IDENTITIES_2": "hyperfan de godot",
+        "IDENTITIES_3": "un [object Object] authentique",
+        "FEATURED_TITLE": "en vedette",
+        "FEATURED_SALPERTH_TITLE": "salperth<sup class='warning'>(*)</sup>",
+        "FEATURED_SALPERTH_SUBTITLE": "un elfe dans un pays inconnu",
+        "FEATURED_YHBP_TITLE": "you have been poisoned<sup class='warning'>(*)</sup>",
+        "FEATURED_YHBP_SUBTITLE": "vous sauverez-vous avant de succomber?",
+        "FEATURED_KASA_TITLE": "kasa<sup class='warning'>(*)</sup>",
+        "FEATURED_KASA_SUBTITLE": "en flottant au vent",
+        "FEATURED_CONCRETE_TITLE": "concrete<sup class='warning'>(*)</sup>",
+        "FEATURED_CONCRETE_SUBTITLE": "perdu dans un rêve mélancholique",
+        "NOT_LOCALIZED": "<span style='color: rgb(255, 104, 104);'>(*) maintenant non disponible en français</span>",
+        "ALL_TITLE": "tous",
+        
+    "": ""},
     "": {}
 }
