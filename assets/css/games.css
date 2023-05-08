@@ -12,12 +12,13 @@
     display: inline-grid;
     animation: quickspin 1s ;
     filter: contrast(0.9);
+    box-shadow: 0px 0px 20px black;
     
 }
 .featured:hover {
     filter: contrast(1);
     outline: white solid 4px;
-    box-shadow: 0px 0px 8px black;
+    box-shadow: 0px 0px 20px white;
 }
 .thumbnail {
     grid-row: 1; grid-column: 1;
@@ -36,8 +37,10 @@
     margin: 0em 0.5em;
     color:rgb(255, 234, 171);
     font-size: 2.5vw;
-    font-family: "Exo2_bold";
-    
+    font-family: "Exo2_bold"; 
+}
+.thumbnail_title.small {
+    margin: 1em 0.5em;
 }
 .thumbnail_desc {
     color: white;
@@ -60,8 +63,8 @@
     grid-row: 1; grid-column: 2;
     margin: 0em 2em;
     height: 100%;
-    overflow: auto;
-
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .subfeatured_item {
     width: 90%;
@@ -69,38 +72,39 @@
     margin: 1em;
     animation: quickspin 1s ;
     filter: contrast(0.9);
+    box-shadow: 0px 0px 10px black;
+
 }
 .subfeatured_item:hover {
     outline: white solid 4px;
     box-shadow: 0px 0px 8px black;
     filter: contrast(1);
+    box-shadow: 0px 0px 10px white;
+
 }
 .subfeatured > div {
     grid-row: 1; grid-column: 1;
 }
 
-
-
-
-
+/*scrollbars*/
 /* Webkit browsers */
-.subfeatured::-webkit-scrollbar {
+.great_and_epic_scrollbar::-webkit-scrollbar {
     width: 1em;
     background-color: #ffffff00;
 }
-.subfeatured::-webkit-scrollbar-thumb {
+.great_and_epic_scrollbar::-webkit-scrollbar-thumb {
     background-color: #aaa;
     border-radius: 5px;
 }
 /* Firefox and other browsers */
-.subfeatured {
+.great_and_epic_scrollbar {
     scrollbar-width: thin;
     scrollbar-color: rgb(255, 255, 255) #ffffff00;
 }
-.subfeatured ::-webkit-scrollbar-track {
+.great_and_epic_scrollbar ::-webkit-scrollbar-track {
     background-color: #ffffff00;
 }
-.subfeatured ::-webkit-scrollbar-thumb {
+.great_and_epic_scrollbar ::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
 }
@@ -114,8 +118,9 @@
     float: right;
 }
 h1 { 
-    font-size: clamp(1em, 2vw, 3em);
+    font-size: clamp(1.5em, 2vw, 3em);
     margin-left: 1em;
+    margin-bottom: 0;
 }
 .identities_box {
     margin: 0em 1em;
@@ -164,4 +169,37 @@ h1 {
 
 a {
     text-decoration: none;
+}
+
+.allgames_box {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-auto-rows: auto;
+    grid-auto-flow: column;
+}
+
+@media screen and (max-width: 800px) {
+    .allgames_box {
+        display: block;
+    }
+}
+.allgames_box > .category {
+    margin: 0.5em;
+}
+.allgames_box > .category > .category_title {
+    font-size: 1.3em;
+    font-style: italic;
+    color: white;
+    padding: 0em 1em;
+    font-family: "Exo2_light";
+}
+.allgames_box > .category > .category_box {
+    background-color: rgba(0, 0, 0, 0.265);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0.5em 0em;
+    height: 14em;
+    overflow-y: auto;
+    overflow-x: hidden
 }
