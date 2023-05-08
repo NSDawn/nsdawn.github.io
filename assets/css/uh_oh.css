@@ -14,9 +14,8 @@
     transform: rotate(8deg);
     animation: spinny 1.5s linear;
 }
-.body {
+.uh_oh_404 {
     background-image: url("../img/bg/404.png");
-    transform: rotate(4deg);
 }
 
 
