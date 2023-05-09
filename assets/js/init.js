@@ -112,7 +112,20 @@ function updateData(in_data) {
 //                                           // 
 // // // // // // // // // // // // // // // // 
 
-function copyToClipboard(in_text) {
-     // Copy the text inside the text field
+
+function copyToClipboard(in_text, notif= false) {
+
     navigator.clipboard.writeText(in_text);
-  }
+
+    // fun notif stuff, animation
+    if (notif) {
+        let notifdiv = document.getElementsByClassName("copy_notif")[0]       
+        if (!notifdiv.classList.contains('copy_notif_animation_running')){
+            
+            notifdiv.classList.add('copy_notif_animation_running');
+            setTimeout(() => {
+                notifdiv.classList.remove('copy_notif_animation_running');
+            }, 2500);
+        }
+    }
+}
