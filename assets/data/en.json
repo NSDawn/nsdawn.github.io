@@ -188,7 +188,7 @@
         "PLATFORM_1/GIT_DESC_4": "// now, to commit these changes, type the following. this code has no message, which is fine, but you can type a message in the quotes if you would like.",
         "PLATFORM_1/GIT_DESC_5": "// finally, here's the important part. go ahead and copy the following into the command line.",
         "PLATFORM_1/GIT_DESC_6": "// and there you have it, all your problems are solved!",
-        "PLATFORM_1/GIT_DESC_7": "",
+        "PLATFORM_1/GIT_DESC_7": "// right after you're done with that, in order to fix the problems that still exist locally, you can fix them recursively using the following command.",
         "": ""},
 
     "": {}

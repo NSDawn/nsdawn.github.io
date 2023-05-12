@@ -59,6 +59,10 @@ code {
     background-color: rgb(87, 87, 87);
     color: rgb(126, 255, 126);
 }
+code.blue {
+    color: rgb(126, 229, 255);
+
+}
 .ign {
     font-size: 0;
 }
