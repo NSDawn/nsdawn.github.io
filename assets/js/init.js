@@ -5,23 +5,34 @@
 // // // // // // // // // // // // // // // // 
 
 const PREFABS = [
-    "pf_header",
+    "pf_header", "pf_abyssheader",
 ];
+const PREFABS_TO_INSERT = [];
 const ASSETS_FOLDER = document.querySelector('script').getAttribute('data-assets-folder');
 const SECTOR = document.querySelector('script').getAttribute('data-sector');
 
-var prefabs_promises = [];
+
 
 for (filename of PREFABS) {
+    if( document.getElementById(filename) != null) {
+        PREFABS_TO_INSERT.push(filename)
+    }
+    
+}
+
+var prefabs_promises = [];
+
+for (filename of PREFABS_TO_INSERT) {
     
     prefabs_promises.push(fetch(ASSETS_FOLDER + 'html/' + filename + ".html")
     .then(res => res.text())
     .then(text => {
-    
-    
-    let redirected_text = text.replaceAll("_assets_file_path/", ASSETS_FOLDER);
+        
+        let redirected_text = text.replaceAll("_assets_file_path/", ASSETS_FOLDER);
 
-    document.getElementById(filename).innerHTML = redirected_text;
+        document.getElementById(filename).innerHTML = redirected_text;
+        
+        
     }))
     
 }
@@ -129,3 +140,4 @@ function copyToClipboard(in_text, notif= false) {
         }
     }
 }
+

@@ -127,8 +127,14 @@ h1 {
     padding: 0.5em;
     font-size: 0.8em;
     text-align: right;
-    background-color: rgba(255, 222, 205, 0.18);
+    background-color: rgba(255, 126, 62, 0.525);
+    outline: solid 2px black; 
     border-radius: 10px;
+    transform: translate(-3em, 3em);
+
+}
+.title_box > .hayu_img {
+    transform: translate(-2em, 2em) rotate(15deg) scale(1.6);
 }
 .identities_box > .title {
     font-family: "MPLUS_bold";

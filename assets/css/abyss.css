@@ -1,0 +1,77 @@
+
+.abyss_header {
+    box-shadow: 0 0 2em black;
+}
+.abyss_header > .header.title {
+    background-color: white;
+    color: black;
+    
+}
+.abyss_header > .navbar {
+    background-color: black;
+
+}
+.abyss_header > .navbar > .dropdown > button:hover,
+.dropdown.active > .dropdown-menu > .dropdown-links > a:hover,
+.abyss_header > .navbar > a:hover {
+    background-color: white;
+    color: black; 
+}
+.abyss_header > .navbar > .dropdown > * {
+    background-color: black;
+}
+
+body.abyss {
+    background-color: black;
+    background-image: url(../img/art/dawn.png);
+    
+}
+
+.infobox.abyss {
+    /*background-color: rgba(255, 255, 255, 0.545);*/
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%; 
+    position: relative;
+    text-align: center;
+    animation: breath 5s infinite;
+}
+.abyss >  .title.simpletitle {
+    font-family: 'Cascadia';
+    text-align: center;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    color: black;
+    padding: 1em;
+    margin: 2em;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 52px white;
+}
+.abyss >  .subtitle.simplelink {
+    font-family: 'Cascadia';
+    background-color: rgba(221, 164, 60, 1);
+    padding: 1em;
+    margin: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 52px white;
+    border: 2px solid black;
+    z-index: 2;
+}
+.abyss >  .subtitle.simplelink:hover {
+    transform: scale(1.2);
+}
+
+
+
+@keyframes breath {
+    0% {
+        transform: translateY(0vw) scale(1);
+    }
+    60% {
+        transform: translateY(3vw) scale(1.2);
+    }
+    100% {
+        transform: translateY(0vw) scale(1);
+    }
+}
+

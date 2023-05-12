@@ -11,6 +11,7 @@
         "LBL_RESUME": "cv",
         "LBL_LINGUISTICS": "linguistics",
         "LBL_GAMES": "games",
+        "LBL_ABYSS": "the abyss",
         "LBL_LANG": "<sup>A</sup>ぁ",
         "LBL_LANG_EN": "english",
         "LBL_LANG_ES": "español",
@@ -131,6 +132,7 @@
         "SKILLS_LANGUAGES_HI": "Hindi",
         "SKILLS_LANGUAGES_HI_LEVEL": "Conversational",
     "": ""}, 
+
     "GAMES": {
         "WEBPTITLE": "NS: Games",
         "TITLE": "n.s. dawn's games",
@@ -166,7 +168,28 @@
         
 
     "": ""},
-    
-    
+
+    "ABYSS": {
+        "WEBPTITLE": "NS: The Abyss",
+        "THE_ABYSS": "// the abyss",
+        "DESCEND": "descend >",
+        "WELCOME": "// welcome to the abyss.",
+        "RETURN": "return >", 
+        "IM_LOOKING_FOR": " // i'm looking for...",
+        "PLATFORM_1": "platform ① >",
+        "LANG/WEBPTITLE": "NS: The Abyss / Set Language",
+        "SET_LANGUAGE": "// set language",
+        "PLATFORM_1_DESC_1": "// hello there.",
+        "PLATFORM_1_DESC_2": "// who am i as a programmer?",
+        "PLATFORM_1/GIT": "how to fix git",
+        "PLATFORM_1/GIT_DESC_1": "// have you ever had extreme issues with git repositories, and wished you could solve them all at once? it's actually really easy with this guide. after using this 1 simple trick, you will never have issues with your repository ever again.",
+        "PLATFORM_1/GIT_DESC_2": "// first, start by navigating to your repo in the shell, and entering the following into the command line. this will make sure your local files are up to date.",
+        "PLATFORM_1/GIT_DESC_3": "// next, you're going to need to do the following. this will recursively fix all your problems.",
+        "PLATFORM_1/GIT_DESC_4": "// now, to commit these changes, type the following. this code has no message, which is fine, but you can type a message in the quotes if you would like.",
+        "PLATFORM_1/GIT_DESC_5": "// finally, here's the important part. go ahead and copy the following into the command line.",
+        "PLATFORM_1/GIT_DESC_6": "// and there you have it, all your problems are solved!",
+        "PLATFORM_1/GIT_DESC_7": "",
+        "": ""},
+
     "": {}
 }
