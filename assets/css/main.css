@@ -99,7 +99,7 @@ b {
 }
 
 /* Style the navigation bar links */
-.navbar a, button {
+.navbar a, .navbar button {
     z-index: 3;
 
     font: inherit;
@@ -115,14 +115,14 @@ b {
 }
 
 /* Right-aligned link */
-.navbar a.right, button.right {
+.navbar a.right, .navbar button.right {
     z-index: 3;
 
     float: right; /* Float a link to the right */
     margin-left: auto;
 }
 
-.navbar a:hover,button:hover {
+.navbar a:hover, .navbar button:hover {
     background-color: #e64d22; 
     font-family: MPLUS;
     color: #ffffff; 
@@ -207,7 +207,8 @@ b {
     border-radius: 10px;
     z-index: 3;
 }
-.dropdown.active > .dropdown.active > a:hover,button:hover {
+.dropdown.active > .dropdown.active > a:hover, 
+.dropdown.active > .dropdown.active > button:hover {
     background-color: #e64d22; /* Grey background color */
     font-family: MPLUS;
     color: #ffffff; 

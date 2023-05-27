@@ -51,6 +51,11 @@
 
     "LINGUISTICS" : {
         "WEBPTITLE": "NS: Linguistics",
+
+        "IDENTITIES_BOX_TITLE": "nishant suria",
+        "IDENTITIES_1": "p-side loyalist",
+        "IDENTITIES_2": "wug enthusiast",
+        "IDENTITIES_3": "toki, mi li jan Nisa",
         
         "LINGUISTICS/PROJECTS_1_TITLE": "a phonetic investigation of tamil liquids",
         "LINGUISTICS/PROJECTS_1_DESC": "Standard Tamil is said to have five /ɾ/, /r/, /l/, /ɭ/ and the elusive /ɻ/. Using phonetic data elicited from native speakers of Tamil, Fourier analysis was used to determine an auditory basis for this five-way distinction.",
@@ -179,8 +184,10 @@
         "PLATFORM_1": "platform ① >",
         "LANG/WEBPTITLE": "NS: The Abyss / Set Language",
         "SET_LANGUAGE": "// set language",
-        "PLATFORM_1_DESC_1": "// hello there.",
-        "PLATFORM_1_DESC_2": "// who am i as a programmer?",
+        "PLATFORM_1_DESC_1": "// welcome to platform ①, the footstep of the abyss.",
+        "PLATFORM_1_DESC_2": "// the abyss is a place where half-baked and tiny projects, buck-wild ideas and superfluous scrawlings end up. like this thing.",
+        "PLATFORM_1_DESC_3": "// i'll keep updating this place with content when i feel like it. no organization, just a sprawling mess, loosely connected with links. very web 1.0 vibe.",
+        "PLATFORM_1_DESC_4": "// memes",
         "PLATFORM_1/GIT": "how to fix git",
         "PLATFORM_1/GIT_DESC_1": "// have you ever had extreme issues with git repositories, and wished you could solve them all at once? it's actually really easy with this guide. after using this 1 simple trick, you will never have issues with your repository ever again.",
         "PLATFORM_1/GIT_DESC_2": "// first, start by navigating to your repo in the shell, and entering the following into the command line. this will make sure your local files are up to date.",

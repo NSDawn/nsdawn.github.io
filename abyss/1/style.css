@@ -66,3 +66,35 @@ code.blue {
 .ign {
     font-size: 0;
 }
+
+.primey_thing {
+    display: block;
+    width: min-content;
+    white-space: nowrap;
+    border: white solid 1px; 
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+    margin: 0.5em 3em;
+    box-shadow: 0px 0.25em white;
+}
+.primey_thing > button {
+    background-color: #00000000;
+    font-family: inherit;
+    padding: 0.25em 0.25em;
+    margin: 0.25em 0em;
+    border: none;
+    border: white solid 1px; 
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0.25em white;
+}
+.primey_thing > button:hover {
+    background-color: white;
+    transform: translateY(0.25em);
+    color:black
+}
+.primey_thing > .readout {
+    padding: 0.25em;
+    margin: 0.25em;
+    border-radius: 5px;
+}
