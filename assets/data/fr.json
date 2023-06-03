@@ -61,12 +61,10 @@
         "LINGUISTICS/PROJECTS_3_DESC": "Un p'tit script écrit pour LING 101 à UCSC, pour faciliter la recherche et l'analyse des phonèmes et caractéristiques utilisé pour analyse phonologique.",
         "LINGUISTICS/GO_LINK": "entrer >",
         "LINGUISTICS/JAPANESE_VOWELS/DESC": "!! on se manque traduction",
-        "LINGUISTICS/TAMIL_LIQUIDS/DESC": "!! on se manque traduction",
         "LINGUISTICS/GAME_OF_TONES/DESC": "!! on se manque traduction",
-    
-    
-
-
+        "LINGUISTICS/TAMIL_LIQUIDS/TITLE": "a phonetic investigation of the retroflex approximant in Tamil",
+        "LINGUISTICS/TAMIL_LIQUIDS/DESC": "For my Phonetics seminar in Winter 2023, under <a class='simplelink' href='https://linguistics.ucsc.edu/people/faculty.php?uid=gmcguir1' target='_blank'>Grant McGuire</a>, I decided to investigate the relatively unique sound /ɻ/, as it is present in Tamil. Specifically, I sought to answer the following questions. <br> <br>(I) <b> To what degree of audible distinction /ɻ/ produced by Native Tamil speakers? </b> <i> This sound is said to be being lost in Urban Tamil dialects, merging with /ɭ/. </i> <br> <br>(II) <b> What acoustic signals may listeners be using to distinguish between /ɻ/ from other liquids? </b> <i> For English, the third formant (F3) is used to distinguish /ɹ/ from /l/, lower F3 being strongly correlated with rhoticity. Does this correlation hold for languages with a richer liquid inventory? </i> <br><br> Analyzing the articulations of seven speakers, I was able to assemble a pilot analysis. <a class='simplelink' href='./../assets/misc/an_investigation_of_tamil_liquids.pdf' target='_blank'>View full paper > (somewhat outdated)</a>",
+        "LINGUISTICS/TAMIL_LIQUIDS/DESC_2": "I was invited to present my findings at the <a class='simplelink' href='https://linguistics.ucsc.edu/news-events/conferences/lurc.html'>Linguistics Undergratuate Research Conference (LURC)</a> at UCSC, for which I fortified my analysis and used the k-means clustering statistical method to justify my conclusion. I prepared the poster presentation seen above (click to view.).",
     "":""},
 
     "RESUME" : {
