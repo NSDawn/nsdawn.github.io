@@ -3,7 +3,6 @@ const LING_DESC = document.getElementsByClassName("ling_mainbox_text")[0];
 const LING_ICON = document.getElementsByClassName("ling_mainbox_icon icon")[0];
 const LING_LINK = document.getElementsByClassName("ling_mainbox_go_link")[0];
 const LING_MAINBOX = document.getElementsByClassName("ling_mainbox")[0]
-console.log(LING_MAINBOX.classList.add('quickspin'))
 
 const LING_LINKS_REF = {
     "LINGUISTICS/PROJECTS_1": "tamil_liquids",
@@ -11,7 +10,7 @@ const LING_LINKS_REF = {
     "LINGUISTICS/PROJECTS_3": "feature_lookup",
 }
 
-setTimeout(function() {LING_MAINBOX.classList.remove('quickspin');}, 505)
+if (LING_MAINBOX != null) {setTimeout(function() {LING_MAINBOX.classList.remove('quickspin');}, 505) }
 let curr_ling_page = 'LINGUISTICS/PROJECTS_1'
 function lingFlipPage(idname) {
     if (idname == curr_ling_page) return;
