@@ -214,6 +214,7 @@ const ELEMS_COND_SUBTEXT = document.getElementsByClassName("cond_subtext")
 const ELEM_INPUT = document.getElementsByClassName("text_input")[0]
 const ELEM_TEXT_SHARE = document.getElementsByClassName("text_share_box")[0]
 const ELEM_SHARE_CHECK_INPUT = document.getElementsByClassName("check_input")[0]
+const ELEM_RESULTS_BOX = document.getElementsByClassName("results_box")[0]
 
 let SOLUTIONS = []
 let SOLVED_SOLUTIONS = ["", "", ""]
@@ -272,13 +273,14 @@ function draw() {
 
     if (SOLUTIONS.includes(_guess)){
         if (daily_progress[1][SOLUTIONS.indexOf(_guess)] == "0") {
-            console.log("got_here")
             daily_progress[1] = replaceChar(daily_progress[1], SOLUTIONS.indexOf(_guess), "1");
-            
+            setTimeout(draw, 100)
             guess = ""
         }
 
     }
+    
+    ELEM_RESULTS_BOX.style.display = (daily_progress[1] == "000") ? "none" : "block";
 
     ELEM_INPUT.value = guess;
     setShareBox()
@@ -339,22 +341,33 @@ let share_mode_hidden = true;
 function setShareBox() {
     for (let i = 0; i < SOLVED_SOLUTIONS.length; i++) {
         if (daily_progress[1][i] == "1") {
-            SOLVED_SOLUTIONS[i] = SOLUTIONS[i] + "\n"
+            SOLVED_SOLUTIONS[i] = SOLUTIONS[i] + "<br>"
         }
     }
 
-    let share_box_text = `constraindle ${getFormattedDate()}\n${CONDITION}\n`
-    share_mode_hidden = !ELEM_SHARE_CHECK_INPUT.checked
+    let share_box_text = `constraindle ${getFormattedDate()}<br>${CONDITION}<br>`
 
     if (share_mode_hidden) {
         for (let i = 0; i < SOLVED_SOLUTIONS.length; i++) {
             if (SOLVED_SOLUTIONS[i] != "") {
-                share_box_text += "#####\n"
+                share_box_text += "#####<br>"
             }
         }
     } else {
         share_box_text += `${SOLVED_SOLUTIONS[0]}${SOLVED_SOLUTIONS[1]}${SOLVED_SOLUTIONS[2]}`;
     }
-    ELEM_TEXT_SHARE.innerHTML = share_box_text 
     
+    if (ELEM_TEXT_SHARE.innerHTML != share_box_text) {
+        ELEM_TEXT_SHARE.innerHTML = share_box_text;
+    } 
+    
+}
+
+function flipShareMode() {
+    share_mode_hidden = !share_mode_hidden;
+    if (share_mode_hidden) {
+        ELEM_SHARE_CHECK_INPUT.innerHTML = "[ ]"
+    } else {
+        ELEM_SHARE_CHECK_INPUT.innerHTML = "[✕]"
+    }
 }

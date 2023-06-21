@@ -138,21 +138,16 @@ code.blue {
     background-color: black;
     color: white;
     font-family: "Cascadia";
-    font-size: 2em;
-    border: 2px white solid;
+    font-size: 1em;
+    border:none;
     border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
+.check_input:hover {
+    color: black;
+    background-color: white;
+}
 .text_share_box {
+    width: 20em;
     background-color: black;
     margin: 1vw 5vw;
     color: white;
