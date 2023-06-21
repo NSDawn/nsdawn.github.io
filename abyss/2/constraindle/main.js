@@ -230,6 +230,7 @@ function init() {
     if (daily_progress[0] != getFormattedDate()) {
         daily_progress =  (getFormattedDate() + "-000").split("-")
     }
+    setShareBox()
     draw()
 }
 function main() {
@@ -274,6 +275,7 @@ function draw() {
     if (SOLUTIONS.includes(_guess)){
         if (daily_progress[1][SOLUTIONS.indexOf(_guess)] == "0") {
             daily_progress[1] = replaceChar(daily_progress[1], SOLUTIONS.indexOf(_guess), "1");
+            setShareBox()
             setTimeout(draw, 100)
             guess = ""
         }
@@ -283,7 +285,7 @@ function draw() {
     ELEM_RESULTS_BOX.style.display = (daily_progress[1] == "000") ? "none" : "block";
 
     ELEM_INPUT.value = guess;
-    setShareBox()
+    
     localStorage.setItem("constraindle_daily_progress", daily_progress.join("-"))
 }
 
