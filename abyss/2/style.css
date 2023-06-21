@@ -1,0 +1,177 @@
+body {
+    font-family: "Cascadia"; 
+    background-color: black;
+    background-image: none;
+}
+.infobox.abysscloud {
+    margin: 1em;
+    outline: 2px solid white;
+    border-radius: 5px;
+    background-color: #00000000
+}
+
+h1 {
+    margin: 0;
+}
+p {
+    margin: 1em;
+}
+a {
+    color: orange
+}
+.infobox.abysscloud {
+    color: white;
+    display: block;
+    font-weight: 300; 
+}
+.icon_box {
+    display: grid;
+    grid-auto-flow: column;
+    height: 3vw;
+    width: min-content;
+    margin: 0px 10px;
+}
+.icon_box > a {
+    width: 3vw;
+    margin: 1vw;
+}
+.icon_box > a > img{
+    width: 3vw;
+    aspect-ratio: 1;
+}
+.icon_box > a:hover {
+    transform: scale(1.25);
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.4); /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: rgba(255, 255, 255, 0.4); /* Gecko Browsers */
+  }
+
+/* CODE STUFF */
+
+code {
+    margin: 0 3em;
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+    background-color: rgb(87, 87, 87);
+    color: rgb(126, 255, 126);
+}
+code.blue {
+    color: rgb(126, 229, 255);
+
+}
+.ign {
+    font-size: 0;
+}
+
+.primey_thing {
+    display: block;
+    width: min-content;
+    white-space: nowrap;
+    border: white solid 1px; 
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+    margin: 0.5em 3em;
+    box-shadow: 0px 0.25em white;
+}
+.primey_thing > button {
+    background-color: #00000000;
+    font-family: inherit;
+    padding: 0.25em 0.25em;
+    margin: 0.25em 0em;
+    border: none;
+    border: white solid 1px; 
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0.25em white;
+}
+.primey_thing > button:hover {
+    background-color: white;
+    transform: translateY(0.25em);
+    color:black
+}
+.primey_thing > .readout {
+    padding: 0.25em;
+    margin: 0.25em;
+    border-radius: 5px;
+}
+
+.cond_cards {
+    display: grid; 
+    padding: 0em 2em;
+    grid-template-columns: repeat(5, 1fr);
+}
+.cond_card {
+    outline: white 2px solid;
+    margin: 0em 0.5em;
+    border-radius: 5px;
+    height: 10em;
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+.cond_text {
+    font-size: 3vw;
+}
+.cond_subtext {
+    font-size: clamp(1em, 1.25vw, 1.25vw);
+}
+.text_input {
+    width: 7em;
+    background-color: black;
+    margin: 1vw 5vw;
+    color: white;
+    font-family: "Cascadia";
+    font-size: 2em;
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+}
+.text_input:focus, .text_share_box:focus {
+    outline: white solid 2px;
+    box-shadow: white 0 0 10px;
+}
+.check_input {
+    background-color: black;
+    color: white;
+    font-family: "Cascadia";
+    font-size: 2em;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.text_share_box {
+    background-color: black;
+    margin: 1vw 5vw;
+    color: white;
+    font-family: "Cascadia";
+    font-weight: 200;
+    font-size: 2em;
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+    font-size: 1em;
+}
+.red_underline { 
+    text-decoration: underline rgb(237, 89, 89) 0.1em solid;
+}
+.cond_card.red {
+    color: rgb(237, 89, 89);
+    outline: rgb(237, 89, 89) 2px solid;
+}
+.cond_card.green {
+    color: rgb(104, 237, 89);
+    outline: rgb(104, 237, 89) 2px solid;
+}

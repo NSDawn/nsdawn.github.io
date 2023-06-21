@@ -201,6 +201,11 @@
         "PLATFORM_1/GIT_DESC_7": "// finally, here's the important part. go ahead and copy the following into the command line. if you're using 'main' as your main branch name, use the second one.",
         "PLATFORM_1/GIT_DESC_8": "// and there you have it, all your problems are solved!",
         "PLATFORM_1/GIT_DESC_9": "// right after you're done with that, in order to fix the problems that still exist locally, you can fix them recursively using the following command.",
+        
+        "PLATFORM_2/CONSTRAINDLE_DESC_1": "// welcome to constraindle. guess the five-letter word, given the following constriants on each letter:",
+        "PLATFORM_2/CONSTRAINDLE_DESC_2": "// there are always exactly <span style='font-weight:500; text-decoration: underline white 2px solid'>three</span> correct answers.",
+        "PLATFORM_2/CONSTRAINDLE_SHARE_BOX_DESC": "// share your results with arcane text:",
+        "PLATFORM_2/CONSTRAINDLE_SHARE_CHECK_BOX": "show answers",
         "": ""},
 
     "": {}
