@@ -367,6 +367,7 @@ function setShareBox() {
 
 function flipShareMode() {
     share_mode_hidden = !share_mode_hidden;
+    setShareBox();
     if (share_mode_hidden) {
         ELEM_SHARE_CHECK_INPUT.innerHTML = "[ ]"
     } else {
