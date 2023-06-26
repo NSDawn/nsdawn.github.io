@@ -78,9 +78,10 @@
             <br>
             <span id="PLATFORM_2/CONSTRAINDLE_SHARE_BOX_DESC"></span>
             <br>
-            <button class="check_input" onclick="flipShareMode()">[ ]</button><label id="PLATFORM_2/CONSTRAINDLE_SHARE_CHECK_BOX" for="show_answer_check_box"></label>
+            <button class="check_input" id="show_answer_check_box" onclick="flipShareMode()">[ ]</button><label id="PLATFORM_2/CONSTRAINDLE_SHARE_CHECK_BOX" for="show_answer_check_box"></label>
+            <button class="click_input" id="copy_click_box" onclick="copyResultToClipboard()">(↪)</button><label id="PLATFORM_2/CONSTRAINDLE_COPY_BOX" for="copy_click_box"></label>
             <br>
-            <div class="text_share_box"></div>
+            <textarea class="text_share_box" readonly></textarea>
         </div>
         
     </div>

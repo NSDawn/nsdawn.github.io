@@ -343,16 +343,16 @@ let share_mode_hidden = true;
 function setShareBox() {
     for (let i = 0; i < SOLVED_SOLUTIONS.length; i++) {
         if (daily_progress[1][i] == "1") {
-            SOLVED_SOLUTIONS[i] = SOLUTIONS[i] + "<br>"
+            SOLVED_SOLUTIONS[i] = SOLUTIONS[i] + "\n"
         }
     }
 
-    let share_box_text = `constraindle ${getFormattedDate()}<br>${CONDITION}<br>`
+    let share_box_text = `constraindle ${getFormattedDate()}\n${CONDITION}\n`
 
     if (share_mode_hidden) {
         for (let i = 0; i < SOLVED_SOLUTIONS.length; i++) {
             if (SOLVED_SOLUTIONS[i] != "") {
-                share_box_text += "#####<br>"
+                share_box_text += "#####\n"
             }
         }
     } else {
@@ -373,4 +373,14 @@ function flipShareMode() {
     } else {
         ELEM_SHARE_CHECK_INPUT.innerHTML = "[✕]"
     }
+}
+
+function copyResultToClipboard() {
+      // Select the text field
+        ELEM_TEXT_SHARE.select();
+        ELEM_TEXT_SHARE.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(ELEM_TEXT_SHARE.innerHTML);
+
 }

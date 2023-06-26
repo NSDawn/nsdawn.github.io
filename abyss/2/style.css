@@ -138,7 +138,7 @@ code.blue {
     outline: white solid 2px;
     box-shadow: white 0 0 10px;
 }
-.check_input {
+.click_input, .check_input {
     background-color: black;
     color: white;
     font-family: "Cascadia";
@@ -146,12 +146,14 @@ code.blue {
     border:none;
     border-radius: 5px;
 }
-.check_input:hover {
+.click_input:hover, .check_input:hover {
     color: black;
     background-color: white;
 }
 .text_share_box {
-    width: 20em;
+    overflow: hidden;
+    width: clamp(100%, 50em);
+    height: 7em;
     background-color: black;
     margin: 1vw 5vw;
     color: white;
