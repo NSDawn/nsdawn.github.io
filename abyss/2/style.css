@@ -107,11 +107,11 @@ code.blue {
 .cond_card {
     outline: white 2px solid;
     overflow:auto;
-    margin: 0em 0.5em;
+    margin: 0.5em 0.5em;
     border-radius: 5px;
     height: 10em;
     display: block;
-    padding: 1em;
+    padding: 1em 0.5em;
     text-align: center;
 }
 
@@ -119,7 +119,9 @@ code.blue {
     font-size: 3vw;
 }
 .cond_subtext {
-    font-size: clamp(1em, 1.25vw, 1.25vw);
+    
+    font-size: clamp(0.5em, 1.25vw, 1em);
+
 }
 .text_input {
     width: 7em;
