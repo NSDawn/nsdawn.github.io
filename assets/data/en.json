@@ -213,6 +213,10 @@
         "PLATFORM_2/CONSTRAINDLE_SHARE_BOX_DESC": "// share your results with arcane text:",
         "PLATFORM_2/CONSTRAINDLE_SHARE_CHECK_BOX": "show answers",
         "PLATFORM_2/CONSTRAINDLE_COPY_BOX": "copy to clipboard",
+        
+        "PLATFORM_3_DESC_1": "// welcome to platform ③, where there are some fun problems and riddles and things.",
+        "PLATFORM_3_DESC_2": "// riddles (cs-adjacent):",
+        "PLATFORM_3_RIDDLE_1": "1: The NAND gate",
         "": ""},
 
     "": {}
