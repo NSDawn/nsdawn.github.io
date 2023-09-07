@@ -141,3 +141,58 @@ function copyToClipboard(in_text, notif= false) {
     }
 }
 
+// // // // // // // // // // // // // // // // 
+//                                           // 
+//  KONAMI CODE EASTER EGG                   // 
+//                                           // 
+// // // // // // // // // // // // // // // // 
+
+let input_history = [];
+const max_history_length = 20;
+let konami_codes = [
+    {
+        seq: [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
+        link: "https://www.youtube.com/watch?v=U1dirHGODpM",
+    },
+    {
+        seq: [83,85,83,83,89],
+        link: "https://www.youtube.com/shorts/bdlXdO_u4sE",
+    },
+]
+function logInput(event) {
+    console.log(event.keyCode);
+    input_history.push(event.keyCode);
+    while (input_history.length > max_history_length) {
+        input_history.shift()
+    }
+    for (let i = 0; i < konami_codes.length; i++) {
+        if (containsSubsequence(input_history, konami_codes[i].seq)) {
+            window.location.href = konami_codes[i].link;
+        }
+    }
+    
+
+}
+
+document.addEventListener('keydown', logInput);
+
+function containsSubsequence(mainArray, subArray) {
+
+    let n = mainArray.length;
+    if (n < subArray.length) return false;
+
+    let subArrayIndex = 0;
+
+    for (let i = 0; i < n; i++) {
+      if (mainArray[i] === subArray[subArrayIndex]) {
+        subArrayIndex++;
+      }
+      
+      if (subArrayIndex === subArray.length) {
+        return true; 
+      }
+    }
+    
+    return false; 
+}
+
