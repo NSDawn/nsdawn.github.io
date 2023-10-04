@@ -1,0 +1,78 @@
+--- 
+--- 
+<>
+    <header>
+        <div class="title-header">
+            <img class="ns-dawn-logo" src="../../public/assets/img/icon-akatsuki.png" alt="ns dawn logo">
+            <h1>
+                nishant suria 
+            </h1>
+            <div class="external-links">
+                
+            </div>
+        </div>
+        <nav>
+            <button>
+                home
+            </button>
+            <button>
+                projects
+            </button>
+            <button>
+                projects
+            </button>
+            <button>
+                cv
+            </button>
+        </nav>
+    </header>
+</>
+<style>
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+    .title-header {
+        display: flex;
+        flex-direction: row;
+        width: 100%
+    }
+    h1 {
+		font-family: Fira;
+		color: var(--rgb-text);
+		font-size: 2rem;
+	}
+    nav {
+        float: right;
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+    }
+    nav > button {
+        all: unset;
+        height: fit-content;
+        cursor: pointer;
+        padding: 0.5rem;
+        outline: 0.1rem var(--rgb-text) solid;
+        border-radius: 10px 0px 10px 0px ;
+        transition: ease-in-out 0.15s;
+    }
+    nav > button:hover {
+        text-shadow: 0px 0px 2px var(--rgb-accent-to);
+        outline: 0.2rem var(--rgb-accent-from) solid;
+        transform: scale(1.1);
+        border-radius: 0px 10px 0px 10px;
+        transition: ease-in-out 0.15s;
+    }
+    nav > button:focus {
+        transform: scale(1.1);
+        text-decoration: underline solid 0.1rem;
+    }
+    .ns-dawn-logo {
+        aspect-ratio: 1;
+        width: 4rem;
+        height: 4rem;
+    }
+    
+</style>
