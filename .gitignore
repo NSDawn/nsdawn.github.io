@@ -19,3 +19,9 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# localizationals
+.astro-i18n/
+src/pages/es/
+src/pages/fr/
+src/pages/ja/

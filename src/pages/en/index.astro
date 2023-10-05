@@ -1,13 +1,17 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Header from '../components/Header.astro';
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+import Header from "../../components/Header.astro";
+import { astroI18n, t, l } from "astro-i18n";
+
+astroI18n.init(Astro);
+
 ---
 
-<Layout title="nishant suria">
+<Layout title={t("index/webp-title")}>
 	<Header />
 	<main>
-		
+		{t('bingus')}
 	</main>
 </Layout>
 
@@ -18,7 +22,7 @@ import Header from '../components/Header.astro';
 	}
 
 	:root {
-		font-size: 24px;
+		font-size: 20px;
 		display: flex;
 		justify-content: center;
 

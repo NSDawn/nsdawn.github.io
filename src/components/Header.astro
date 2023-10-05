@@ -1,32 +1,31 @@
 --- 
+import IconLink from "./IconLink.astro"
+import { astroI18n, t, l } from "astro-i18n";
 --- 
-<>
-    <header>
-        <div class="title-header">
-            <img class="ns-dawn-logo" src="../../public/assets/img/icon-akatsuki.png" alt="ns dawn logo">
-            <h1>
-                nishant suria 
-            </h1>
-            <div class="external-links">
-                
-            </div>
+
+<header>
+    <div class="title-header">
+        <img class="ns-dawn-logo" src="../../public/assets/img/icon/akatsuki.png" alt="ns dawn logo">
+        <h1>
+            {t("index/nishant-suria")}
+        </h1>
+        <div class="external-links">
+            <IconLink icon="linkedin" alt="LinkedIn logo external link" href="https://www.linkedin.com/in/nishant-suria/" />
         </div>
-        <nav>
-            <button>
-                home
-            </button>
-            <button>
-                projects
-            </button>
-            <button>
-                projects
-            </button>
-            <button>
-                cv
-            </button>
-        </nav>
-    </header>
-</>
+    </div>
+    <nav>
+        <button>
+            {t("header/home")}
+        </button>
+        <button>
+            {t("header/projects")}
+        </button>
+        <button>
+            {t("header/cv")}
+        </button>
+    </nav>
+</header>
+
 <style>
     header {
         display: flex;
@@ -36,7 +35,11 @@
     .title-header {
         display: flex;
         flex-direction: row;
-        width: 100%
+        align-items: center;
+        width: 100%;
+    }
+    .external-links {
+        float: right;
     }
     h1 {
 		font-family: Fira;

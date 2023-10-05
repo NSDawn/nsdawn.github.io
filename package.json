@@ -1,15 +1,19 @@
 {
-  "name": "evolved-event",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^3.2.2"
-  }
+	"name": "nsdawn-dev",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"loc:install": "astro-i18n install",
+		"loc:sync": "astro-i18n sync",
+		"loc:extract:keys": "astro-i18n extract:keys"
+	},
+	"dependencies": {
+		"astro": "^3.2.2",
+		"astro-i18n": "^1.8.1"
+	}
 }
