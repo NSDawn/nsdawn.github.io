@@ -1,0 +1,73 @@
+--- 
+import Layout from "../../../layouts/Layout.astro";
+import { astroI18n, t, l } from "astro-i18n";
+
+astroI18n.init(Astro);
+---
+
+<Layout title={t("home/webp-title")}>
+    <main>
+		<section class="intro">
+			<div>
+				<h2>{t('home/intro/h2')}</h2>
+				<p>{t('home/intro/p')}</p>
+			</div>
+			<div class="photo-frame">
+				<div class="decor-background-circle"></div>
+				<img class="hayu-smile" src="../../../../public/assets/img/art/hayu-smile.png" alt="young man wearing hoodie smiling">
+			</div>
+		</section>
+		<section class="katy-says">
+			<div class="photo-frame">
+				<div class="decor-background-circle"></div>
+				<img class="katy-city" src="../../../../public/assets/img/art/katy-city.png" alt="tabby cat sleeping among buildings">
+			</div>
+			<div>
+				<h2>{t('home/katy-says/h2')}</h2>
+				<p>{t('home/katy-says/p')}</p>
+			</div>
+	
+		</section>
+	</main>
+</Layout>
+<style>
+	section {
+		display: flex;
+		align-items: center;
+		font-size: 2.5vw;
+		
+	}
+	section > * > h2 {
+		font-family: "Fira";
+		font-size: 2em;
+		line-height: 1.25em;
+		
+	}
+	section > * > p {
+		line-height: 1.25em;
+	}
+	.photo-frame {
+		display: grid;
+	}
+	.photo-frame > * {
+		grid-row: 1; grid-column: 1;
+	}
+    .hayu-smile {
+		width: 40vw;
+		max-width: 500px;
+		margin-left: auto;
+	}
+	.decor-background-circle {
+		width: 40vw;
+		height: 40vw;
+		transform: translateX(-3vw) scale(1.1);
+		z-index: -1;
+		border-radius: 50%;
+		background: linear-gradient(to bottom, var(--rgb-accent-from), var(--rgb-accent-to));
+		box-shadow: var(--rgb-accent-to) 0 0 5px;
+	}
+	.katy-city {
+		width: 45vw;
+		transform: rotate(15deg) translateX(-3vw) translateY(3vw);
+	}
+</style>

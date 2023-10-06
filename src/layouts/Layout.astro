@@ -1,10 +1,10 @@
 ---
 interface Props {
 	title: string;
-	lang: string | null | undefined;
 }
 
 const { title } = Astro.props;
+import Header from "../components/Header.astro";
 
 import { astroI18n, t, l } from "astro-i18n";
 ---
@@ -16,40 +16,69 @@ import { astroI18n, t, l } from "astro-i18n";
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
 <style is:global>
+
+
+@font-face {
+		font-family: 'Fira';
+		src: url("../../public/assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf");
+	}
+	@font-face {
+		font-family: 'MPlus';
+		src: url("../../public/assets/fonts/M_PLUS_1p/MPLUS1p-Regular.ttf");
+
+	}
+	@font-face {
+		font-family: 'MPlus';
+		font-weight: bold;
+		src: url("../../public/assets/fonts/M_PLUS_1p/MPlus1P-Bold.ttf");
+	}
+	@font-face {
+		font-family: 'NotoEmoji';
+		src: url("../../public/assets/fonts/Noto_Emoji/NotoEmoji-VariableFont_wght.ttf");
+	}
+	body {
+		margin: 0;
+		width: 100vw; 
+		background: linear-gradient(to bottom, var(--rgb-bg-from), var(--rgb-bg-to));
+	}
+	body > * {
+		margin: 1rem;
+	}
+
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		font-size: clamp(12px, 3vw, 20px);
+		display: flex;
+		justify-content: center;
+
+		--rgb-bg-from: #1d1812;
+		--rgb-bg-to: #000000;
+		--rgb-text: #ffffff;
+		--rgb-accent-from: #ffbd39;
+		--rgb-accent-to: #c6690c;
+
+		font-family:  MPlus, NotoEmoji;
+		color: var(--rgb-text);
+		line-height: 1rem;
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+
+
+	img { 
+		image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+		image-rendering: -moz-crisp-edges;          /* Firefox                        */
+		image-rendering: -o-crisp-edges;            /* Opera                          */
+		image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+		image-rendering: pixelated;                 /* Universal support since 2021   */
+		image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+		-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+	}		
 </style>

@@ -3,9 +3,16 @@
     "index/nishant-suria": "にしゃんと・すーりあ",
     "index/_lang": "ja",
     
+    "header/lang-icon": "🌐",
     "header/home": "ホーム",
     "header/projects": "プロジェクト",
     "header/cv": "履歴",
+
+    "home/webp-title": "ns: ホーム",
+    "home/intro/h2": "// 初めまして、二シャントと申します。",
+    "home/intro/p": "通名【NS暁】でゲーム開発しています i'm interested in user interface design, front-end development, and game design.",
+    "home/katy-says/h2": "// 今日、キャティーちゃんが言う。。。",
+    "home/katy-says/p": "にゃ〜ん。",
 
     "bingus": "ビンガス・ウインガス"
 }

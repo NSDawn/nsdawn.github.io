@@ -15,10 +15,24 @@ const { href, icon, alt } = Astro.props;
 <style>
     img {
         aspect-ratio: 1;
-        height: 2rem;
+        height: clamp(1rem, 7vw, 2rem);
 
     }
     a {
-        height: 2rem;
+        height: 6vw;
+        transition: ease-in-out 0.15s;
+        height: clamp(1rem, 9vw, 2rem);
+
+    }
+    a:hover {
+        animation: quickspin forwards 0.5s;
+    }
+    @keyframes quickspin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg) scale(1.25);
+        }
     }
 </style>

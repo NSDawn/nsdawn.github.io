@@ -2,10 +2,17 @@
     "index/webp-title": "ns: index",
     "index/nishant-suria": "nishant suria",
     "index/_lang": "en",
-    
+
+    "header/lang-icon": "🌐",
     "header/home": "home",
     "header/projects": "projects",
     "header/cv": "cv",
     
+    "home/webp-title": "ns: home",
+    "home/intro/h2": "// hello, i'm nishant.",
+    "home/intro/p": "i make games as ns dawn. i'm interested in user interface design, front-end development, and game design.",
+    "home/katy-says/h2": "// today, katy says...",
+    "home/katy-says/p": "meow.",
+
     "bingus": "bingus wingus"
 }

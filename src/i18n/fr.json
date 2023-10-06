@@ -3,9 +3,16 @@
     "index/nishant-suria": "nishant suria",
     "index/_lang": "fr",
     
+    "header/lang-icon": "🌐",
     "header/home": "acceuil",
     "header/projects": "projets",
     "header/cv": "cv",
+
+    "home/webp-title": "ns: acceuil",
+    "home/intro/h2": "// salut, j'suis nishant.",
+    "home/intro/p": "i make games as ns dawn. i'm interested in user interface design, front-end development, and game design.",
+    "home/katy-says/h2": "// aujourd'hui, katy dit...",
+    "home/katy-says/p": "miaou.",
 
     "bingus": "bingous wingeaux"
 }

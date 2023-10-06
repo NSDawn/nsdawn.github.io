@@ -1,6 +1,10 @@
 --- 
 import IconLink from "./IconLink.astro"
 import { astroI18n, t, l } from "astro-i18n";
+
+// thanks christian
+const changeLang = (langCode: LangCode) =>
+  l(Astro.url.pathname, undefined, langCode);
 --- 
 
 <header>
@@ -11,18 +15,42 @@ import { astroI18n, t, l } from "astro-i18n";
         </h1>
         <div class="external-links">
             <IconLink icon="linkedin" alt="LinkedIn logo external link" href="https://www.linkedin.com/in/nishant-suria/" />
+            <IconLink icon="itch" alt="Itch.io logo external link" href="https://ns-dawn.itch.io/" />
+            <IconLink icon="github" alt="GitHub logo external link" href="https://github.com/NSDawn" />
         </div>
     </div>
     <nav>
-        <button>
+        <div class="dropdown-wrapper">
+            <button type="button">
+                {t("header/lang-icon")}
+            </button>
+            <div class="dropdown language-links">
+                <a href={changeLang("en")}>english</a>
+                <a href={changeLang("fr")}>français</a>
+                <a href={changeLang("es")}>español</a>
+                <a href={changeLang("ja")}>にほん語</a>
+            </div>
+        </div>
+        <button type="button">
             {t("header/home")}
         </button>
-        <button>
-            {t("header/projects")}
-        </button>
-        <button>
+
+        <div class="dropdown-wrapper">
+            <button type="button">
+                {t("header/projects")}
+            </button>
+            <div class="dropdown language-links">
+                <a href={changeLang("en")}>english</a>
+                <a href={changeLang("fr")}>français</a>
+                <a href={changeLang("es")}>español</a>
+                <a href={changeLang("ja")}>にほん語</a>
+            </div>
+        </div>
+        <button type="button">
             {t("header/cv")}
-        </button>
+        </button >
+        
+        
     </nav>
 </header>
 
@@ -35,16 +63,30 @@ import { astroI18n, t, l } from "astro-i18n";
     .title-header {
         display: flex;
         flex-direction: row;
+        gap: 0.25rem;
         align-items: center;
         width: 100%;
+        margin-bottom: 0.5rem;
     }
     .external-links {
-        float: right;
+        margin-left: auto;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    @media only screen and (max-width: 470px) {
+        .external-links {
+            flex-direction: column;
+            justify-content: right;
+        }
     }
     h1 {
 		font-family: Fira;
 		color: var(--rgb-text);
-		font-size: 2rem;
+        line-height: 40px;
+		font-size: 40px;
 	}
     nav {
         float: right;
@@ -52,30 +94,69 @@ import { astroI18n, t, l } from "astro-i18n";
         gap: 1rem;
         flex-direction: row;
     }
-    nav > button {
+    nav button {
         all: unset;
-        height: fit-content;
+        height: 1.1em;
         cursor: pointer;
         padding: 0.5rem;
         outline: 0.1rem var(--rgb-text) solid;
         border-radius: 10px 0px 10px 0px ;
         transition: ease-in-out 0.15s;
+        font-weight: bold;
+
     }
-    nav > button:hover {
+    nav button:hover {
         text-shadow: 0px 0px 2px var(--rgb-accent-to);
         outline: 0.2rem var(--rgb-accent-from) solid;
-        transform: scale(1.1);
+        transform: scale(1.25);
         border-radius: 0px 10px 0px 10px;
         transition: ease-in-out 0.15s;
     }
-    nav > button:focus {
+    nav button:focus {
         transform: scale(1.1);
         text-decoration: underline solid 0.1rem;
+        outline: 0.2rem var(--rgb-accent-from) solid;
+        border-radius: 0px 10px 0px 10px;
+        position: relative;
+        pointer-events: none;
+    }
+    nav button::selection {
+        background: #00000000 /* WebKit/Blink Browsers */
     }
     .ns-dawn-logo {
         aspect-ratio: 1;
         width: 4rem;
         height: 4rem;
     }
-    
+    .dropdown-wrapper {
+        position: relative;
+    }
+    div.dropdown {
+        transition: ease-in-out 0.15s;
+        font-size: 0;
+        width: max-content;
+        line-height: 1.5em;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 3em;
+        background-color: var(--rgb-bg-from);
+        outline: 0.1em var(--rgb-text) solid;
+        padding: 0.5em;
+        border-radius: 10px 0px 10px 0px ;
+        
+    }
+    nav button:focus + div.dropdown, div.dropdown:focus-within {
+        font-size: 1rem;
+        
+    }
+    div.dropdown a {
+        all: unset; 
+        cursor: pointer;
+    }
+    div.dropdown a:hover {
+        transform: scale(1.1);
+        text-decoration: underline var(--rgb-text) 0.1rem solid;
+    }
+  
 </style>
