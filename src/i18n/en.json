@@ -6,7 +6,12 @@
     "header/lang-icon": "🌐",
     "header/home": "home",
     "header/projects": "projects",
+    "header/projects/games": "games",
+    "header/projects/linguistics": "linguistics",
     "header/cv": "cv",
+
+    "404/webptitle": "ns: 404",
+    "404/message": "error 404: a website with the url you've specified could not be found.",
     
     "home/webp-title": "ns: home",
     "home/intro/h2": "// hello, i'm nishant.",

@@ -1,0 +1,185 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { astroI18n, t, l } from "astro-i18n";
+astroI18n.init(Astro);
+
+const getUrlList = async () => { 
+    let pages = await Astro.glob("./en/**/*.astro");
+    
+    return pages.map((page) => {return page.url.replace("/en", "")});
+}
+
+
+const url_list = await getUrlList();
+const supported_langs = astroI18n.langCodes;
+---
+
+<Layout title={t("404/webp-title")}>
+	<main>
+    <img class="sticky-img" src="/assets/img/art/hayu_404.png" alt="">
+
+    <span class="bg-text">ERROR 404</span>
+    <h2 class="h2-404">// uh oh!</h2>
+    <h3 class="h3-404">you were redirected here :(</h3>
+    <br> 
+    <span class="explanation-404">it is likely that the page you are looking for is at a different URL, or does not exist.</span>
+    <noscript>
+      
+      <p>
+        ⚠️ This page uses JavaScript to automatically redirect users. Please use the following links to go to the appropriate homepage for your language.
+      </p>
+      <p>
+        ⚠️ Esta página utiliza JavaScript para redirigir automáticamente a los usuari(o/a)s. Utilice los siguientes enlaces para ir a la página de inicio adecuada para su idioma.
+      </p>
+      <p>
+        ⚠️ Cette page utilise JavaScript pour rediriger automatiquement les utilisateurs/euses. Veuillez utiliser les liens suivants pour accéder à la page d'accueil appropriée pour votre langue.
+      </p>
+      <p>
+        ⚠️ このページはJavaScriptを使用してユーザーを自動的にリダイレクトします。この機能はあなたのブラウザでは利用できませんので、適切な言語のホームページに移動するために次のリンクをご利用ください。
+      </p>
+
+      <a href="/en/home">english &gt;</a> &nbsp;
+      <a href="/en/home">español &gt;</a> &nbsp;
+      <a href="/en/home">français &gt;</a> &nbsp;
+      <a href="/en/home">日本語 &gt;</a> &nbsp;
+    </noscript>
+  </main>
+
+  <span hidden class="_data">{JSON.stringify({url_list, supported_langs})}</span>
+</Layout>
+<style>
+  .bg-text {
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    transform: rotate(-10deg) translateY(3rem) translateX(-1rem);
+    color: var(--rgb-accent-to);
+    z-index: -1;
+    font-size: clamp(1rem, 10vw, 3rem);
+  }
+  main {
+    position: relative;
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: var(--rgb-accent-to) 0 0 5px;
+    outline: var(--rgb-accent-to) 0.1rem solid;
+    border-radius: 50px 0 50px 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  h2, h3 {
+    font-family: "Fira";
+    animation: width-show 3s forwards;
+    text-shadow: 0 0 1px var(--rgb-bg-to);
+  }
+  @keyframes width-show {
+    0% {
+      transform: translateX(-100%) translateY(0rem) rotate(35deg);
+    }
+    100% {
+      transform: translateX(0%) translateY(0rem) rotate(5deg);
+    }
+  }
+
+  .sticky-img {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    transform: rotate(-10deg) translateY(3rem) translateX(-1rem);
+  }
+  
+  @media (max-width: 720px) {
+    .sticky-img {
+      display: none;
+    }
+    .bg-text {
+      display: none;
+    }
+  }
+
+
+</style>
+
+<script>
+
+  function main() {
+    const _DATA = JSON.parse(document.querySelector('._data').textContent);
+    const URL_LIST = _DATA.url_list;
+    const SUPPORTED_LANGS = _DATA.supported_langs;
+    const PATHNAME = location.pathname;
+    const PREFERRED_LANG = getPreferredLang(SUPPORTED_LANGS);
+
+    // redirect if the pathname is valid but language unspecified.
+    if (URL_LIST.includes(PATHNAME)) {
+      location.replace(`/${PREFERRED_LANG}${PATHNAME}`);
+      return true;
+    } 
+    
+    // custom js i18n bc astro won't work here
+    const defaultLang = "en";
+    if (PREFERRED_LANG === defaultLang) {return false};
+
+    const i18n = {
+      ".h2-404": {
+        "en": "uh oh!",
+        "es": "¡ay caramba!",
+        "fr": "zut alors!",
+        "ja": "あっ、しまった！",
+      },
+      ".h3-404": {
+        "en": "you were redirected here :(",
+        "es": "parece que usted fue redirigido aquí :(",
+        "fr": "il semble que vous avez été redirigé(e) vers ici :(",
+        "ja": "ココへ転送いたしたようです。",
+      },
+      ".explanation-404": {
+        "en": "it is likely that the page you are looking for is at a different URL, or does not exist.",
+        "es": "es probable que la página que estás buscando se encuentre en una URL diferente o que no exista.",
+        "fr": "il est probable que la page que vous recherchez se trouve à une URL différente ou n'existe pas.",
+        "ja": "多分、お探しのページは、異なるURLにあるか、存在しない可能性があります。",
+      }
+    }
+
+    for (let entry in i18n) {
+      const elem = document.querySelector(entry);
+      if (elem) elem.textContent = i18n[entry][PREFERRED_LANG] ?? i18n[entry][defaultLang];
+    }
+
+  }
+
+  main();
+
+  function getPreferredLang(supportedLangs: string[]) {
+    return getPreferredLangViaLocalStorage(supportedLangs) ?? getPreferredLangViaNavigator(supportedLangs);
+  }
+
+  function getPreferredLangViaNavigator(supportedLangs: string[]) {
+    const defaultLang = "en";
+
+    if (Intl && Intl.Locale) {
+      let navLanguages = navigator.languages.map(
+        (localeStr) => new Intl.Locale(localeStr).language
+      );
+
+      for (let language of navLanguages) {
+        if (supportedLangs.includes(language)) return language;
+      }
+    }
+    return defaultLang;
+  }
+
+  function getPreferredLangViaLocalStorage(supportedLangs: string[]) {
+    const l = localStorage.getItem("preferred-navigation-language");
+    if (supportedLangs.includes(l)) return l;
+    return null;
+  }
+
+  
+</script> 

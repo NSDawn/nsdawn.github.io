@@ -6,7 +6,12 @@
     "header/lang-icon": "🌐",
     "header/home": "inicio",
     "header/projects": "proyectos",
+    "header/projects/games": "juegos",
+    "header/projects/linguistics": "lingüística",
     "header/cv": "cv",
+
+    "404/webptitle": "ns: 404",
+    "404/message": "error 404: español",
 
     "home/webp-title": "ns: inicio",
     "home/intro/h2": "// hola, soy nishant.",

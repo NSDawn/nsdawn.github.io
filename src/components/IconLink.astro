@@ -9,7 +9,7 @@ const { href, icon, alt } = Astro.props;
 ---
 
 <a href={href}>
-    <img src={"../../public/assets/img/icon/" + icon + ".png"} alt={alt}>
+    <img src={"/assets/img/icon/" + icon + ".png"} alt={alt}>
 </a>
 
 <style>

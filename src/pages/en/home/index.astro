@@ -8,21 +8,24 @@ astroI18n.init(Astro);
 <Layout title={t("home/webp-title")}>
     <main>
 		<section class="intro">
-			<div>
+			<div class="">
 				<h2>{t('home/intro/h2')}</h2>
 				<p>{t('home/intro/p')}</p>
 			</div>
 			<div class="photo-frame">
 				<div class="decor-background-circle"></div>
-				<img class="hayu-smile" src="../../../../public/assets/img/art/hayu-smile.png" alt="young man wearing hoodie smiling">
+				<img class="hayu-smile" src="/assets/img/art/hayu-smile.png" alt="young man wearing hoodie smiling">
 			</div>
 		</section>
 		<section class="katy-says">
 			<div class="photo-frame">
 				<div class="decor-background-circle"></div>
-				<img class="katy-city" src="../../../../public/assets/img/art/katy-city.png" alt="tabby cat sleeping among buildings">
+				<img class="katy-city" src="/assets/img/art/katy-city.png" alt="tabby cat sleeping among buildings">
 			</div>
-			<div>
+
+
+			
+			<div class="">
 				<h2>{t('home/katy-says/h2')}</h2>
 				<p>{t('home/katy-says/p')}</p>
 			</div>
@@ -68,6 +71,9 @@ astroI18n.init(Astro);
 	}
 	.katy-city {
 		width: 45vw;
+
 		transform: rotate(15deg) translateX(-3vw) translateY(3vw);
 	}
+
+
 </style>

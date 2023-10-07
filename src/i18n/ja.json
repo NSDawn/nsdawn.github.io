@@ -8,9 +8,12 @@
     "header/projects": "プロジェクト",
     "header/cv": "履歴",
 
+    "404": "ns: 404",
+    "404/message": "error 404: にほん語",
+
     "home/webp-title": "ns: ホーム",
     "home/intro/h2": "// 初めまして、二シャントと申します。",
-    "home/intro/p": "通名【NS暁】でゲーム開発しています i'm interested in user interface design, front-end development, and game design.",
+    "home/intro/p": "通名【NS暁】でゲーム開発しています。GUIデザインやフロントエンド開発やゲームデザインなどに興味があります。よろしくお願いします。",
     "home/katy-says/h2": "// 今日、キャティーちゃんが言う。。。",
     "home/katy-says/p": "にゃ〜ん。",
 
