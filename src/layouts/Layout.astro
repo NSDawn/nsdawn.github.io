@@ -5,7 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import Header from "../components/Header.astro";
-
+import Footer from "../components/Footer.astro";
 import { astroI18n, t, l } from "astro-i18n";
 ---
 
@@ -23,6 +23,7 @@ import { astroI18n, t, l } from "astro-i18n";
 	<body>
 		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
@@ -55,9 +56,25 @@ import { astroI18n, t, l } from "astro-i18n";
 	body > * {
 		margin: 1rem;
 	}
-
+	h1 {
+		font-size: 2.5rem;
+		line-height: 3rem;
+		text-align: center;
+		margin: 0 1rem;
+		font-family: 'Fira', 'NotoEmoji';
+	}
+	h2 {
+		font-size: 2rem;
+		line-height: 2rem;
+		font-family: 'Fira', 'NotoEmoji';
+	}
+	h3 {
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+		font-family: 'Fira', 'NotoEmoji';
+	}
 	:root {
-		font-size: clamp(12px, 3vw, 20px);
+		font-size: clamp(12px, 2.5vw, 20px);
 		display: flex;
 		justify-content: center;
 
@@ -73,6 +90,9 @@ import { astroI18n, t, l } from "astro-i18n";
 	}
 	html {
 		min-height: 100vh;
+		width: max-content;
+		overflow-x: hidden;
+		scrollbar-gutter: stable;
   	}
 
 	img { 
@@ -94,5 +114,25 @@ import { astroI18n, t, l } from "astro-i18n";
 		cursor: pointer;
 		transform: scale(1.1);
 		color: var(--rgb-accent-from);
+	}
+	/* width */
+	::-webkit-scrollbar {
+		width: 0.5rem;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: var(--rgb-bg-from);
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: var(--rgb-accent-to);
+		border-radius: 0 10px 0 10px;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--rgb-accent-from);
 	}
 </style>

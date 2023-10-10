@@ -6,7 +6,6 @@ import { astroI18n, t, l } from "astro-i18n";
 const changeLang = (langCode: LangCode) =>
   l(Astro.url.pathname, undefined, langCode);
 
- 
 --- 
 
 <header>
@@ -16,9 +15,9 @@ const changeLang = (langCode: LangCode) =>
             {t("index/nishant-suria")}
         </h1>
         <div class="external-links">
-            <IconLink icon="linkedin" alt="LinkedIn logo external link" href="https://www.linkedin.com/in/nishant-suria/" />
-            <IconLink icon="itch" alt="Itch.io logo external link" href="https://ns-dawn.itch.io/" />
-            <IconLink icon="github" alt="GitHub logo external link" href="https://github.com/NSDawn" />
+            <IconLink icon="linkedin.png" alt="LinkedIn logo external link" href="https://www.linkedin.com/in/nishant-suria/" />
+            <IconLink icon="itch.png" alt="Itch.io logo external link" href="https://ns-dawn.itch.io/" />
+            <IconLink icon="github.png" alt="GitHub logo external link" href="https://github.com/NSDawn" />
         </div>
     </div>
     <nav>
@@ -48,7 +47,7 @@ const changeLang = (langCode: LangCode) =>
             </div>
         </div>
 
-        <a href={`${Astro.url.origin}/${astroI18n.langCode}/resume`}>
+        <a href={`${Astro.url.origin}/${astroI18n.langCode}/cv`}>
             {t("header/cv")}
         </a>
         
@@ -90,6 +89,8 @@ const changeLang = (langCode: LangCode) =>
 		color: var(--rgb-text);
         line-height: 40px;
 		font-size: 40px;
+        text-align: left;
+        margin: 0;
 	}
     nav {
         float: right;

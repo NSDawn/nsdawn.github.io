@@ -34,6 +34,11 @@ astroI18n.init(Astro);
 	</main>
 </Layout>
 <style>
+	main {
+		border: var(--rgb-accent-to) 0.2rem solid;
+    	border-radius: 50px 0 50px 0;
+		padding: 1rem;
+	}
 	section {
 		display: flex;
 		align-items: center;
@@ -59,19 +64,19 @@ astroI18n.init(Astro);
 		width: 40vw;
 		max-width: 500px;
 		margin-left: auto;
+		z-index: 2;
+		
 	}
 	.decor-background-circle {
 		width: 40vw;
 		height: 40vw;
-		transform: translateX(-3vw) scale(1.1);
-		z-index: -1;
+		transform: translateX(-2vw) translateY(-1vw) scale(1.1);
 		border-radius: 50%;
 		background: linear-gradient(to bottom, var(--rgb-accent-from), var(--rgb-accent-to));
 		box-shadow: var(--rgb-accent-to) 0 0 5px;
 	}
 	.katy-city {
 		width: 45vw;
-
 		transform: rotate(15deg) translateX(-3vw) translateY(3vw);
 	}
 

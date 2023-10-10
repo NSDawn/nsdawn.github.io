@@ -9,7 +9,7 @@ const { href, icon, alt } = Astro.props;
 ---
 
 <a href={href}>
-    <img src={"/assets/img/icon/" + icon + ".png"} alt={alt}>
+    <img src={"/assets/img/icon/" + icon } alt={alt}>
 </a>
 
 <style>
@@ -24,15 +24,11 @@ const { href, icon, alt } = Astro.props;
         height: clamp(1rem, 9vw, 2rem);
 
     }
-    a:hover {
-        animation: quickspin forwards 0.5s;
+    a > img {
+        transition: ease-in-out 0.25s;
     }
-    @keyframes quickspin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg) scale(1.25);
-        }
+    a:hover > img {
+        transform: scale(1.25);
     }
+    
 </style>
