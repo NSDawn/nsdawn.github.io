@@ -1,0 +1,134 @@
+--- 
+import Layout from "../../../layouts/Layout.astro";
+import Title from "../../../components/Title.astro";
+import { astroI18n, t, l } from "astro-i18n";
+import ScreenshotLink from "../../../components/ScreenshotLink.astro";
+
+astroI18n.init(Astro);
+---
+
+<Layout title={t("games/webp-title")}>
+    <main>
+        <Title text={t("games/h")} char="💠"  />
+        <h3>{t("games/category/featured")}</h3>
+        <div class="card-wrapper hidden">
+            <section class="card hidden">
+                <ScreenshotLink 
+                    title={t("games/salperth/title")}
+                    subtitle={t("games/salperth/subtitle")}
+                    href="https://ns-dawn.itch.io/salperth" 
+                    scsh="salperth-big.png" 
+                    alt="screenshot salperth" 
+                />
+            </section>
+            <div class="card-wrapper vertical hidden">
+                <section class="card hidden">
+                    <ScreenshotLink 
+                        title={t("games/the-js-quiz/title")}
+                        subtitle={t("games/the-js-quiz/subtitle")}
+                        href="https://nsdawn.dev/the-js-quiz" 
+                        scsh="the-js-quiz.png" 
+                        alt="screenshot the-js-quiz" 
+                    />
+                </section>
+                <section class="card hidden">
+                    <ScreenshotLink 
+                        title={t("games/kasa/title")}
+                        subtitle={t("games/kasa/subtitle")}
+                        href="https://ns-dawn.itch.io/kasa" 
+                        scsh="kasa.png" 
+                        alt="screenshot kasa" 
+                    />
+                </section>
+                <section class="card hidden">
+                    <ScreenshotLink 
+                        title={t("games/concrete/title")}
+                        subtitle={t("games/concrete/subtitle")}
+                        href="https://ns-dawn.itch.io/concrete" 
+                        scsh="concrete.png" 
+                        alt="screenshot concrete" 
+                    />
+                </section>
+            </div>
+        </div>
+        <h3>{t("games/category/all")}</h3>
+        <div class="card-row-collection">
+            {
+                Object.entries({
+                    "main-projects": ["the-js-quiz", "salperth", "kasa"],
+                    "interactive-fiction": ["whispers", "concrete"],
+                    "demos": ["flick-chess", "ns-debugger",  "yhbp", "the-wing"],
+                }).map((category) => {
+                    return (
+                        <section class="card">
+                            <h4>{t(`games/category/${category[0]}`)}</h4>
+                            <div class="scrollable-list">
+                                {
+                                category[1].map((game) => {
+                                    return (
+                                        <ScreenshotLink
+                                            title={t(`games/${game}/title`)}
+                                            verysmall={true}
+                                            subtitle=""
+                                            href={`https://ns-dawn.itch.io/${game}` }
+                                            scsh={`${game}.png`}
+                                            alt={`screenshot ${game}`}
+                                        />   
+                                    )
+                                })
+                            }
+                            </div>
+                        </section>
+                    )
+                })
+            }
+            </section>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        display: flex;
+        place-items: center;
+    }
+    section.card.hidden {
+        display: flex;
+        outline: none;
+        padding: 0;
+        background: none;
+    }
+    .card-wrapper.hidden {
+        max-width: 1200px;
+    }
+    .card-row-collection {
+        margin: 0.5rem;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .card-row-collection > .card {
+        width: clamp(500px, 33vw, 600px);
+        padding: 0.5rem;
+    }
+    .card > h4 {
+        margin: 1.25rem 0;
+        text-align: center;
+    }
+    
+    .scrollable-list {
+        margin: 1em 0;
+        overflow-y: scroll;
+        scrollbar-gutter: stable;
+        overflow-x: hidden;
+        height: 10em;
+    }
+    a.list-screenshot-link {
+        margin: 1rem 1rem;
+        width: auto;
+    }
+    
+
+</style>

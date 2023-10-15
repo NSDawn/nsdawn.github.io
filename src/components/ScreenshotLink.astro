@@ -1,0 +1,87 @@
+---
+interface Props {
+	href: string;
+    scsh: string;
+    alt: string;
+    title: string;
+    subtitle: string;
+    verysmall?: boolean;
+}
+
+const { href, scsh, alt, title, subtitle, verysmall} = Astro.props;
+---
+
+<a href={href} class={(verysmall ? "verysmall" : "")}>
+    <img src={"/assets/img/scsh/" + scsh } alt={alt}>
+    <div class="label" >
+        <h3>{title}</h3>
+        <h4>{subtitle}</h4>
+    </div>
+</a>
+
+<style>
+    a {
+        transition: ease-in-out 0.15s;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        border-radius: 20px 0px 20px 0px;
+        outline: 0.1rem var(--rgb-text) solid;
+    }
+    a > * {
+        grid-column: 1; grid-row: 1;
+    }
+    a > img {
+        width: 100%;
+        
+    }
+    a:hover {
+        outline: 0.1rem var(--rgb-accent-from) solid;
+        transform: scale(1.05)
+
+    }
+    a:hover > img {
+        filter: saturate(100%);
+    }
+    h3 {
+        text-shadow: 0 0 4px var(--rgb-bg-to);
+        line-height: 1rem;
+        margin: 0.5rem;
+    }
+
+    .verysmall {
+        width: auto;
+        margin: 0.5rem;
+    }
+    .verysmall h3 {
+        position: static;
+        font-size: 1rem;
+    }
+    .verysmall > .label{
+        align-items: end;
+        bottom: 0;
+        right: 0;
+        
+    }
+
+    h4 {
+        text-shadow: 0 0 4px var(--rgb-bg-to);
+        z-index: 2;
+        margin: 0;
+        margin: 0.25rem;
+
+    }
+
+    .label {
+        position: absolute;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 2;
+        line-height: 1rem;
+        text-align: right;
+    }
+</style>

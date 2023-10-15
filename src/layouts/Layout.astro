@@ -73,6 +73,27 @@ import { astroI18n, t, l } from "astro-i18n";
 		line-height: 1.5rem;
 		font-family: 'Fira', 'NotoEmoji';
 	}
+
+	main {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-wrapper {
+        display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+	.card-wrapper.vertical {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(auto-fit, minmax(0px, 1fr));
+	}
+    section.card {
+        background-color: var(--rgb-bg-to);
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+        outline: 0.1em var(--rgb-accent-to) solid;
+        border-radius: 50px 0 50px 0;
+    }
+
 	:root {
 		font-size: clamp(12px, 2.5vw, 20px);
 		display: flex;
@@ -106,6 +127,7 @@ import { astroI18n, t, l } from "astro-i18n";
 	}		
 	a {
 		all: unset;
+		text-decoration: underline solid;
 		color: var(--rgb-text);
 		
 	}

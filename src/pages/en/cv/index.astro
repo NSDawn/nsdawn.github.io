@@ -1,16 +1,14 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
+import Title from "../../../components/Title.astro"
 import { astroI18n, t, l } from "astro-i18n";
 
 astroI18n.init(Astro);
 ---
 
 <Layout title={t("cv/webp-title")}>
-    <div class="title">
-        <div>💠</div>
-        <h1>{t("cv/title")}</h1>
-        <div>💠</div>
-    </div>
+    <Title text={t("cv/h")} char="💠" />
+        
     <main>
         <section class="card">
             <h3>{t("cv/about/h")}</h3>
@@ -48,7 +46,7 @@ astroI18n.init(Astro);
                             </li>
                         )
                     })}
-
+                        
                 </ul>
             </section>
         </div>
@@ -65,9 +63,9 @@ astroI18n.init(Astro);
                                     if (t(`cv/skills/${i}/${j}/_skill`) == `cv/skills/${i}/${j}/_skill`) return;
                                     return (
                                         <li class="skill">
-                                            <img src={"/assets/img/block-icon/"+ t(`cv/skills/${i}/${j}/_skill`) + ".png"} alt={t(`cv/skills/${i}/${j}/_skill`) + " icon"}>
+                                            <img src={"/assets/img/block-icon/"+ t(`cv/skills/${i}/${j}/_skill`) + ".png"} alt={t(`cv/skills/${i}/${j}/_skill`) + " icon"} />
                                             <div class="skill-text">{t(`cv/skills/${i}/${j}/skill` + ".png")}</div>
-                                            <img src={"/assets/img/block-icon/hp_bar_"+ t(`cv/skills/${i}/${j}/_proficiency`) + ".png"} alt={"skill bar"}>
+                                            <img src={"/assets/img/block-icon/hp_bar_"+ t(`cv/skills/${i}/${j}/_proficiency`) + ".png"} alt="skill bar" />
                                             <small class="skill-text">{t(`cv/skills/${i}/${j}/proficiency`)}</small>
                                         </li>
                                     )
@@ -78,59 +76,39 @@ astroI18n.init(Astro);
                 })}
             </div>
         </section>
+        <section class="card">
+            <h3>{t("cv/certifications/h")}</h3>
+            <ul class="cert-list">
+                {[3, 2, 1, 0].map((i) => {
+                    return (
+                        <li>
+                            <h4>{t(`cv/certifications/li/${i}/h`)}</h4> 
+                            {t(`cv/certifications/li/${i}/href`) !== `cv/certifications/li/${i}/href` ? <a href={t(`cv/certifications/li/${i}/href`)} target="_blank">📄</a> : null}
+                            <small>{t(`cv/certifications/li/${i}/date`)}</small>
+                        </li>
+                    )
+                })}
+            </ul>
+        </section>
     </main>
 </Layout>
 
 <style>
-    .title {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-    .card-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media (max-width: 400px) {
-        .card-wrapper {
-            display: block;
-        }
-    }
-    section.card {
-		/*background: linear-gradient(to right, var(--rgb-bg-to), var(--rgb-bg-from)); */
-        background-color: var(--rgb-bg-to);
-        margin: 0.5rem;
-        padding: 0.5rem  1rem 0.5rem 2rem;
-        border: 0.1em var(--rgb-accent-to) solid;
-        border-radius: 50px 0 50px 0;
-    }
-    section.card.fullcard {
-        flex-grow: 2;
-        flex-shrink: 0;
-        max-width: 100%;
-        
-        
-    }
-    .edu-list {
+
+    .cert-list, .edu-list {
         list-style-type: "💠  ";
     }
-    .edu-list li {
+    .cert-list li, .edu-list li {
         margin: 0.5rem 0em;
     }
-    .edu-list h4 {
+    .cert-list h4, .edu-list h4 {
         all: unset;
         font-size: 1.1em;
         font-weight: bold;
         display: block;
         line-height: 1.5rem;
     }
-    .edu-list small {
+    .cert-list small, .edu-list small {
         font-size: 0.65em;
     }
     .edu-list .desc {
@@ -138,20 +116,11 @@ astroI18n.init(Astro);
         font-size: 0.75em;
     }
     .skills-row {
-        /*
-        display: grid;
-        gap: 0.5rem;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(
-                min(15rem, 100%), 1fr
-            )
-        );*/
+        margin: 1rem;
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
         justify-content: center;
-
 
     }
     .skills-row > div {

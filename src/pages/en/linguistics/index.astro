@@ -1,0 +1,99 @@
+--- 
+import Layout from "../../../layouts/Layout.astro";
+import Title from "../../../components/Title.astro";
+import { astroI18n, t, l } from "astro-i18n";
+import ScreenshotLink from "../../../components/ScreenshotLink.astro";
+
+astroI18n.init(Astro);
+
+const projects = [
+    "tamil-liquids",
+    "japanese-vowels",
+    "feature-lookup",
+    "game-of-tones",
+]
+---
+
+<Layout title={t("linguistics/webp-title")}>
+
+    <main>
+        <Title text={t("linguistics/h")} char="💠"  />
+        <div class="main-w-sidebar">
+            <section class="card projects-sidebar">
+                <h4>{t("linguistics/projects/h")}</h4>
+                {projects.map((project) => {
+                    return (
+                        <a class="project-button" role="button" href={`#${project}`}>
+                            {t(`linguistics/${project}`)}
+                        </a>
+                    )
+                })}
+            </section>
+            <section class="card display">
+                {projects.map((project) => {
+                    return (
+                        <div class="showable" id={project} role="button">
+                            <h4> {t(`linguistics/${project}/h`)} </h4>
+                            <img class="project-icon" src={`/assets/img/block-icon/${project}.png`} alt={`${project} project icon`}/>
+                            <br />
+                            <span>{t(`linguistics/${project}/desc`)}</span>
+                            <a class="see">{t(`linguistics/see`)}</a>
+                        </div>
+                    )
+                })}
+            </section>
+        </div>
+        
+    </main>
+</Layout>
+
+<style>
+.card.display {
+    overflow: hidden;
+}
+.main-w-sidebar {
+    display: grid;
+    height: 20rem; /* maybe change later */
+    grid-template-columns: 1fr 2fr;
+}
+.showable {
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    transition: ease-in-out 0.15s;
+    position: relative;
+}
+.projects-sidebar {
+    display: block;
+}
+a.project-button {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0 10px 0 10px;
+    outline: 0.1em solid var(--rgb-accent-to);
+}
+a.project-button:hover,  a.project-button:focus {
+    outline: 0.1em solid var(--rgb-accent-from);
+
+}
+.showable:target {
+    height: 100%;
+    font-size: 1rem;
+}
+h4 {
+    text-align: center;
+}
+.showable .project-icon {
+    width: 5rem;
+    display: inline;
+    float: left;
+    margin: 0.5rem;
+}
+.showable .see {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+</style>

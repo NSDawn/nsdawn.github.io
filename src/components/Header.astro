@@ -29,7 +29,7 @@ const changeLang = (langCode: LangCode) =>
                 <a href={changeLang("en")} onclick="setNavLang('en');">english</a>
                 <a href={changeLang("fr")} onclick="setNavLang('fr');">français</a>
                 <a href={changeLang("es")} onclick="setNavLang('es');">español</a>
-                <a href={changeLang("ja")} onclick="setNavLang('ja');">にほん語</a>
+                <a href={changeLang("ja")} onclick="setNavLang('ja');">日本語</a>
             </div>
         </div>
 
@@ -42,8 +42,8 @@ const changeLang = (langCode: LangCode) =>
                 {t("header/projects")}
             </button>
             <div class="dropdown projects">
-                <a href={`${Astro.url.origin}/${astroI18n.langCode}/linguistics`}>{t("header/projects/linguistics")}</a>
                 <a href={`${Astro.url.origin}/${astroI18n.langCode}/games`}>{t("header/projects/games")}</a>
+                <a href={`${Astro.url.origin}/${astroI18n.langCode}/linguistics`}>{t("header/projects/linguistics")}</a>
             </div>
         </div>
 
