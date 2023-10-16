@@ -183,6 +183,32 @@
     "linguistics/game-of-tones/desc": "A small interactive project for WLMA, which works on the description and revitilisation of Mesoamerican languages.",
     "linguistics/see": "see page >",
 
+    "linguistics/tamil-liquids/webp-title": "ns: tamil liquids",
+    "linguistics/tamil-liquids/see": "see work:",
+    "linguistics/tamil-liquids/poster": "lurc poster",
+    "linguistics/tamil-liquids/paper": "term paper",
+    "linguistics/tamil-liquids/somewhat-outdated": "(somewhat outdated)",
+    "linguistics/tamil-liquids/p1-0": "For my Phonetics seminar in Winter 2023, under ",
+    "linguistics/tamil-liquids/p1-1": ", I decided to investigate the relatively unique sound /ɻ/, as it is present in Tamil. Specifically, I sought to answer the following questions.",
+    "linguistics/tamil-liquids/p2/li/0-0": "To what degree of audible distinction is /ɻ/ produced by Native Tamil speakers?",
+    "linguistics/tamil-liquids/p2/li/0-1": "This sound is said to be being lost in Urban Tamil dialects, merging with /ɭ/.",
+    "linguistics/tamil-liquids/p2/li/1-0": "What acoustic signals may listeners be using to distinguish between /ɻ/ from other liquids?",
+    "linguistics/tamil-liquids/p2/li/1-1": "For English, the third formant (F3) is used to distinguish /ɹ/ from /l/, lower F3 being strongly correlated with rhoticity. Does this correlation hold for languages with a richer liquid inventory?",
+    "linguistics/tamil-liquids/p3": "I assembled a pilot study, using seven speakers, performed formant analysis using Praat, focusing on F3. Speakers were given words, with carry sentences, and asked to self-record pronunciations. My methods and findings are outlined in a term paper, accessible to the right.",
+    "linguistics/tamil-liquids/p4-0": "I was invited to present my findings at the Linguistics Undergratuate Research Conference (",
+    "linguistics/tamil-liquids/p4-1": ") at UCSC, for which I fortified my analysis and used R to perform k-means clustering analysis to justify correlation. I presented the poster shown at right.",
+    "linguistics/tamil-liquids/p5": "My key findings and conclusions are summarized:",
+    "linguistics/tamil-liquids/p6/li/0-0": "Weak correlation was found between low F3 and rhoticity.",
+    "linguistics/tamil-liquids/p6/li/0-1": "The k-means analysis supports the hypothesis that F3 is associated with the /ɻ/ ~ /ɭ/, however this correlation is not nearly as strong as American English.",
+    "linguistics/tamil-liquids/p6/li/1-0": "No correlation was found with F1 or F2.",
+    "linguistics/tamil-liquids/p6/li/1-1": "The articulations of /ɻ/ ~ /ɭ/ seemed to not be readily distinguishable by F1 or F2.",
+    "linguistics/tamil-liquids/p6/li/2-0": "The distinction between /ɻ/ and /ɭ/ was only salient some speakers.",
+    "linguistics/tamil-liquids/p6/li/2-1": "Only four out of seven speakers had an audible distinction. (Conclusions above only refer to the productions of these speakers.)",
+    "linguistics/tamil-liquids/p6/li/3-0": "No speaker readily produced the distinction in running, spoken Tamil.",
+    "linguistics/tamil-liquids/p6/li/3-1": "During the debrief phase, conducted in Tamil, the correspondent noted that no speaker actually distinguished /ɻ/ and /ɭ/ reliably, replacing nearly all articulations with /ɭ/.",
+
+    
+
     "home/webp-title": "ns: home",
     "home/intro/h2": "// hello, i'm nishant.",
     "home/intro/p": "i make games as ns dawn. i'm interested in user interface design, front-end development, and game design.",
@@ -191,3 +217,4 @@
 
     "bingus": "bingus wingus"
 }
+ 

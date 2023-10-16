@@ -1,0 +1,110 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import Title from "../../../../components/Title.astro";
+import ScreenshotLink from "../../../../components/ScreenshotLink.astro";
+import { astroI18n, t, l } from "astro-i18n";
+
+astroI18n.init(Astro);
+---
+
+<Layout title={t("linguistics/tamil-liquids/webp-title")}>
+    <Title text={t("linguistics/tamil-liquids/h")} char=""></Title>
+    <main>
+        <div class="main-w-sidebar">
+            <section class="card">
+                <p>
+                    {t("linguistics/tamil-liquids/p1-0")}
+                    <a href="https://linguistics.ucsc.edu/people/faculty.php?uid=gmcguir1" target="_blank">Grant McGuire</a>
+                    {t("linguistics/tamil-liquids/p1-1")}
+                </p>
+                <ul class="tamil">
+                    {[0, 1].map((i) => {
+                        return (
+                            <li>
+                                <strong>{t(`linguistics/tamil-liquids/p2/li/${i}-0`)}</strong>
+                                &nbsp;
+                                <span>{t(`linguistics/tamil-liquids/p2/li/${i}-1`)}</span>
+                            </li>
+                        )
+                    })}
+                </ul>
+                <p>
+                    {t("linguistics/tamil-liquids/p3")}
+                </p>
+                <p>
+                    {t("linguistics/tamil-liquids/p4-0")}
+                    <a href="https://linguistics.ucsc.edu/news-events/conferences/lurc.html" target="_blank">LURC</a>
+                    {t("linguistics/tamil-liquids/p4-1")}
+                </p>
+                <p>
+                    {t("linguistics/tamil-liquids/p5")}
+                </p>
+                <ul class="tamil">
+                    {[0, 1, 2, 3].map((i) => {
+                        return (
+                            <li>
+                                <strong>{t(`linguistics/tamil-liquids/p6/li/${i}-0`)}</strong>
+                                &nbsp;
+                                <span>{t(`linguistics/tamil-liquids/p6/li/${i}-1`)}</span>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </section>
+            <section class="card sidebar">
+                <h4>{t("linguistics/tamil-liquids/see")}</h4>
+                <div class="poster-frame">
+                    <ScreenshotLink 
+                        href="/assets/pdf/tamil-liquids-poster.pdf"
+                        scsh="tamil-liquids-poster-preview.png"
+                        title={t("linguistics/tamil-liquids/poster")}
+                        subtitle=""
+                        target="_blank"
+                        alt={"tamil-liquids poster preview"}
+                    />
+                </div>
+                <div class="paper-frame">
+                    <ScreenshotLink 
+                        href="/assets/pdf/tamil-liquids-paper.pdf"
+                        scsh="tamil-liquids-paper-preview.png"
+                        title={t("linguistics/tamil-liquids/paper")}
+                        subtitle={t("linguistics/tamil-liquids/somewhat-outdated")}
+                        target="_blank"
+                        alt={"tamil-liquids paper preview"}
+                    />
+                </div>
+            </section>
+            
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        
+    }
+    .card.sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .poster-frame {
+        width: 30vw;
+    }
+    .paper-frame {
+        width: 20vw;
+    }
+    .poster-frame, .paper-frame {
+        padding: 1rem;
+    }
+    .main-w-sidebar {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    ul.tamil {
+        list-style-type: tamil;
+    }
+</style>
+
+

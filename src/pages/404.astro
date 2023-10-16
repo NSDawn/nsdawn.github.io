@@ -113,9 +113,9 @@ const supported_langs = astroI18n.langCodes;
     const _DATA = JSON.parse(document.querySelector('._data').textContent);
     const URL_LIST = _DATA.url_list;
     const SUPPORTED_LANGS = _DATA.supported_langs;
-    const PATHNAME = location.pathname;
+    const PATHNAME = cleanPathname(location.pathname);
     const PREFERRED_LANG = getPreferredLang(SUPPORTED_LANGS);
-
+    
     // redirect if the pathname is valid but language unspecified.
     if (URL_LIST.includes(PATHNAME)) {
       location.replace(`/${PREFERRED_LANG}${PATHNAME}`);
@@ -180,6 +180,22 @@ const supported_langs = astroI18n.langCodes;
     if (supportedLangs.includes(l)) return l;
     return null;
   }
+
+  function cleanPathname(pathname) {
+
+    const toRepl = [
+      ["_", "-"],
+      ["/en/", "/"],
+      ["/es/", "/"],
+      ["/fr/", "/"],
+      ["/ja/", "/"],
+    ]
+
+    return ( toRepl.reduce((acc_string, v) => {
+        return acc_string.replaceAll(v[0], v[1]);
+      }, pathname)
+    );
+ }
 
   
 </script> 

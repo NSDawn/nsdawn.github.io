@@ -2,7 +2,6 @@
 import Layout from "../../../layouts/Layout.astro";
 import Title from "../../../components/Title.astro";
 import { astroI18n, t, l } from "astro-i18n";
-import ScreenshotLink from "../../../components/ScreenshotLink.astro";
 
 astroI18n.init(Astro);
 
@@ -20,11 +19,11 @@ const projects = [
         <Title text={t("linguistics/h")} char="💠"  />
         <div class="main-w-sidebar">
             <section class="card projects-sidebar">
-                <h4>{t("linguistics/projects/h")}</h4>
+                <h3>{t("linguistics/projects/h")}</h3>
                 {projects.map((project) => {
                     return (
                         <a class="project-button" role="button" href={`#${project}`}>
-                            {t(`linguistics/${project}`)}
+                            // {t(`linguistics/${project}`)}
                         </a>
                     )
                 })}
@@ -33,11 +32,11 @@ const projects = [
                 {projects.map((project) => {
                     return (
                         <div class="showable" id={project} role="button">
-                            <h4> {t(`linguistics/${project}/h`)} </h4>
+                            <h3> {t(`linguistics/${project}/h`)} </h3>
                             <img class="project-icon" src={`/assets/img/block-icon/${project}.png`} alt={`${project} project icon`}/>
                             <br />
                             <span>{t(`linguistics/${project}/desc`)}</span>
-                            <a class="see">{t(`linguistics/see`)}</a>
+                            <a class="see" href={`linguistics/${project}`}><h3>{t(`linguistics/see`)}</h3></a>
                         </div>
                     )
                 })}
@@ -68,7 +67,7 @@ const projects = [
 }
 a.project-button {
     display: block;
-    margin: 0.5rem;
+    margin: 0.75rem;
     padding: 0.5rem;
     border-radius: 0 10px 0 10px;
     outline: 0.1em solid var(--rgb-accent-to);

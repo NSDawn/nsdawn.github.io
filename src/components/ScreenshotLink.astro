@@ -6,12 +6,13 @@ interface Props {
     title: string;
     subtitle: string;
     verysmall?: boolean;
+    target?: string;
 }
 
-const { href, scsh, alt, title, subtitle, verysmall} = Astro.props;
+const { href, scsh, alt, title, subtitle, verysmall, target} = Astro.props;
 ---
 
-<a href={href} class={(verysmall ? "verysmall" : "")}>
+<a href={href} class={(verysmall ? "verysmall" : "")} target={target ?? "_self"}>
     <img src={"/assets/img/scsh/" + scsh } alt={alt}>
     <div class="label" >
         <h3>{title}</h3>
