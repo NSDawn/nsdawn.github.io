@@ -14,6 +14,12 @@
     "404/webp-title": "ns: 404",
     "404/message": "error 404: a website with the url you've specified could not be found.",
 
+    "home/webp-title": "ns: home",
+    "home/intro/h2": "// hello, i'm nishant.",
+    "home/intro/p": "i make games as ns dawn. i'm interested in user interface design, front-end development, and game design.",
+    "home/katy-says/h2": "// today, katy says...",
+    "home/katy-says/p": "meow.",
+
     "cv/webp-title": "ns: cv",
     "cv/h": "curriculum vitae",
     "cv/about/h": "📖 about",
@@ -135,7 +141,7 @@
     "cv/certifications/li/0/date": "2019 february - certified",
     "cv/certifications/li/1/h": "Japanese Language Proficiency Test N2",
     "cv/certifications/li/1/href": "/assets/pdf/cert-jlptn2.pdf",
-    "cv/certifications/li/1/date": "2022 december - certified",
+    "cv/certifications/li/1/date": "2022 december - passed",
     "cv/certifications/li/2/h": "ΦBK Honor Society",
     "cv/certifications/li/2/date": "2023 june - inducted",
     "cv/certifications/li/3/h": "Cum Laude, Honors in the Major",
@@ -227,11 +233,6 @@
 
     "linguistics/game-of-tones/webp-title": "ns: game of tones",
 
-    "home/webp-title": "ns: home",
-    "home/intro/h2": "// hello, i'm nishant.",
-    "home/intro/p": "i make games as ns dawn. i'm interested in user interface design, front-end development, and game design.",
-    "home/katy-says/h2": "// today, katy says...",
-    "home/katy-says/p": "meow.",
 
     "bingus": "bingus wingus"
 }
