@@ -22,8 +22,8 @@ const projects = [
                 <h3>{t("linguistics/projects/h")}</h3>
                 {projects.map((project) => {
                     return (
-                        <a class="project-button" role="button" href={`#${project}`}>
-                            // {t(`linguistics/${project}`)}
+                        <a class="project-button" role="button" href={`#${project}`} onclick="updateSelectedLink()">
+                        // {t(`linguistics/${project}`)}
                         </a>
                     )
                 })}
@@ -72,7 +72,7 @@ a.project-button {
     border-radius: 0 10px 0 10px;
     outline: 0.1em solid var(--rgb-accent-to);
 }
-a.project-button:hover,  a.project-button:focus {
+a.project-button:hover, a.project-button.selected {
     outline: 0.1em solid var(--rgb-accent-from);
 
 }
@@ -96,3 +96,22 @@ h4 {
 }
 
 </style>
+
+<script defer>
+    // optional javascript to show that selected thing is selected
+    const _updateSelectedLink = () => {
+        const projectButtons = document.getElementsByClassName("project-button");
+        
+        for (let elem of projectButtons) {
+            elem.classList.remove("selected");
+            if (elem.href === location.href) {
+                elem.classList.add("selected");
+            }
+        }
+    }
+    const updateSelectedLink = () => {
+        _updateSelectedLink();
+        setTimeout(_updateSelectedLink, 150);
+    }
+    updateSelectedLink();
+</script>

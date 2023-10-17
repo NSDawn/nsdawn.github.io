@@ -2,6 +2,7 @@
     "index/webp-title": "ns: index",
     "index/nishant-suria": "nishant suria",
     "index/_lang": "en",
+    "index/noscript": "⚠️ elements on this page require JavaScript to function. please turn on scripts in order to make full use of this page.",
 
     "header/lang-icon": "🌐",
     "header/home": "home",
@@ -184,11 +185,11 @@
     "linguistics/see": "see page >",
 
     "linguistics/tamil-liquids/webp-title": "ns: tamil liquids",
-    "linguistics/tamil-liquids/see": "see work:",
+    "linguistics/tamil-liquids/see": "read works:",
     "linguistics/tamil-liquids/poster": "lurc poster",
     "linguistics/tamil-liquids/paper": "term paper",
     "linguistics/tamil-liquids/somewhat-outdated": "(somewhat outdated)",
-    "linguistics/tamil-liquids/p1-0": "For my Phonetics seminar in Winter 2023, under ",
+    "linguistics/tamil-liquids/p1-0": "For my Phonetics seminar (LING 214 @ UCSC) in Winter 2023, under ",
     "linguistics/tamil-liquids/p1-1": ", I decided to investigate the relatively unique sound /ɻ/, as it is present in Tamil. Specifically, I sought to answer the following questions.",
     "linguistics/tamil-liquids/p2/li/0-0": "To what degree of audible distinction is /ɻ/ produced by Native Tamil speakers?",
     "linguistics/tamil-liquids/p2/li/0-1": "This sound is said to be being lost in Urban Tamil dialects, merging with /ɭ/.",
@@ -207,7 +208,24 @@
     "linguistics/tamil-liquids/p6/li/3-0": "No speaker readily produced the distinction in running, spoken Tamil.",
     "linguistics/tamil-liquids/p6/li/3-1": "During the debrief phase, conducted in Tamil, the correspondent noted that no speaker actually distinguished /ɻ/ and /ɭ/ reliably, replacing nearly all articulations with /ɭ/.",
 
+    "linguistics/japanese-vowels/webp-title": "ns: japanese vowels",
+    "linguistics/japanese-vowels/see": "read paper:",
+    "linguistics/japanese-vowels/paper": "term paper",
+    "linguistics/japanese-liquids/p0-0": "For Phonology II (LING 102 @ UCSC) in Fall 2021, under ",
+    "linguistics/japanese-liquids/p0-1": ", I applied Optimality Theory to create a framework for summarizing the phonological basis for vowel devoicing in Japanese.",
+    "linguistics/japanese-liquids/p1": "In Japanese, vowels /i/ and /ɯ/ can become voiceless, such as in the word 月 「つき」 /tsuki/ → [tsɯ̥ki]. Voicelessness in vowels seems to be invariably triggered by voiceless consonants adjacent, and in such well-understood cases, rule-based phonology is more than satisfactory to summarize it.",
+    "linguistics/japanese-liquids/p2-0": "V -> [-voi] / [-voi] _ [-voi]",
+    "linguistics/japanese-liquids/p2-1": "(vowels become voiceless when preceded by and followed by a voiceless segment.)",
+    "linguistics/japanese-liquids/p3": "However, in order to understand more complicated cases, such as 尽くす 「つくす」/tsɯkɯsɯ/ [t͡sɯ̥.kɯ.sɯ̥], rules such as the one above would have to be supplemented with increasing numbers of additional rules, to make sure that voiceless vowels are not overgenerated. In forms such as this one, pitch-accent becomes relavant, as the downstep mora of Japanese pitch contours don't tend to devoice even when they match the environments. It is in these cases, that Optimality Theory, which uses conditions rather than rules to find the best fit, is apt. The paper outlines the increasingly complex factors that may affect whether vowels appear devoiced, and how they fit into Optimality Theory conditions.",
+
+    "linguistics/feature-lookup/webp-title": "ns: feature lookup",
+    "linguistics/feature-lookup/guide": "pdf guide",
+    "linguistics/feature-lookup/button-0": "2022 version (latest)",
+    "linguistics/feature-lookup/button-1": "2021 version (Hayes 2005)",
+    "linguistics/feature-lookup/p": "feature_lookup.js can be used to look up the features of phonemes, and compare and contrast them based on their feature specifications. Please refer to the pdf guide for help. Originally made for UCSC's LING 101, in Python, this JavaScript version of feature_lookup has updated features and user experience.",
     
+
+    "linguistics/game-of-tones/webp-title": "ns: game of tones",
 
     "home/webp-title": "ns: home",
     "home/intro/h2": "// hello, i'm nishant.",

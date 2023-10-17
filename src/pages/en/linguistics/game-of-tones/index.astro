@@ -1,0 +1,33 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import Title from "../../../../components/Title.astro";
+import ScreenshotLink from "../../../../components/ScreenshotLink.astro";
+import { astroI18n, t, l } from "astro-i18n";
+
+astroI18n.init(Astro);
+---
+<Layout title={t("linguistics/game-of-tones/webp-title")}>
+    <Title text={t("linguistics/game-of-tones/h")} char="" />
+    <section class="card">
+        <iframe src="https://nsdawn.github.io/GameOfTones/"
+            width="512", 
+            height="288",
+            frameborder="0",
+            scrolling="no",
+            class = "project_embed_iframe",
+            allowfullscreen >
+        </iframe>
+    </section>
+</Layout>
+
+<style>
+    .card { 
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .project_embed_iframe {
+        width: 65vw;
+        height: 36.5625vw;
+    }
+</style>

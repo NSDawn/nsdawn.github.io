@@ -1,0 +1,160 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import Title from "../../../../components/Title.astro";
+import ScreenshotLink from "../../../../components/ScreenshotLink.astro";
+import { astroI18n, t, l } from "astro-i18n";
+
+astroI18n.init(Astro);
+---
+<Layout title={t("linguistics/feature-lookup/webp-title")}>
+    <Title text={t("linguistics/feature-lookup/h")} char="" />
+    <noscript class="warning">{t("index/noscript")}</noscript>
+    <main>
+        <div class="main-w-sidebar">
+            <section class="card">
+
+                <div class="terminalbox">
+                    <div class="command_box">
+                        <p class="console" ></p>
+                    </div>
+                    <input type="text" id="" class="command_line" name="name" autocomplete="off">
+                </div>
+
+                <p>{t("linguistics/feature-lookup/p")}</p>
+            </section>
+            <section class="card sidebar">
+                <button onclick="changeSelection('feature_lookup_hayes_2005');">{t("linguistics/feature-lookup/button-0")}</button>
+                <button onclick="changeSelection('feature_lookup_2022');">{t("linguistics/feature-lookup/button-1")}</button>
+                <ScreenshotLink 
+                        href="/assets/pdf/feature-lookup-guide.pdf"
+                        scsh="feature-lookup-guide-preview.png"
+                        title={t("linguistics/feature-lookup/guide")}
+                        subtitle=""
+                        target="_blank"
+                        alt={"feature-lookup-pdf-guide paper preview"}
+                />
+            </section>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .main-w-sidebar {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .sidebar {
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .sidebar button {
+        all: unset; 
+        display: block;
+        padding: 0.5rem;
+        border-radius: 0 10px 0 10px;
+        outline: 0.1em solid var(--rgb-accent-to);
+    }
+
+    .sidebar button:hover { 
+        outline: 0.1em solid var(--rgb-accent-from);
+        color: var(--rgb-accent-from);
+        transform: scale(1.1);
+    }
+
+    .paper-frame {
+        width: 20vw;
+        padding: 1rem;
+    }
+
+    .card.sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+    
+
+    .terminalbox {
+        background-color: rgb(0, 0, 0); /* Dark background color */
+        font-size: 0.75rem;
+        color: var(--rgb-text);
+        outline: solid var(--rgb-text);
+        border-radius:  30px 0 30px 0;
+        font-family: "Fira";
+    }
+
+    .command_line {
+        height: 1rem;
+        width: 90%;
+        color: var(--rgb-text);
+        background-color: var(--rgb-bg-to);
+        font-family: "Fira";
+        margin: 1vw;
+        border: 0.2rem solid var(--rgb-text);
+        border-radius: 10px 0 10px 0;
+    }
+    .command_box {
+        padding-top: 1rem;
+        height: 50vh;
+        margin: 1vw;
+        
+        overflow: auto;
+    }
+    .console {
+    
+        border-radius: 30px 0 30px 0;
+        
+        margin: 1vw;
+        width: 90%;
+        padding: 0.5rem 1rem;
+    }
+
+    .console.feature_lookup_2022 {
+        --console_color: #4fc54f;
+        outline: 0.2em dashed var(--console_color);
+        color: var(--console_color);
+    }
+    .console.feature_lookup_hayes_2005 {
+        --console_color: #41caef;
+        outline: 0.2em dashed var(--console_color);
+        color: var(--console_color);
+    }
+
+    /* Webkit browsers */
+    .terminalbox > ::-webkit-scrollbar {
+        width: 1em;
+        background-color: #ffffff00;
+    }
+    .terminalbox > ::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+        border-radius: 5px;
+    }
+
+    /* Firefox and other browsers */
+    .terminalbox > div {
+        scrollbar-width: thin;
+        scrollbar-color: rgb(255, 255, 255) #ffffff00;
+    }
+    .terminalbox > div::-webkit-scrollbar-track {
+        background-color: #ffffff00;
+    }
+    .terminalbox > div::-webkit-scrollbar-thumb {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+
+    .console::selection {
+        background: #373737;
+        text-decoration: underline rgb(255, 255, 255) 0.1em;
+    }
+    .command_box::selection {
+        background: #373737;
+        text-decoration: underline rgb(255, 255, 255) 0.1em;
+    }
+</style>
+
+<script src="/assets/js/feature_lookup.js" defer />

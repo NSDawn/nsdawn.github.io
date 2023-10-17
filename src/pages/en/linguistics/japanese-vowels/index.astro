@@ -1,0 +1,68 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import Title from "../../../../components/Title.astro";
+import ScreenshotLink from "../../../../components/ScreenshotLink.astro";
+import { astroI18n, t, l } from "astro-i18n";
+
+astroI18n.init(Astro);
+---
+
+<Layout title={t("linguistics/japanese-vowels/webp-title")}>
+    <Title text={t("linguistics/japanese-vowels/h")} char="" />
+    <main>
+        <div class="main-w-sidebar">
+            <section class="card">
+                <p>
+                    {t("linguistics/japanese-liquids/p0-0")}
+                    <a href="https://linguistics.ucsc.edu/people/faculty.php?uid=rwalker3" target="_blank">Rachel Walker</a>
+                    {t("linguistics/japanese-liquids/p0-1")}
+                </p>
+                <p>
+                    {t("linguistics/japanese-liquids/p1")}
+                </p>
+               <code>
+                    {t("linguistics/japanese-liquids/p2-0")} 
+                    <br>
+                    <span class="code-comment">{t("linguistics/japanese-liquids/p2-1")} </span>
+                </code>
+                <p>
+                    {t("linguistics/japanese-liquids/p3")}
+
+                </p>
+            </section>
+            <section class="card sidebar">
+                <h3>{t("linguistics/japanese-vowels/see")}</h3>
+                <div class="paper-frame">
+                    <ScreenshotLink 
+                        href="/assets/pdf/japanese-vowels-paper.pdf"
+                        scsh="japanese-vowels-paper-preview.png"
+                        title={t("linguistics/japanese-vowels/paper")}
+                        subtitle=""
+                        target="_blank"
+                        alt={"japanese-vowels paper preview"}
+                    />
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .main-w-sidebar {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .paper-frame {
+        width: 20vw;
+        padding: 1rem;
+    }
+
+    .card.sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+    
+</style>
