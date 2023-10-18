@@ -19,6 +19,7 @@ let COMMANDBOX = document.getElementsByClassName("command_box")[0];
 COMMANDBOX.scrollTop = COMMANDBOX.scrollHeight;
 var currConsole = "";
 let version = "feature_lookup_hayes_2005"; // "feature_lookup_hayes_2005"
+const _VERSIONS = ["feature_lookup_hayes_2005", "feature_lookup_2022"]
 
 function consolePrint(in_str = "", hasNewline = true) {
     let toPrint = String(in_str);
@@ -45,7 +46,8 @@ document.addEventListener("keydown", function(event) {
 });
 
 function featureLookupInit() {
-    let selected_version = localStorage.getItem("feature_lookup_selection") ?? version;
+    const _v = localStorage.getItem("feature_lookup_selection");
+    let selected_version =  _VERSIONS.includes(v) ? v : version;
     version = selected_version;
     PHONSET = {};
     CONSOLE.classList.remove("feature_lookup_2022");
