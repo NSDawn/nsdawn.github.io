@@ -1,18 +1,20 @@
 {
     "index/webp-title": "ns: インデックス",
-    "index/nishant-suria": "にしゃんと・すーりあ",
+    "index/nishant-suria": "二シャント・スーリア",
     "index/_lang": "ja",
     
     "header/lang-icon": "🌐",
     "header/home": "ホーム",
     "header/projects": "プロジェクト",
+    "header/projects/games": "ゲーム",
+    "header/projects/linguistics": "言語学",
     "header/cv": "履歴",
 
     "404/webp-title": "ns: 404",
     "404/message": "error 404: にほん語",
 
     "cv/webp-title": "ns: cv",
-    "cv/title": "履歴",
+    "cv/h": "履歴",
     "cv/about/h": "📖 自己",
     "cv/about/p": "フロントエンド開発者・ゲームデザイナー・言語愛好家で、アクセシビリティや異文化を通じてのデザインは興味深いです。いろいろなゲームエンジンやソフトの体験があり、いつもスキルを蓄え、修めるように励んでいる。少ない資源で多くを成し遂げるように頑張り、常に真心に働く。",
     "cv/employment/h": "🗄️ 職務経歴",
@@ -228,7 +230,7 @@
     "home/webp-title": "ns: ホーム",
     "home/intro/h2": "// 初めまして、二シャントと申します。",
     "home/intro/p": "通名【NS暁】でゲーム開発しています。GUIデザインやフロントエンド開発やゲームデザインなどに興味があります。よろしくお願いします。",
-    "home/katy-says/h2": "// 今日、キャティーちゃんが言う。。。",
+    "home/katy-says/h2": "// 今日、キャティーちゃんが言う…",
     "home/katy-says/p": "にゃ〜ん。",
     "bingus": "ビンガス・ウインガス"
 }
