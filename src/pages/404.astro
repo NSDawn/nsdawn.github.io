@@ -183,12 +183,10 @@ const supported_langs = astroI18n.langCodes;
 
   function cleanPathname(pathname) {
 
+    if (pathname === "/") return "/home";
+
     const toRepl = [
-      ["_", "-"],
-      ["/en/", "/"],
-      ["/es/", "/"],
-      ["/fr/", "/"],
-      ["/ja/", "/"],
+      ["_", "-"], 
     ]
 
     return ( toRepl.reduce((acc_string, v) => {
