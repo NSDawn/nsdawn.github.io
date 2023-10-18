@@ -3,4 +3,5 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
   integrations: [i18n()],
+  site: "https://nsdawn.dev",
 });

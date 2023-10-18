@@ -33,7 +33,7 @@ const changeLang = (langCode: LangCode) =>
             </div>
         </div>
 
-        <a href={`${Astro.url.origin}/${astroI18n.langCode}/home`}>
+        <a href={l("/home")}>
             {t("header/home")}
         </a>
 
@@ -42,12 +42,12 @@ const changeLang = (langCode: LangCode) =>
                 {t("header/projects")}
             </button>
             <div class="dropdown projects">
-                <a href={`${Astro.url.origin}/${astroI18n.langCode}/games`}>{t("header/projects/games")}</a>
-                <a href={`${Astro.url.origin}/${astroI18n.langCode}/linguistics#tamil-liquids`}>{t("header/projects/linguistics")}</a>
+                <a href={l("/games")}>{t("header/projects/games")}</a>
+                <a href={l("/linguistics#tamil-liquids")}>{t("header/projects/linguistics")}</a>
             </div>
         </div>
 
-        <a href={`${Astro.url.origin}/${astroI18n.langCode}/cv`}>
+        <a href={l("/cv")}>
             {t("header/cv")}
         </a>
         
