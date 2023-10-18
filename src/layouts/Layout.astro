@@ -17,6 +17,11 @@ import { astroI18n, t, l } from "astro-i18n";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preload" href="/assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="/assets/fonts/M_PLUS_1p/MPLUS1p-Regular.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="/assets/fonts/M_PLUS_1p/MPLUS1p-Bold.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="/assets/fonts/Noto_Emoji/NotoEmoji-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
 		<title>{title}</title>
 		<slot name="head"/>
 	</head>
