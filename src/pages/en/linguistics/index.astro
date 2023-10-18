@@ -71,10 +71,15 @@ a.project-button {
     padding: 0.5rem;
     border-radius: 0 10px 0 10px;
     outline: 0.1em solid var(--rgb-accent-to);
+    transition: ease-in-out 0.15s;
 }
-a.project-button:hover, a.project-button.selected {
+a.project-button:hover{
     outline: 0.1em solid var(--rgb-accent-from);
 
+}
+a.project-button.selected { 
+    outline: 0.2em solid var(--rgb-accent-from);
+    padding: 1rem 0.5rem;
 }
 .showable:target {
     height: 100%;
