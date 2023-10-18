@@ -47,7 +47,7 @@ document.addEventListener("keydown", function(event) {
 
 function featureLookupInit() {
     const _v = localStorage.getItem("feature_lookup_selection");
-    let selected_version =  _VERSIONS.includes(v) ? v : version;
+    let selected_version =  _VERSIONS.includes(_v) ? _v : version;
     version = selected_version;
     PHONSET = {};
     CONSOLE.classList.remove("feature_lookup_2022");
