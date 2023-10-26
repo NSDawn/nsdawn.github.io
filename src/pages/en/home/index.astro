@@ -9,7 +9,7 @@ astroI18n.init(Astro);
 
     <main>
 		<section class="intro">
-			<div class="">
+			<div class="intro">
 				<h2>{t('home/intro/h2')}</h2>
 				<p>{t('home/intro/p')}</p>
 			</div>
@@ -54,6 +54,9 @@ astroI18n.init(Astro);
 	}
 	section > * > p {
 		line-height: 1.25em;
+	}
+	div.intro {
+		padding-right: 1rem;
 	}
 	.photo-frame {
 		display: grid;
