@@ -12,6 +12,9 @@
     "header/projects/linguistics": "lingüística",
     "header/cv": "cv",
 
+    "footer/implemented-with": "implementado con Astro:",
+    "footer/contact": "contactar:",
+
     "404/webp-`title": "ns: 404",
     "404/message": "error 404: una página que corresponde al URL que ha especificado no se encontró.",
 

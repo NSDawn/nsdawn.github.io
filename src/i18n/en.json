@@ -11,6 +11,9 @@
     "header/projects/linguistics": "linguistics",
     "header/cv": "cv",
 
+    "footer/implemented-with": "implemented with Astro:",
+    "footer/contact": "contact me:",
+
     "404/webp-title": "ns: 404",
     "404/message": "error 404: a website with the url you've specified could not be found.",
 

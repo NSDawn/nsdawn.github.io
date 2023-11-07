@@ -9,6 +9,9 @@
     "header/projects/games": "ゲーム",
     "header/projects/linguistics": "言語学",
     "header/cv": "履歴",
+    
+    "footer/implemented-with": "Astroで実装：",
+    "footer/contact": "連絡：",
 
     "404/webp-title": "ns: 404",
     "404/message": "error 404: にほん語",

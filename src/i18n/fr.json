@@ -10,6 +10,9 @@
     "header/projects/games": "jeux",
     "header/projects/linguistics": "linguistique",
     "header/cv": "cv",
+
+    "footer/implemented-with": "implémenté avec Astro:",
+    "footer/contact": "me contacter:",
     
     "404/webp-title": "ns: 404",
     "404/message": "error 404: une page qui correspond à l'URL que vous avez spécifié n'a pas été rencontrée.",
