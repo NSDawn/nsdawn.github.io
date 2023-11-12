@@ -55,6 +55,10 @@
     "cv/skills/0/2/skill": "AngularJS",
     "cv/skills/0/2/_proficiency": "4",
     "cv/skills/0/2/proficiency": "体験あります",
+    "cv/skills/0/3/_skill": "mysql",
+    "cv/skills/0/3/skill": "MySQL",
+    "cv/skills/0/3/_proficiency": "5",
+    "cv/skills/0/3/proficiency": "体験あります",
 
     "cv/skills/1/h": "ゲーム開発",
     "cv/skills/1/0/_skill": "godot",

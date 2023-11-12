@@ -62,7 +62,11 @@
     "cv/skills/0/2/_skill": "angularjs",
     "cv/skills/0/2/skill": "AngularJS",
     "cv/skills/0/2/_proficiency": "4",
-    "cv/skills/0/2/proficiency": "avanzado",
+    "cv/skills/0/2/proficiency": "apto",
+    "cv/skills/0/3/_skill": "mysql",
+    "cv/skills/0/3/skill": "MySQL",
+    "cv/skills/0/3/_proficiency": "5",
+    "cv/skills/0/3/proficiency": "apto",
 
     "cv/skills/1/h": "desarollo de juegos",
     "cv/skills/1/0/_skill": "godot",
