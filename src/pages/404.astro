@@ -14,7 +14,8 @@ const supported_langs = astroI18n.langCodes;
 
 <Layout title={t("404/webp-title")}>
 	<main>
-    <img class="sticky-img" src="/assets/img/art/hayu_404.png" alt="">
+    <link rel="preload" as="image" href="/assets/img/art/hayu_404.png" />
+    <img class="sticky-img" src="/assets/img/art/hayu_404.png" alt="404 image" />
 
     <span class="bg-text">ERROR 404</span>
     <h2 class="h2-404">// uh oh!</h2>

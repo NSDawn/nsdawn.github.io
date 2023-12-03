@@ -20,7 +20,6 @@ function tryRedirect() {
 }
 
 function internationalizeUsingVanillaJS(preferredLang, defaultLang) {
-    console.log(preferredLang, defaultLang)
     const i18n = {
         ".h2-404": {
         "en": "uh oh!",
