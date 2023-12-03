@@ -13,6 +13,7 @@ const { href, scsh, alt, title, subtitle, verysmall, target} = Astro.props;
 ---
 
 <a href={href} class={(verysmall ? "verysmall" : "")} target={target ?? "_self"}>
+    <link rel="preload" as="image" href={"/assets/img/scsh/" + scsh }>
     <img src={"/assets/img/scsh/" + scsh } alt={alt}>
     <div class="label" >
         <h3>{title}</h3>
