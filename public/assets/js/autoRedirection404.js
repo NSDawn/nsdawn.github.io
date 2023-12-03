@@ -60,7 +60,8 @@ const defaultLang = "en";
             (localeStr) => new Intl.Locale(localeStr).language
         );
 
-        for (let language of navLanguages) {
+        for (const _language of navLanguages) {
+            const language = _language.substring(0, 2);
             if (supportedLangs.includes(language)) return language;
         }
     }
