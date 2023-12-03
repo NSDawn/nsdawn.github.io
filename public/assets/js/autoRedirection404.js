@@ -13,7 +13,7 @@ function tryRedirect() {
 
     // redirect if the pathname is valid but language unspecified.
     if (URL_LIST.includes(PATHNAME)) {
-        location.replace(`/${PREFERRED_LANG}${PATHNAME}`);
+        location.replace(`https://nsdawn.dev/${PREFERRED_LANG}${PATHNAME}`);
     } 
 
     return [PREFERRED_LANG, defaultLang];
