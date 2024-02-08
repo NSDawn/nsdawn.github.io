@@ -58,7 +58,7 @@
     "cv/skills/0/2/proficiency": "体験あります",
     "cv/skills/0/3/_skill": "mysql",
     "cv/skills/0/3/skill": "MySQL",
-    "cv/skills/0/3/_proficiency": "5",
+    "cv/skills/0/3/_proficiency": "2",
     "cv/skills/0/3/proficiency": "体験あります",
 
     "cv/skills/1/h": "ゲーム開発",
@@ -177,9 +177,9 @@
 
     "linguistics/h": "言語学",
     "linguistics/projects/h": "プロジェクト",
-    "linguistics/tamil-liquids": "tamil liquids",
-    "linguistics/tamil-liquids/h": "a phonetic investigation of tamil liquids",
-    "linguistics/tamil-liquids/desc": "Standard Tamil is said to have five /ɾ/, /r/, /l/, /ɭ/ and the elusive /ɻ/. Using phonetic data elicited from native speakers of Tamil, Fourier analysis was used to determine an auditory basis for this five-way distinction.",
+    "linguistics/tamil-liquids": "タミル語の流音",
+    "linguistics/tamil-liquids/h": "タミル語の流音についての発音学的検査",
+    "linguistics/tamil-liquids/desc": "標準タミル語は、５つの流音：/ɾ/、/r/、/l/、/ɭ/、/ɻ/を区別するとされています. Using phonetic data elicited from native speakers of Tamil, Fourier analysis was used to determine an auditory basis for this five-way distinction.",
     "linguistics/japanese-vowels": "japanese vowel devoicing",
     "linguistics/japanese-vowels/h": "a phonological framework for japanese vowel devoicing using OT",
     "linguistics/japanese-vowels/desc": "In Japanese, vowels can get devoiced, such as in words like つき /tsuki/ → [tsɯ̥ki]. While the triggers for vowel devoicing are easily explained, interactions between environments, pitch accents, and knockout conditions make the full extent of the phenomenon hard to explain without Optimality Theory.",
