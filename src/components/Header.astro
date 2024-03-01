@@ -122,7 +122,7 @@ const changeLang = (langCode: LangCode) =>
         padding: 0.5rem;
         outline: 0.1rem var(--rgb-text) solid;
         border-radius: 10px 0px 10px 0px ;
-        transition: ease-in-out 0.15s;
+        transition: ease-in-out 0.15s; 
         font-weight: bold;
     }
     nav button:hover {
@@ -130,7 +130,7 @@ const changeLang = (langCode: LangCode) =>
         outline: 0.2rem var(--rgb-accent-from) solid;
         transform: scale(1.25);
         border-radius: 0px 10px 0px 10px;
-        transition: ease-in-out 0.15s;
+        
     }
     nav button:focus {
         transform: scale(1.1);
@@ -189,6 +189,13 @@ function setNavLang(language) {
     localStorage.setItem("preferred-navigation-language", language);
     return false; // prevent default
 }
+
+document.querySelectorAll("nav button + div.dropdown")
+    .forEach((navButton) => {
+        navButton.addEventListener("click", () => {
+            navButton.focus()
+        })
+    })
  
 
 </script>
