@@ -51,7 +51,6 @@ const changeLang = (langCode: LangCode) =>
             {t("header/cv")}
         </a>
         
-        
     </nav>
 </header>
 
@@ -151,9 +150,10 @@ const changeLang = (langCode: LangCode) =>
     .dropdown-wrapper {
         position: relative;
     }
+    
     div.dropdown {
         transition: ease-in-out 0.15s;
-        font-size: 0;
+        font-size: 0rem;
         filter: opacity(0);
         width: max-content;
         line-height: 1.5em;
@@ -168,6 +168,12 @@ const changeLang = (langCode: LangCode) =>
         z-index: 99;
         
     }
+    @media not all and (min-resolution:.001dpcm)
+    { @supports (-webkit-appearance:none) {
+        div.dropdown {
+            font-size: 1rem !important;
+        }
+    }}
     nav button:focus + div.dropdown, div.dropdown:focus-within {
         font-size: 1rem;
         filter: opacity(100);
@@ -183,19 +189,30 @@ const changeLang = (langCode: LangCode) =>
   
 </style>
 
-<script is:inline>
+<script is:inline defer>
 
 function setNavLang(language) {
     localStorage.setItem("preferred-navigation-language", language);
     return false; // prevent default
 }
 
-document.querySelectorAll("nav button + div.dropdown")
-    .forEach((navButton) => {
-        navButton.addEventListener("click", () => {
-            navButton.focus()
-        })
+
+// add Event Listener to ensure focus on click for mobile devices
+const navButtons = document.querySelectorAll("nav .dropdown-wrapper > button")
+for (let navButton of navButtons) {
+    console.log(navButton);
+    navButton.addEventListener("click", (e) => {
+        console.log("what");
+        navButton.focus();
     })
- 
+}
+
+const browserIsSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (browserIsSafari) {
+    const dropdowns = document.querySelectorAll("div.dropdown-wrapper > .dropdown");
+    for (let dropdown of dropdowns) {
+        dropdown.style.fontSize = '1rem';
+    }
+}
 
 </script>
