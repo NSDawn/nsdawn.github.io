@@ -1,0 +1,132 @@
+---
+import { astroI18n, t } from "astro-i18n";
+import LayoutPortfolio from "../../../layouts/LayoutPortfolio.astro"
+import IconLink from "../../../components/IconLink.astro";
+
+astroI18n.init(Astro);
+---
+<LayoutPortfolio title={t("portfolio/webp-title")}>
+    <noscript class="warning">
+        <section class="javascript-warning">
+            <p>{t("portfolio/javascript-warning")}</p>
+        </section>
+    </noscript>
+    <main class="portfolio">
+        <section class="profile fullsize">
+            <div class="info-box">
+                <h1>hi, i'm nishant</h1>
+                let me take you through some of the things i've made.
+            </div>
+        </section>
+        <section class="salperth fullsize">
+            <div class="info-box hidden left">
+                <h1>salperth</h1>
+                <h2>a retro-style 2d rpg</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem debitis velit rerum? Dicta veniam dolores iure, possimus libero reprehenderit. Ratione atque laborum alias ipsum, cupiditate quae debitis. Similique, doloremque suscipit!</p>
+            </div>
+            <div class="images-wrapper hidden right">
+                <div class="screenshots">
+                    <img class="hidden right delay-1" src="/assets/img/portfolio/salperth-scsh-0.png" alt="salperth screenshot" />
+                    <img class="hidden right delay-2"  src="/assets/img/portfolio/salperth-scsh-1.png" alt="salperth screenshot" />
+                    <img class="hidden right delay-3" src="/assets/img/portfolio/salperth-scsh-2.png" alt="salperth screenshot" />
+                </div>
+                <div class="sprite">
+                    <img src="/assets/img/portfolio/salperth-sprites.png" alt="salperth sprites">
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    
+</LayoutPortfolio>
+
+<style>
+    main {
+        padding: 5vh 3vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    section.fullsize {
+        height: 80vh;
+        margin: 3vh 0;
+    } 
+    section.salperth {
+        overflow: hidden;
+        & > * {
+            flex: 1;
+        }
+        & > .info-box {
+            flex: 1.5;
+            z-index: 2;
+        }
+        & > .images-wrapper {
+            display: grid;
+            & > .screenshots {
+                grid-row: 1; grid-column: 1;
+                & > img {
+                    transform: translateX(-25%) scale(1.5);
+                    filter: opacity(0.5);
+                }
+                & > img:nth-child(2n) {
+                    transform: translateX(-50%) scale(1.5);
+                }
+            }
+            & > .sprite {
+                grid-row: 1; grid-column: 1;
+                display: flex; align-items: center;
+                & img {
+                    transform: translateX(0);
+                    filter: drop-shadow(0 0 5px var(--rgb-text))
+                }
+            }
+        } 
+    }
+    img {
+        width: 100%;
+    }
+
+    .hidden {
+        opacity: 0;
+        transition: ease-in-out 0.5s;
+        transition-delay: 0.25s;
+        &.right {
+            transform: translateX(100%);
+        }
+        &.left {
+            transform: translateX(-100%);
+        }
+        &.delay-1 {
+            transition-delay: 0.5s;
+        }
+        &.delay-2 {
+            transition-delay: 0.75s;
+        }
+        &.delay-3 {
+            transition-delay: 1s;
+        }
+        &.show {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    
+</style>
+
+<script>
+
+// ANIMATIONS ON SCROLL
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } 
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+</script>

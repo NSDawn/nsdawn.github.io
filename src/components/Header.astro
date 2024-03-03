@@ -200,9 +200,7 @@ function setNavLang(language) {
 // add Event Listener to ensure focus on click for mobile devices
 const navButtons = document.querySelectorAll("nav .dropdown-wrapper > button")
 for (let navButton of navButtons) {
-    console.log(navButton);
     navButton.addEventListener("click", (e) => {
-        console.log("what");
         navButton.focus();
     })
 }
