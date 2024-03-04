@@ -240,13 +240,18 @@
     "linguistics/feature-lookup/button-0": "2022 version (latest)",
     "linguistics/feature-lookup/button-1": "2021 version (Hayes 2005)",
     "linguistics/feature-lookup/p": "feature_lookup.js can be used to look up the features of phonemes, and compare and contrast them based on their feature specifications. Please refer to the pdf guide for help. Originally made for UCSC's LING 101, in Python, this JavaScript version of feature_lookup has updated features and user experience.",
-    
 
     "linguistics/game-of-tones/webp-title": "ns: game of tones",
 
     "portfolio/webp-title": "ns: portfolio",
     "portfolio/javascript-warning": "this site requires JavaScript to function properly. some effects may not be available.",
-    
+    "portfolio/salperth/h1": "salperth", 
+    "portfolio/salperth/h2": "a retro-style 2d rpg", 
+    "portfolio/salperth/p1": "Salperth is a game about an elf in a foreign land. Developed as my final project for AGPM at UCSC.", 
+    "portfolio/salperth/p2": "Developed from scratch with Godot, I programmed the movement, interaction and text systems myself. Along with the retro-style pixel art textures, I also implemented a shader to give the impression of an old TV screen.", 
+    "portfolio/salperth/li-itch": "check it out on Itch: ", 
+    "portfolio/salperth/li-godot": "implemented in Godot: ", 
+    "portfolio/salperth/li-aseprite": "sprites drawn in Aseprite: ", 
     "bingus": "bingus wingus"
 }
  

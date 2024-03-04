@@ -1,7 +1,7 @@
 ---
 import { astroI18n, t } from "astro-i18n";
 import LayoutPortfolio from "../../../layouts/LayoutPortfolio.astro"
-import IconLink from "../../../components/IconLink.astro";
+import IconLink from "../../../components/InlineIconLink.astro";
 
 astroI18n.init(Astro);
 ---
@@ -20,9 +20,25 @@ astroI18n.init(Astro);
         </section>
         <section class="salperth fullsize">
             <div class="info-box hidden left">
-                <h1>salperth</h1>
-                <h2>a retro-style 2d rpg</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem debitis velit rerum? Dicta veniam dolores iure, possimus libero reprehenderit. Ratione atque laborum alias ipsum, cupiditate quae debitis. Similique, doloremque suscipit!</p>
+                <h1>{t("portfolio/salperth/h1")}</h1>
+                <h2>{t("portfolio/salperth/h2")}</h2>
+                {t("portfolio/salperth/p1")}
+                <ul>
+                    <li>
+                        {t("portfolio/salperth/li-itch")} <IconLink icon="itch.svg" alt="itch icon link" href="https://ns-dawn.itch.io/salperth"></IconLink>
+                    </li>
+
+                </ul>
+                {t("portfolio/salperth/p2")}
+                <ul>
+                    <li>
+                        {t("portfolio/salperth/li-godot")} <IconLink icon="godot.svg" alt="godot icon link" href="https://godotengine.org/"></IconLink>
+                    </li>
+                    <li>
+                        {t("portfolio/salperth/li-aseprite")} <IconLink icon="aseprite.png" alt="aseprite icon link" href="https://www.aseprite.org/"></IconLink>
+                    </li>
+                </ul>
+            
             </div>
             <div class="images-wrapper hidden right">
                 <div class="screenshots">
@@ -34,8 +50,45 @@ astroI18n.init(Astro);
                     <img src="/assets/img/portfolio/salperth-sprites.png" alt="salperth sprites">
                 </div>
             </div>
-            
         </section>
+        <section class="kasa fullsize">
+            <div class="images-wrapper hidden left">
+                <div class="screenshots">
+                    <img class="hidden right delay-1" src="/assets/img/portfolio/kasa-scsh-0.png" alt="salperth screenshot" />
+                    <img class="hidden right delay-2"  src="/assets/img/portfolio/kasa-scsh-1.png" alt="salperth screenshot" />
+                    <img class="hidden right delay-3" src="/assets/img/portfolio/kasa-scsh-2.png" alt="salperth screenshot" />
+                </div>
+                <div class="sprite">
+                    <img src="/assets/img/portfolio/salperth-sprites.png" alt="salperth sprites">
+                </div>
+            </div>
+            <div class="info-box hidden right">
+                <h1>{t("portfolio/kasa/h1")}</h1>
+                <h2>{t("portfolio/kasa/h2")}</h2>
+                {t("portfolio/kasa/p1")}
+            </div>
+        </section>
+
+
+        {[
+            "/assets/img/portfolio/salperth-scsh-0.png",
+            "/assets/img/portfolio/salperth-scsh-1.png",
+            "/assets/img/portfolio/salperth-scsh-2.png",
+            "/assets/img/portfolio/kasa-scsh-0.png",
+            "/assets/img/portfolio/kasa-scsh-1.png",
+            "/assets/img/portfolio/kasa-scsh-2.png",
+        ].map((s) => {
+            return (
+                <link
+                    rel="preload"
+                    href={s}
+                    as="image"
+                    type="image/png"
+                    slot="head"
+                />
+            )
+        })}
+        
     </main>
 
     
@@ -52,7 +105,7 @@ astroI18n.init(Astro);
         height: 80vh;
         margin: 3vh 0;
     } 
-    section.salperth {
+    section.salperth, section.kasa {
         overflow: hidden;
         & > * {
             flex: 1;
@@ -61,7 +114,7 @@ astroI18n.init(Astro);
             flex: 1.5;
             z-index: 2;
         }
-        & > .images-wrapper {
+        & > .images-wrapper.right {
             display: grid;
             & > .screenshots {
                 grid-row: 1; grid-column: 1;
@@ -71,6 +124,27 @@ astroI18n.init(Astro);
                 }
                 & > img:nth-child(2n) {
                     transform: translateX(-50%) scale(1.5);
+                }
+            }
+            & > .sprite {
+                grid-row: 1; grid-column: 1;
+                display: flex; align-items: center;
+                & img {
+                    transform: translateX(0);
+                    filter: drop-shadow(0 0 5px var(--rgb-text))
+                }
+            }
+        } 
+        & > .images-wrapper.left {
+            display: grid;
+            & > .screenshots {
+                grid-row: 1; grid-column: 1;
+                & > img {
+                    transform: translateX(25%) scale(1.5);
+                    filter: opacity(0.5);
+                }
+                & > img:nth-child(2n) {
+                    transform: translateX(50%) scale(1.5);
                 }
             }
             & > .sprite {
@@ -93,9 +167,11 @@ astroI18n.init(Astro);
         transition-delay: 0.25s;
         &.right {
             transform: translateX(100%);
+            text-align: right;
         }
         &.left {
             transform: translateX(-100%);
+            text-align: left;
         }
         &.delay-1 {
             transition-delay: 0.5s;
@@ -112,6 +188,9 @@ astroI18n.init(Astro);
         }
     }
 
+    a > img {
+        display: inline;
+    }
     
 </style>
 

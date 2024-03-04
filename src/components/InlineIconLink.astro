@@ -15,20 +15,22 @@ const { href, icon, alt } = Astro.props;
 <style>
     img {
         aspect-ratio: 1;
-        height: clamp(1rem, 7vw, 2rem);
+        transform: translateY(0.25em);
+        height: 1.5em;
 
     }
     a {
-        height: 6vw;
+        height: 1em;
         transition: ease-in-out 0.15s;
         height: clamp(1rem, 9vw, 2rem);
 
     }
     a > img {
         transition: ease-in-out 0.15s;
+        
     }
     a:hover > img {
-        transform: translateY(0.5em) scale(1.1);
+        transform: translateY(0.25em) scale(1.1);
     }
     
 </style>
