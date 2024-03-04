@@ -151,7 +151,34 @@ astroI18n.init(Astro);
             
             <CategoryIndicator backgroundColor="#c66bff" text={t("portfolio/category/research-project")} className="hidden right">
         </section>
-
+        <section class="yoyuri">
+            <div class="info-box hidden left">
+                <h1>{t("portfolio/yoyuri/h1")}</h1>
+                <h2>{t("portfolio/yoyuri/h2")}</h2>
+                <ul>
+                    <li>
+                        {t("portfolio/yoyuri/li-github")} <IconLink icon="github.png" alt="github icon link" href="https://github.com/NSDawn/yoyuri"></IconLink>
+                    </li>
+                </ul>
+                <p>{t("portfolio/yoyuri/p1")}</p>
+                <ul>
+                    <li>
+                        {t("portfolio/yoyuri/li-react")} <IconLink icon="react.svg" alt="react icon link" href="https://react.dev/"></IconLink>
+                    </li>
+                </ul>
+            </div>
+            <a class="screenshot hidden right outline" href="https://github.com/NSDawn/yoyuri">
+                <img src="/assets/img/portfolio/yoyuri-scsh-0.png" alt="the JS quiz screenshot" />
+            </a>
+            <CategoryIndicator backgroundColor="#57ff78" text={t("portfolio/category/web-app")} className="hidden right">
+        </section>
+        <section class="end">
+            <a href="https://nsdawn.dev">
+                <h2>
+                    {t("portfolio/a-homepage")}
+                </h2>
+            </a>
+        </section>
         {[
             "/assets/img/portfolio/salperth-scsh-0.png",
             "/assets/img/portfolio/salperth-scsh-1.png",
@@ -163,6 +190,7 @@ astroI18n.init(Astro);
             "/assets/img/portfolio/tamil-liquids-scsh-0.png",
             "/assets/img/portfolio/tamil-liquids-scsh-1.png",
             "/assets/img/portfolio/tamil-liquids-scsh-2.png",
+            "/assets/img/portfolio/yoyuri-scsh-0.png",
         ].map((s) => {
             return (
                 <link
@@ -196,12 +224,17 @@ astroI18n.init(Astro);
 
         }
     }
+    a:not(a:hover) {
+        text-decoration: none;
+
+    }
     section.profile {
         & .info-box {
             display: flex;
             flex-direction: column;
             place-items: center;
             justify-content: center;
+            
         }
     }
     section.fullsize {
@@ -269,13 +302,17 @@ astroI18n.init(Astro);
         
     }
     .info-box {
-        z-index: 2
+        z-index: 2;
+        min-width: 25rem;
     }
     img {
         width: 100%;
     }
     ul {
         list-style-type: none;
+    }
+    .outline {
+        outline: var(--rgb-text) solid 0.1rem;
     }
     .hidden {
         opacity: 0;

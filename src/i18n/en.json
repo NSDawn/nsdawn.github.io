@@ -273,6 +273,13 @@
     "portfolio/tamil-liquids/li-praat": "phonetic analysis carried out with Praat: ",
     "portfolio/tamil-liquids/li-r": "data analysis carried out with R: ",
     "portfolio/category/game": "game 🎮",
+    "portfolio/yoyuri/h1": "YOYURI", 
+    "portfolio/yoyuri/h2": "an interactive novel (in progress)", 
+    "portfolio/yoyuri/p1": "An interactive novel that plays in the browser, using React. This is what I'm developing right now, so it's a work-in-progress. At right is a early screenshot.",
+    "portfolio/yoyuri/li-github": "check out the source code on Github: ", 
+    "portfolio/yoyuri/li-react": "implemented with React: ", 
+    "portfolio/a-homepage": "my homepage →",
+
     "portfolio/category/web-app": "web app 💻",
     "portfolio/category/research-project": "research project 🔬",
 
