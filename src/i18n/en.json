@@ -245,6 +245,8 @@
 
     "portfolio/webp-title": "ns: portfolio",
     "portfolio/javascript-warning": "this site requires JavaScript to function properly. some effects may not be available.",
+    "portfolio/title": "hi, i'm nishant",
+    "portfolio/tagline": "let me take you through a few of my projects.",
     "portfolio/salperth/h1": "salperth", 
     "portfolio/salperth/h2": "a retro-style 2d rpg", 
     "portfolio/salperth/p1": "Salperth is a game about an elf in a foreign land. Developed as my final project for AGPM at UCSC.", 
@@ -252,6 +254,28 @@
     "portfolio/salperth/li-itch": "check it out on Itch: ", 
     "portfolio/salperth/li-godot": "implemented in Godot: ", 
     "portfolio/salperth/li-aseprite": "sprites drawn in Aseprite: ", 
+    "portfolio/kasa/h1": "kasa", 
+    "portfolio/kasa/h2": "a 2d platformer", 
+    "portfolio/kasa/p1": "Kasa has the player jumping across platforms, floating using their umbrella. Inspired by the aesthetics of hanafuda cards, I completed the majority of the game within a 3 week time period.", 
+    "portfolio/kasa/p2": "I developed the movement and mechanics myself, using Godot.", 
+    "portfolio/kasa/li-itch": "check it out on Itch: ", 
+    "portfolio/kasa/li-godot": "implemented in Godot: ", 
+    "portfolio/kasa/li-aseprite": "sprites drawn in Aseprite: ", 
+    "portfolio/the-js-quiz/h1": "the js quiz", 
+    "portfolio/the-js-quiz/h2": "a humorous quiz about arcane JavaScript", 
+    "portfolio/the-js-quiz/p1": "Inspired by The Impossible Quiz by Splapp-Me-Do, the JS Quiz is a web application which asks questions about increasingly obscure and confusing JavaScript functionalities.", 
+    "portfolio/the-js-quiz/li-link": "check it out: ", 
+    "portfolio/the-js-quiz/li-react": "implemented with React: ", 
+    "portfolio/tamil-liquids/h1": "tamil liquids",
+    "portfolio/tamil-liquids/h2": "a phonetic analysis of liquid sounds in Tamil",
+    "portfolio/tamil-liquids/p1": "A research project performed on audio data collected from Tamil native speakers, trying to study the 'r' and 'l' like sounds in Tamil, specifically /ɻ/. Carried out as my capstone project for LING 214 at UCSC.",
+    "portfolio/tamil-liquids/li-link": "📖 read more →",
+    "portfolio/tamil-liquids/li-praat": "phonetic analysis carried out with Praat: ",
+    "portfolio/tamil-liquids/li-r": "data analysis carried out with R: ",
+    "portfolio/category/game": "game 🎮",
+    "portfolio/category/web-app": "web app 💻",
+    "portfolio/category/research-project": "research project 🔬",
+
     "bingus": "bingus wingus"
 }
  

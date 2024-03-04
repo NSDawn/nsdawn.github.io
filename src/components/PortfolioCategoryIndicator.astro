@@ -1,0 +1,24 @@
+---
+interface Props {
+	backgroundColor: string;
+    text: string;
+    className?: string;
+}
+
+const { backgroundColor, text, className } = Astro.props;
+---
+<div class=`portfolio-category-indicator ${className ?? ""}`>
+    <span>{text}</span>
+</div>
+
+<style define:vars={{backgroundColor}}>
+    .portfolio-category-indicator {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        padding: 0.25rem 0.5rem;
+        outline: var(--backgroundColor) 0.1em solid;
+        color: var(--backgroundColor);
+        border-radius:  10px 0 10px 0;
+    }
+</style>

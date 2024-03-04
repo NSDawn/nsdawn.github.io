@@ -1,7 +1,9 @@
 ---
-import { astroI18n, t } from "astro-i18n";
+import { astroI18n, l, t } from "astro-i18n";
 import LayoutPortfolio from "../../../layouts/LayoutPortfolio.astro"
 import IconLink from "../../../components/InlineIconLink.astro";
+import CategoryIndicator from "../../../components/PortfolioCategoryIndicator.astro";
+import ScreenshotLink from "../../../components/ScreenshotLink.astro";
 
 astroI18n.init(Astro);
 ---
@@ -14,22 +16,22 @@ astroI18n.init(Astro);
     <main class="portfolio">
         <section class="profile fullsize">
             <div class="info-box">
-                <h1>hi, i'm nishant</h1>
-                let me take you through some of the things i've made.
+                <h1>{t("portfolio/title")}</h1>
+                {t("portfolio/tagline")}
             </div>
         </section>
         <section class="salperth fullsize">
             <div class="info-box hidden left">
                 <h1>{t("portfolio/salperth/h1")}</h1>
                 <h2>{t("portfolio/salperth/h2")}</h2>
-                {t("portfolio/salperth/p1")}
+                <p>{t("portfolio/salperth/p1")}</p>
                 <ul>
                     <li>
                         {t("portfolio/salperth/li-itch")} <IconLink icon="itch.svg" alt="itch icon link" href="https://ns-dawn.itch.io/salperth"></IconLink>
                     </li>
 
                 </ul>
-                {t("portfolio/salperth/p2")}
+                <p>{t("portfolio/salperth/p2")}</p>
                 <ul>
                     <li>
                         {t("portfolio/salperth/li-godot")} <IconLink icon="godot.svg" alt="godot icon link" href="https://godotengine.org/"></IconLink>
@@ -50,6 +52,7 @@ astroI18n.init(Astro);
                     <img src="/assets/img/portfolio/salperth-sprites.png" alt="salperth sprites">
                 </div>
             </div>
+            <CategoryIndicator backgroundColor="#ffa94f" text={t("portfolio/category/game")} className="hidden right">
         </section>
         <section class="kasa fullsize">
             <div class="images-wrapper hidden left">
@@ -65,10 +68,89 @@ astroI18n.init(Astro);
             <div class="info-box hidden right">
                 <h1>{t("portfolio/kasa/h1")}</h1>
                 <h2>{t("portfolio/kasa/h2")}</h2>
-                {t("portfolio/kasa/p1")}
+                <p>{t("portfolio/kasa/p1")}</p>
+                
+                <ul>
+                    <li>
+                        {t("portfolio/kasa/li-itch")} <IconLink icon="itch.svg" alt="itch icon link" href="https://godotengine.org/"></IconLink>
+                    </li>
+                </ul>
+                <p>{t("portfolio/kasa/p2")}</p>
+                <ul>
+                    <li>
+                        {t("portfolio/kasa/li-godot")} <IconLink icon="godot.svg" alt="godot icon link" href="https://godotengine.org/"></IconLink>
+                    </li>
+                    <li>
+                        {t("portfolio/kasa/li-aseprite")} <IconLink icon="aseprite.png" alt="aseprite icon link" href="https://www.aseprite.org/"></IconLink>
+                    </li>
+                    
+                </ul>
             </div>
+            <a class="hanafuda-cards-wrapper hidden left" href="https://en.wikipedia.org/wiki/Hanafuda">
+                <img src="/assets/img/portfolio/kasa-hanafuda-0.svg" alt="hanafuda card moon"/>
+                <img src="/assets/img/portfolio/kasa-hanafuda-1.svg" alt="hanafuda card rain man"/>
+            </a>
+            <CategoryIndicator backgroundColor="#ffa94f" text={t("portfolio/category/game")} className="hidden right">
         </section>
-
+        <section class="the-js-quiz">
+            <div class="info-box hidden left">
+                <h1>{t("portfolio/the-js-quiz/h1")}</h1>
+                <h2>{t("portfolio/the-js-quiz/h2")}</h2>
+                <ul>
+                    <li>
+                        {t("portfolio/the-js-quiz/li-link")} <IconLink icon="the-js-quiz.png" alt="the JS quiz icon link" href="https://nsdawn.dev/the-js-quiz/"></IconLink>
+                    </li>
+                </ul>
+                <p>{t("portfolio/the-js-quiz/p1")}</p>
+                <ul>
+                    <li>
+                        {t("portfolio/the-js-quiz/li-react")} <IconLink icon="react.svg" alt="react icon link" href="https://react.dev/"></IconLink>
+                    </li>
+                </ul>
+            </div>
+            <a class="screenshot hidden right" href="https://nsdawn.dev/the-js-quiz">
+                <img src="/assets/img/portfolio/the-js-quiz-scsh-0.png" alt="the JS quiz screenshot" />
+            </a>
+            <CategoryIndicator backgroundColor="#57ff78" text={t("portfolio/category/web-app")} className="hidden right">
+        </section>
+        <section class="tamil-liquids">
+            <div class="info-box hidden left">
+                <h1>{t("portfolio/tamil-liquids/h1")}</h1>
+                <h2>{t("portfolio/tamil-liquids/h2")}</h2>
+                <p>{t("portfolio/tamil-liquids/p1")}</p>
+                <ul>
+                    <li>
+                        <a href={l("/linguistics/tamil-liquids/")}>
+                            <h3>{t("portfolio/tamil-liquids/li-link")}</h3>
+                        </a>
+                    </li>
+                    <li>
+                        {t("portfolio/tamil-liquids/li-praat")} <IconLink icon="praat.svg" alt="Praat icon link" href="https://www.fon.hum.uva.nl/praat/" />
+                    </li>
+                    <li>
+                        {t("portfolio/tamil-liquids/li-r")} <IconLink icon="r.png" alt="R icon link" href="https://www.r-project.org/" />
+                    </li>
+                </ul>
+            </div>
+            <div class="images-wrapper hidden right">
+                <div class="bg-screenshots-right hidden right">
+                    <img class="hidden right delay-1" src="/assets/img/portfolio/tamil-liquids-scsh-0.png" alt="tamil liquids screenshot" />
+                    <img class="hidden right delay-2"  src="/assets/img/portfolio/tamil-liquids-scsh-1.png" alt="tamil liquids screenshot" />
+                    <img class="hidden right delay-3" src="/assets/img/portfolio/tamil-liquids-scsh-2.png" alt="tamil liquids screenshot" />
+                    
+                </div>
+                <ScreenshotLink 
+                    href="/assets/pdf/tamil-liquids-poster.pdf"
+                    scsh="tamil-liquids-poster-preview.png"
+                    title=""
+                    subtitle=""
+                    target="_blank"
+                    alt={"tamil-liquids poster preview"}
+                />
+            </div>
+            
+            <CategoryIndicator backgroundColor="#c66bff" text={t("portfolio/category/research-project")} className="hidden right">
+        </section>
 
         {[
             "/assets/img/portfolio/salperth-scsh-0.png",
@@ -77,6 +159,10 @@ astroI18n.init(Astro);
             "/assets/img/portfolio/kasa-scsh-0.png",
             "/assets/img/portfolio/kasa-scsh-1.png",
             "/assets/img/portfolio/kasa-scsh-2.png",
+            "/assets/img/portfolio/the-js-quiz-scsh-0.png",
+            "/assets/img/portfolio/tamil-liquids-scsh-0.png",
+            "/assets/img/portfolio/tamil-liquids-scsh-1.png",
+            "/assets/img/portfolio/tamil-liquids-scsh-2.png",
         ].map((s) => {
             return (
                 <link
@@ -96,17 +182,38 @@ astroI18n.init(Astro);
 
 <style>
     main {
-        padding: 5vh 3vw;
+        padding: 0 3vw;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        & > section {
+            display: flex;
+            gap: 1rem;
+            overflow: hidden;
+            padding: 2rem;
+            position: relative;
+
+
+        }
+    }
+    section.profile {
+        & .info-box {
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            justify-content: center;
+        }
     }
     section.fullsize {
         height: 80vh;
         margin: 3vh 0;
     } 
+    section:not(section.fullsize) {
+        padding: 4rem 2rem;
+        
+    }
+    
     section.salperth, section.kasa {
-        overflow: hidden;
         & > * {
             flex: 1;
         }
@@ -120,7 +227,7 @@ astroI18n.init(Astro);
                 grid-row: 1; grid-column: 1;
                 & > img {
                     transform: translateX(-25%) scale(1.5);
-                    filter: opacity(0.5);
+                    filter: opacity(0.4);
                 }
                 & > img:nth-child(2n) {
                     transform: translateX(-50%) scale(1.5);
@@ -139,12 +246,15 @@ astroI18n.init(Astro);
             display: grid;
             & > .screenshots {
                 grid-row: 1; grid-column: 1;
+                display: flex;
+                flex-direction: column;
+                place-items: center;
                 & > img {
-                    transform: translateX(25%) scale(1.5);
-                    filter: opacity(0.5);
+                    transform: translateY(30%) translateX(25%) scale(1.5);
+                    filter: opacity(0.4);
                 }
                 & > img:nth-child(2n) {
-                    transform: translateX(50%) scale(1.5);
+                    transform: translateY(30%) translateX(50%) scale(1.5);
                 }
             }
             & > .sprite {
@@ -156,11 +266,17 @@ astroI18n.init(Astro);
                 }
             }
         } 
+        
+    }
+    .info-box {
+        z-index: 2
     }
     img {
         width: 100%;
     }
-
+    ul {
+        list-style-type: none;
+    }
     .hidden {
         opacity: 0;
         transition: ease-in-out 0.5s;
@@ -188,13 +304,42 @@ astroI18n.init(Astro);
         }
     }
 
+    a.hanafuda-cards-wrapper {
+        left: 3rem;
+        top: 1rem;
+        display: grid;
+        position: absolute;
+        width: max-content;
+        & img {
+            grid-row: 1; grid-column: 1;
+            transform: rotate(15deg);
+            height: 5rem;
+        }
+        & img:nth-child(2n) {
+            transform: translateX(-50%) rotate(-15deg);
+        }
+    }
+    .bg-screenshots-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40%;
+        & > * {
+            transform: translateX(-25%) scale(1.2);
+            opacity: 0.3;
+        }
+        & > img:nth-child(2n) {
+            transform: translateX(0%) scale(1.2);
+        }
+    }
+
     a > img {
         display: inline;
     }
     
 </style>
 
-<script>
+<script is:inline defer>
 
 // ANIMATIONS ON SCROLL
 const observer = new IntersectionObserver((entries) => {
